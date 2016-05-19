@@ -79,6 +79,7 @@ namespace TTVL.Dialog
             {
                 try
                 {
+                    DialogBox.ShowWaitForm();
                     using (var db = new MasterDataContext())
                     {
                         var queryQuyDanhs = from q in db.QuyDanhs where q.MaQuyDanh == Convert.ToInt32(gvQuyDanh.GetFocusedRowCellValue(gridColumn1).ToString()) select q;
@@ -92,8 +93,10 @@ namespace TTVL.Dialog
                 }
                 catch
                 {
+                    DialogBox.HideWaitForm();
                     DialogBox.Infomation("Xóa không thành công vì Quý danh: <" + gvQuyDanh.GetFocusedRowCellValue(gridColumn2) + "> đã được sử dụng. Vui lòng kiểm tra lại.");
                 }
+                DialogBox.HideWaitForm();
             }
         }
 
