@@ -189,3 +189,6 @@ C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL
 C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.UserControl.ctlNhanVien.resources
 C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
 C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
