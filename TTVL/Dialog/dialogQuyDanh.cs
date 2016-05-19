@@ -106,5 +106,10 @@ namespace TTVL.Dialog
             else
                 DialogBox.Infomation("Vui lòng chọn [Quý danh] cần xóa. Xin cảm ơn");
         }
+
+        private void barButtonItem_Nap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }
