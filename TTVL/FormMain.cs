@@ -14,7 +14,7 @@ using TTVL.UserControl;
 using TTVL_DLL;
 
 namespace TTVL
-{//jdhkfsh
+{//jdh
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public FormMain()
