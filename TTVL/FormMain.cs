@@ -14,7 +14,11 @@ using TTVL.UserControl;
 using TTVL_DLL;
 
 namespace TTVL
+<<<<<<< HEAD
 {//jdhzzzzzzzzzzzzz
+=======
+{//jdhkfsh
+>>>>>>> parent of fa26a35... fdgdfg
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public FormMain()
