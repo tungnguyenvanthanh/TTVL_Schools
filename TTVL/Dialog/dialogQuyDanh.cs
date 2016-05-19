@@ -96,6 +96,7 @@ namespace TTVL.Dialog
                 }
             }
         }
+
         private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (gvQuyDanh.GetFocusedRowCellValue(gridColumn1) != null)
