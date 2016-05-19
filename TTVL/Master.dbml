@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TTVL_Schools" Class="MasterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TTVL-PC;Initial Catalog=TTVL_Schools;Persist Security Info=True;User ID=sa" SettingsObjectName="TTVL.Properties.Settings" SettingsPropertyName="TTVL_SchoolsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ChucVu" Member="ChucVus">
+    <Type Name="ChucVu">
+      <Column Name="MaChucVu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenChucVu" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="ChucVu_NhanVien" Member="NhanViens" ThisKey="MaChucVu" OtherKey="MaChucVu" Type="NhanVien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Khoa" Member="Khoas">
+    <Type Name="Khoa">
+      <Column Name="MaKhoa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKhoa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NhanVien" Member="NhanViens">
+    <Type Name="NhanVien">
+      <Column Name="MaNhanVien" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MatKhau" Type="System.String" DbType="NVarChar(172)" CanBeNull="true" />
+      <Column Name="MaQuyDanh" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HoVaTen" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayCap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NoiCap" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaChucVu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="ChucVu_NhanVien" Member="ChucVu" ThisKey="MaChucVu" OtherKey="MaChucVu" Type="ChucVu" IsForeignKey="true" />
+      <Association Name="QuyDanh_NhanVien" Member="QuyDanh" ThisKey="MaQuyDanh" OtherKey="MaQuyDanh" Type="QuyDanh" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QuyDanh" Member="QuyDanhs">
+    <Type Name="QuyDanh">
+      <Column Name="MaQuyDanh" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenQuyDanh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayUpdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="QuyDanh_NhanVien" Member="NhanViens" ThisKey="MaQuyDanh" OtherKey="MaQuyDanh" Type="NhanVien" />
+    </Type>
+  </Table>
+</Database>
