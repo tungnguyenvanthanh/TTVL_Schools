@@ -24,14 +24,22 @@ namespace TTVL.Dialog
             DialogBox.ShowWaitForm();
             using (var db = new MasterDataContext())
             {
-                gcQuyDanh.DataSource = (from qd in db.QuyDanhs
-                                        select new
-                                        {
-                                            qd.MaQuyDanh,
-                                            qd.TenQuyDanh,
-                                            qd.NgayUpdate
-                                        }).ToList();
-
+                try
+                {
+                    gcQuyDanh.DataSource = (from qd in db.QuyDanhs
+                                            select new
+                                            {
+                                                qd.MaQuyDanh,
+                                                qd.TenQuyDanh,
+                                                qd.NgayUpdate
+                                            }).ToList();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Kết nối server thất bại, hãy kiểm tra lại mạng Internet của bạn.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    this.Close();
+                }
+                
                 if (gvQuyDanh.FocusedRowHandle == 0) gvQuyDanh.FocusedRowHandle = -1;
             }
             DialogBox.HideWaitForm();
