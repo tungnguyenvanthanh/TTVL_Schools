@@ -21,7 +21,9 @@ namespace TTVL.UserControl
         {
             using (var db = new MasterDataContext())
             {
-                gcNhanVien.DataSource = (from nv in db.NhanViens
+                try
+                {
+                    gcNhanVien.DataSource = (from nv in db.NhanViens
                     join cv in db.ChucVus on nv.MaChucVu equals cv.MaChucVu
                     select new
                     {
@@ -34,7 +36,11 @@ namespace TTVL.UserControl
                         nv.GioiTinh,
                         cv.TenChucVu
                     }).ToList();
-
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Kết nối server thất bại, hãy kiểm tra lại mạng Internet của bạn.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
                 if (gvNhanVien.FocusedRowHandle == 0) gvNhanVien.FocusedRowHandle = -1;
             }
         }

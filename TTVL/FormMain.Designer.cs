@@ -274,7 +274,7 @@
             // 
             // xtraTabControl_TTVL
             // 
-            this.xtraTabControl_TTVL.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InTabControlHeader;
+            this.xtraTabControl_TTVL.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPagesAndTabControlHeader;
             this.xtraTabControl_TTVL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl_TTVL.Images = this.imageCollection1;
             this.xtraTabControl_TTVL.Location = new System.Drawing.Point(0, 146);
@@ -292,7 +292,7 @@
             this.xtraTabPage1.ImageIndex = 51;
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1383, 497);
-            this.xtraTabPage1.Text = " Home Main";
+            this.xtraTabPage1.Text = "Home main";
             // 
             // FormMain
             // 
