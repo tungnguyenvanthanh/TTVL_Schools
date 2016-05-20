@@ -274,7 +274,7 @@
             // 
             // xtraTabControl_TTVL
             // 
-            this.xtraTabControl_TTVL.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPagesAndTabControlHeader;
+            this.xtraTabControl_TTVL.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InTabControlHeader;
             this.xtraTabControl_TTVL.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl_TTVL.Images = this.imageCollection1;
             this.xtraTabControl_TTVL.Location = new System.Drawing.Point(0, 146);

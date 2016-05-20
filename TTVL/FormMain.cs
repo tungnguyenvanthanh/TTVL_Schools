@@ -25,15 +25,8 @@ namespace TTVL
         // Đóng TabControl
         private void xtraTabControl_TTVL_CloseButtonClick(object sender, EventArgs e)
         {
-            foreach (XtraTabPage tab in xtraTabControl_TTVL.TabPages)
-            {
-                if (tab.Text != " Home Main")
-                {
-                    DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs arg = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
-                    (arg.Page as XtraTabPage).Dispose();
-                    return;
-                }
-            }
+            DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs arg = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
+            (arg.Page as XtraTabPage).Dispose();
         }
         // Nhảy tới TabControl vừa mở
         private void xtraTabControl_TTVL_ControlAdded(object sender, ControlEventArgs e)
@@ -48,7 +41,7 @@ namespace TTVL
 
         private void Item_HeThong_TaiKhoan_DanhMuc_ThongTinTaiKhoan_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+
         }
 
         private void Item_HeThong_NhanVien_DanhSach_ItemClick(object sender, ItemClickEventArgs e)
