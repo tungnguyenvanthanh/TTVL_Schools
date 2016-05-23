@@ -50,6 +50,8 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
@@ -73,10 +75,13 @@
             this.Item_HeThong_NhanVien_ChucVu,
             this.Item_HeThong_NhanVien_Khoa,
             this.barButtonItem4,
-            this.Item_HeThong_NhanVien_QuyDanh});
+            this.Item_HeThong_NhanVien_QuyDanh,
+            this.barButtonItem2,
+            this.barButtonItem3});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 13;
+            this.ribbon.MaxItemId = 2;
             this.ribbon.Name = "ribbon";
+            this.ribbon.PageHeaderItemLinks.Add(this.barButtonItem3);
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbon.Size = new System.Drawing.Size(1389, 146);
@@ -294,6 +299,18 @@
             this.xtraTabPage1.Size = new System.Drawing.Size(1383, 497);
             this.xtraTabPage1.Text = "Home main";
             // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "barButtonItem2";
+            this.barButtonItem2.Id = 13;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "barButtonItem3";
+            this.barButtonItem3.Id = 1;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,5 +357,7 @@
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_NhanVien_Khoa;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_NhanVien_QuyDanh;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
     }
 }

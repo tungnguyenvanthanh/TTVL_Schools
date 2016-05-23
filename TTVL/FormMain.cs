@@ -30,8 +30,7 @@ namespace TTVL
                 var closePageButtonEventArgs = e as DevExpress.XtraTab.ViewInfo.ClosePageButtonEventArgs;
                 if (closePageButtonEventArgs != null)
                 {
-                    XtraTabPage page = (XtraTabPage)
-                        closePageButtonEventArgs.Page;
+                    XtraTabPage page = (XtraTabPage) closePageButtonEventArgs.Page;
 
                     if (!page.Text.Equals("Home main"))
                     {
