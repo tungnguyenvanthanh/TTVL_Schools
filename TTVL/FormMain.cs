@@ -75,8 +75,8 @@ namespace TTVL
             }
             if (t == 0)
             {
-                AddTabPageToXtraTabControl add = new AddTabPageToXtraTabControl();
-                add.Add(xtraTabControl_TTVL, -1, "Danh sách nhân viên", new ctlNhanVien());
+                TTVL_DLL.TTVL ttvl = new TTVL_DLL.TTVL();
+                ttvl.AddTabPageToXtraTabControl(xtraTabControl_TTVL, -1, "Danh sách nhân viên", new ctlNhanVien());
             }
             DialogBox.HideWaitForm();
         }

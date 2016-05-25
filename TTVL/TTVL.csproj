@@ -54,8 +54,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TTVL_DLL">
-      <HintPath>..\..\..\0 - DLL\TTVL_DLL\TTVL_DLL\bin\Debug\TTVL_DLL.dll</HintPath>
+    <Reference Include="TTVL_DLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\0 - DLL\TTVL_DLL\TTVL_DLL\bin\Debug\TTVL_DLL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
