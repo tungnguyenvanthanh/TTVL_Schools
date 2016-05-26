@@ -288,3 +288,4 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.DangNhap.resources

@@ -21,7 +21,7 @@ namespace TTVL
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new FormMain());
+            Application.Run(new DangNhap.DangNhap());
         }
     }
 }

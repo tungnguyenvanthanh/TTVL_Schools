@@ -20,7 +20,6 @@ namespace TTVL
         public FormMain()
         {
             InitializeComponent();
-            defaultLookAndFeel1.LookAndFeel.SkinName = Common.Skins;
         }
 
         // Đóng TabControl

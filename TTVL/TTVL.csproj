@@ -61,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
+    <Compile Include="DangNhap\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialog\dialogQuyDanh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="UserControl\ctlNhanVien.Designer.cs">
       <DependentUpon>ctlNhanVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialog\dialogQuyDanh.resx">
       <DependentUpon>dialogQuyDanh.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,7 +146,6 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DangNhap\" />
     <Folder Include="Form\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
