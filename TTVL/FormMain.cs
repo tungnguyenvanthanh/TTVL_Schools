@@ -20,6 +20,7 @@ namespace TTVL
         public FormMain()
         {
             InitializeComponent();
+            defaultLookAndFeel1.LookAndFeel.SkinName = Common.Skins;
         }
 
         // Đóng TabControl
@@ -85,6 +86,20 @@ namespace TTVL
         {
             dialogQuyDanh quyDanh = new dialogQuyDanh();
             quyDanh.ShowDialog();
+        }
+        void InitSkinGallery()
+        {
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(itemSkins, true);
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            InitSkinGallery();
+        }
+
+        private void itemSkins_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
+        {
+            Common.Skins = e.Item.Caption;
         }
     }
 }

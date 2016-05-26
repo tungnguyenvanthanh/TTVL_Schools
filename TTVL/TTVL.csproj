@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="Dialog\dialogQuyDanh.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -33,5 +33,20 @@ namespace TTVL.Properties {
                 return ((string)(this["TTVL_SchoolsConnectionString"]));
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Springtime")]
+        public string Skins
+        {
+            get
+            {
+                return ((string)(this["Skins"]));
+            }
+            set
+            {
+                this["Skins"] = value;
+            }
+        }
     }
 }
