@@ -13,6 +13,7 @@ namespace TTVL
             get { return Properties.Settings.Default.Skins; }
             set { Properties.Settings.Default.Skins = value; Properties.Settings.Default.Save(); }
         }
+
         public static string SqlConnString
         {
             get { return Properties.Settings.Default.TTVL_SchoolsConnectionString; }

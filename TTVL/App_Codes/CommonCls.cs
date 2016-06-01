@@ -22,7 +22,7 @@ namespace TTVL.App_Codes
             SqlCommand sqlCmd;
             try
             {
-                sqlCmd = new SqlCommand("select top 1 * from QuyDanhff", SqlConn);
+                sqlCmd = new SqlCommand("select top 1 * from QuyDanh", SqlConn);
                 SqlConn.Open();
                 sqlCmd.ExecuteNonQuery();
                 SqlConn.Close();

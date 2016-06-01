@@ -23,6 +23,7 @@ namespace TTVL.DangNhap
 
         private void btLuuDong_Click(object sender, EventArgs e)
         {
+            DialogBox.ShowWaitForm();
             if (xtraTabControl1.SelectedTabPageIndex == 0)
             {
                 //Nhap chuoi ket noi                
@@ -35,6 +36,7 @@ namespace TTVL.DangNhap
                 else
                     this.Hide();
             }
+            DialogBox.HideWaitForm();
         }
 
         private void btHuy_Click(object sender, EventArgs e)

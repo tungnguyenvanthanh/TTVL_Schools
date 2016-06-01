@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
