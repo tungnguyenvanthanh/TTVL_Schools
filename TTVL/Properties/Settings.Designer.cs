@@ -8,29 +8,51 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TTVL.Properties {
-    
-    
+namespace TTVL.Properties
+{
+
+
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-        
-        public static Settings Default {
-            get {
+
+        public static Settings Default
+        {
+            get
+            {
                 return defaultInstance;
             }
         }
-        
+
+        //Kết nối server
+        //        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        //        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        //        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        //        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TTVL-PC;Initial Catalog=TTVL_Schools;Persist Security Info=True;User " +
+        //            "ID=sa;Password=P@ssword")]
+        //        public string TTVL_SchoolsConnectionString {
+        //            get {
+        //                return ((string)(this["TTVL_SchoolsConnectionString"]));
+        //            }
+        //        }
+
+        // Kết nối server Yes        //workstation id=MySchools.mssql.somee.com;packet size=4096;user id=thanhtungttvl_SQLLogin_1;pwd=n8fdnk7rs7;data source=MySchools.mssql.somee.com;persist security info=False;initial catalog=MySchools
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TTVL-PC;Initial Catalog=TTVL_Schools;Persist Security Info=True;User " +
-            "ID=sa;Password=P@ssword")]
-        public string TTVL_SchoolsConnectionString {
-            get {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TTVL_SchoolsConnectionString
+        {
+            get
+            {
                 return ((string)(this["TTVL_SchoolsConnectionString"]));
+            }
+            set
+            {
+                this["TTVL_SchoolsConnectionString"] = value;
             }
         }
 
@@ -46,6 +68,21 @@ namespace TTVL.Properties {
             set
             {
                 this["Skins"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Conn
+        {
+            get
+            {
+                return ((string)(this["Conn"]));
+            }
+            set
+            {
+                this["Conn"] = value;
             }
         }
     }

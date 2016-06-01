@@ -34,11 +34,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.2" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v15.2" />
     <Reference Include="DevExpress.Printing.v15.2.Core" />
     <Reference Include="DevExpress.Utils.v15.2" />
     <Reference Include="DevExpress.XtraBars.v15.2" />
     <Reference Include="DevExpress.Sparkline.v15.2.Core" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v15.2" />
     <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -60,12 +64,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Codes\CommonCls.cs" />
+    <Compile Include="App_Codes\EncDec.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="DangNhap\DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DangNhap\DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap\Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap\ThietLapKetNoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap\ThietLapKetNoi.Designer.cs">
+      <DependentUpon>ThietLapKetNoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialog\dialogQuyDanh.cs">
       <SubType>Form</SubType>
@@ -100,6 +118,12 @@
     </Compile>
     <EmbeddedResource Include="DangNhap\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap\ThietLapKetNoi.resx">
+      <DependentUpon>ThietLapKetNoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\dialogQuyDanh.resx">
       <DependentUpon>dialogQuyDanh.cs</DependentUpon>
