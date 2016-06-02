@@ -86,6 +86,7 @@ namespace TTVL
             dialogQuyDanh quyDanh = new dialogQuyDanh();
             quyDanh.ShowDialog();
         }
+
         void InitSkinGallery()
         {
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(itemSkins, true);

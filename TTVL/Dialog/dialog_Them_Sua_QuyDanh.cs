@@ -35,7 +35,6 @@ namespace TTVL.Dialog
             }
 
             objQuyDanh.TenQuyDanh = txtTenQuyDanh.Text;
-            objQuyDanh.NgayUpdate = DateTime.Now;
 
             try
             {

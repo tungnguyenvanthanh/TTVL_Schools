@@ -37,6 +37,7 @@ namespace TTVL.DangNhap
                     this.Hide();
             }
             DialogBox.HideWaitForm();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void btHuy_Click(object sender, EventArgs e)

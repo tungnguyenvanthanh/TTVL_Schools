@@ -7,27 +7,63 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
+using DevExpress.XtraBars;
+using TTVL_DLL;
 
 namespace TTVL.DangNhap
 {
-    public partial class DangNhap : DevExpress.XtraEditors.XtraForm
+    public partial class DangNhap : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public DangNhap()
         {
             InitializeComponent();
-            defaultLookAndFeel1.LookAndFeel.SkinName = Common.Skins;
+            txtTaiKhoan.Text = Properties.Settings.Default.TaiKhoan;
+            txtMatKhau.Text = Properties.Settings.Default.MatKhau;
+            CheckGhiNho.Checked = Properties.Settings.Default.Check;
         }
 
-        private void DangNhap_Load(object sender, EventArgs e)
+        private void btDangNhap_Click(object sender, EventArgs e)
         {
+            if (txtTaiKhoan.Text.Equals(""))
+            {
+                DialogBox.Error("Xin vui lòng nhập [Mã số], xin cám ơn");
+                txtTaiKhoan.Focus();
+                return;
+            }
+            if (txtMatKhau.Text.Equals(""))
+            {
+                DialogBox.Error("Xin vui lòng nhập [Mật khẩu], xin cám ơn");
+                txtMatKhau.Focus();
+                return;
+            }
 
-        }
+            using (var db = new MasterDataContext())
+            {
+                var QueryIP = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == txtMatKhau.Text);
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            FormMain v = new FormMain();
-            v.Show();
+                if (QueryIP == null)
+                {
+                    DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");
+                }
+                else
+                {
+                    if (CheckGhiNho.Checked)
+                    {
+                        Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;
+                        Properties.Settings.Default.MatKhau = txtMatKhau.Text;
+                        Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                        Properties.Settings.Default.Save();
+                    }
+                    else
+                    {
+                        Properties.Settings.Default.TaiKhoan = "";
+                        Properties.Settings.Default.MatKhau = "";
+                        Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                        Properties.Settings.Default.Save();
+                    }
+                    this.DialogResult = DialogResult.OK;
+                }
+            }
         }
     }
 }

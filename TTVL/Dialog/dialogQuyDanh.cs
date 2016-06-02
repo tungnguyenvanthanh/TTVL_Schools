@@ -26,13 +26,7 @@ namespace TTVL.Dialog
             {
                 try
                 {
-                    gcQuyDanh.DataSource = (from qd in db.QuyDanhs
-                                            select new
-                                            {
-                                                qd.MaQuyDanh,
-                                                qd.TenQuyDanh,
-                                                qd.NgayUpdate
-                                            }).ToList();
+                    
                 }
                 catch (Exception)
                 {

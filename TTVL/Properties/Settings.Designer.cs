@@ -85,5 +85,48 @@ namespace TTVL.Properties
                 this["Conn"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TaiKhoan
+        {
+            get
+            {
+                return ((string)(this["TaiKhoan"]));
+            }
+            set
+            {
+                this["TaiKhoan"] = value;
+            }
+        }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string MatKhau
+        {
+            get
+            {
+                return ((string)(this["MatKhau"]));
+            }
+            set
+            {
+                this["MatKhau"] = value;
+            }
+        }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public bool Check
+        {
+            get
+            {
+                return ((bool)(this["Check"]));
+            }
+            set
+            {
+                this["Check"] = value;
+            }
+        }
     }
 }

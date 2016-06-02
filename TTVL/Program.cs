@@ -8,6 +8,7 @@ using DevExpress.UserSkins;
 using DevExpress.Skins;
 using TTVL.App_Codes;
 using TTVL.DangNhap;
+using TTVL.Form;
 using TTVL_DLL;
 
 namespace TTVL
@@ -27,8 +28,17 @@ namespace TTVL
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
 
-            Intro t = new Intro();
+            string n = EncDec.Encrypt("workstation id=MySchools.mssql.somee.com;packet size=4096;user id=thanhtungttvl_SQLLogin_1;pwd=n8fdnk7rs7;data source=MySchools.mssql.somee.com;persist security info=False;initial catalog=MySchools");
+            
+            demo t = new demo();
             t.Show();
+
+            //#region Intro
+            //for (int i = 0; i < 5000; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //#endregion
 
             DialogBox.ShowWaitForm();
             
@@ -55,10 +65,19 @@ namespace TTVL
             DialogBox.HideWaitForm();
 
             #region Đăng nhập
-            //using (DangNhap.DangNhap frmLogin = new DangNhap.DangNhap())
+            using (DangNhap.DangNhap frmLogin = new DangNhap.DangNhap())
+            {
+                frmLogin.ShowDialog();
+                if (frmLogin.DialogResult != DialogResult.OK)
+                {
+                    return;
+                }
+            }
+
+            //using (Form1 f = new Form1())
             //{
-            //    frmLogin.ShowDialog();
-            //    if (frmLogin.DialogResult != DialogResult.OK) // nếu không đăng nhập mà nhấn nút X thì điều kiện này đúng
+            //    f.ShowDialog();
+            //    if (f.DialogResult != DialogResult.OK)
             //    {
             //        return;
             //    }
@@ -66,8 +85,10 @@ namespace TTVL
             #endregion
 
             t.Close();
+            t.Dispose();
 
             new FormMain().Show();
+
             Application.Run();
         }
     }

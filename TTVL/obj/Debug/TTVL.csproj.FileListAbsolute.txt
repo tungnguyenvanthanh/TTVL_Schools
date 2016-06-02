@@ -279,7 +279,6 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
-C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialogQuyDanh.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialog_Them_Sua_QuyDanh.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
@@ -330,3 +329,5 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.Intro.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.ThietLapKetNoi.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Form.Form1.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
