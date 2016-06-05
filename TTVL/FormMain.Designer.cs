@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -49,22 +47,22 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.itemSkins = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.Item_HeThong_BaoMat_PhanQuyen = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
             this.xtraTabControl_TTVL.SuspendLayout();
-            this.xtraTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -87,13 +85,17 @@
             this.Item_HeThong_NhanVien_QuyDanh,
             this.barButtonItem2,
             this.barButtonItem3,
-            this.itemSkins});
+            this.itemSkins,
+            this.Item_HeThong_BaoMat_PhanQuyen});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 3;
+            this.ribbon.MaxItemId = 4;
             this.ribbon.Name = "ribbon";
             this.ribbon.PageHeaderItemLinks.Add(this.barButtonItem3);
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
+            this.ribbonPage1,
+            this.ribbonPage2,
+            this.ribbonPage3,
+            this.ribbonPage4});
             this.ribbon.Size = new System.Drawing.Size(1389, 146);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
@@ -152,6 +154,7 @@
             this.imageCollection1.Images.SetKeyName(49, "49_marked_price.png");
             this.imageCollection1.Images.SetKeyName(50, "50_light.png");
             this.imageCollection1.Images.SetKeyName(51, "1463561141_star.png");
+            this.imageCollection1.Images.SetKeyName(52, "Checklist-icon.png");
             // 
             // barButtonItem1
             // 
@@ -230,7 +233,7 @@
             // 
             this.Item_HeThong_NhanVien_ChucVu.Caption = "Chức vụ";
             this.Item_HeThong_NhanVien_ChucVu.Id = 9;
-            this.Item_HeThong_NhanVien_ChucVu.ImageIndex = 23;
+            this.Item_HeThong_NhanVien_ChucVu.ImageIndex = 49;
             this.Item_HeThong_NhanVien_ChucVu.Name = "Item_HeThong_NhanVien_ChucVu";
             this.Item_HeThong_NhanVien_ChucVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_NhanVien_ChucVu_ItemClick);
             // 
@@ -251,7 +254,7 @@
             // 
             this.Item_HeThong_NhanVien_QuyDanh.Caption = "Quý danh";
             this.Item_HeThong_NhanVien_QuyDanh.Id = 12;
-            this.Item_HeThong_NhanVien_QuyDanh.ImageIndex = 22;
+            this.Item_HeThong_NhanVien_QuyDanh.ImageIndex = 49;
             this.Item_HeThong_NhanVien_QuyDanh.Name = "Item_HeThong_NhanVien_QuyDanh";
             this.Item_HeThong_NhanVien_QuyDanh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_NhanVien_QuyDanh_ItemClick);
             // 
@@ -274,11 +277,21 @@
             this.itemSkins.Name = "itemSkins";
             this.itemSkins.GalleryItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.itemSkins_GalleryItemClick);
             // 
+            // Item_HeThong_BaoMat_PhanQuyen
+            // 
+            this.Item_HeThong_BaoMat_PhanQuyen.Caption = "Phân quyền";
+            this.Item_HeThong_BaoMat_PhanQuyen.Glyph = global::TTVL.Properties.Resources.Checklist_icon;
+            this.Item_HeThong_BaoMat_PhanQuyen.Id = 3;
+            this.Item_HeThong_BaoMat_PhanQuyen.Name = "Item_HeThong_BaoMat_PhanQuyen";
+            this.Item_HeThong_BaoMat_PhanQuyen.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
+            this.ribbonPageGroup4,
             this.ribbonPageGroup3});
             this.ribbonPage1.ImageIndex = 47;
             this.ribbonPage1.Name = "ribbonPage1";
@@ -300,6 +313,13 @@
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "NHÂN VIÊN";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.Item_HeThong_BaoMat_PhanQuyen);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            this.ribbonPageGroup4.ShowCaptionButton = false;
+            this.ribbonPageGroup4.Text = "BẢO MẬT";
             // 
             // ribbonPageGroup3
             // 
@@ -332,25 +352,28 @@
             // 
             // xtraTabPage1
             // 
-            this.xtraTabPage1.Controls.Add(this.chartControl1);
             this.xtraTabPage1.ImageIndex = 51;
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1383, 497);
             this.xtraTabPage1.Text = "Home main";
             // 
-            // chartControl1
+            // ribbonPage2
             // 
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram3;
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControl1.Location = new System.Drawing.Point(0, 0);
-            this.chartControl1.Name = "chartControl1";
-            series3.Name = "Series 1";
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3};
-            this.chartControl1.Size = new System.Drawing.Size(1383, 497);
-            this.chartControl1.TabIndex = 0;
+            this.ribbonPage2.ImageIndex = 7;
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = " QUẢN LÝ SINH VIÊN";
+            // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.ImageIndex = 17;
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = " QUẢN LÝ THƯ VIỆN";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.ImageIndex = 15;
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = " QUẢN LÝ KHO";
             // 
             // FormMain
             // 
@@ -372,10 +395,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).EndInit();
             this.xtraTabControl_TTVL.ResumeLayout(false);
-            this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,6 +426,10 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem itemSkins;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
+        private DevExpress.XtraBars.BarButtonItem Item_HeThong_BaoMat_PhanQuyen;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
     }
 }
