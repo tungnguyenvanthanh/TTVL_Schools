@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -63,8 +63,8 @@
             this.xtraTabControl_TTVL.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -214,6 +214,7 @@
             this.Item_HeThong_NhanVien_ThemMoi.Name = "Item_HeThong_NhanVien_ThemMoi";
             this.Item_HeThong_NhanVien_ThemMoi.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.Item_HeThong_NhanVien_ThemMoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_NhanVien_ThemMoi_ItemClick);
             // 
             // Item_HeThong_NhanVien_DanhSach
             // 
@@ -231,6 +232,7 @@
             this.Item_HeThong_NhanVien_ChucVu.Id = 9;
             this.Item_HeThong_NhanVien_ChucVu.ImageIndex = 23;
             this.Item_HeThong_NhanVien_ChucVu.Name = "Item_HeThong_NhanVien_ChucVu";
+            this.Item_HeThong_NhanVien_ChucVu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_NhanVien_ChucVu_ItemClick);
             // 
             // Item_HeThong_NhanVien_Khoa
             // 
@@ -294,8 +296,7 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_ThemMoi);
             this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_DanhSach);
             this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_ChucVu, true);
-            this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_Khoa);
-            this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_QuyDanh, true);
+            this.ribbonPageGroup2.ItemLinks.Add(this.Item_HeThong_NhanVien_QuyDanh);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "NHÂN VIÊN";
@@ -339,15 +340,15 @@
             // 
             // chartControl1
             // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram3;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
-            series1.Name = "Series 1";
+            series3.Name = "Series 1";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
+        series3};
             this.chartControl1.Size = new System.Drawing.Size(1383, 497);
             this.chartControl1.TabIndex = 0;
             // 
@@ -372,8 +373,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).EndInit();
             this.xtraTabControl_TTVL.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

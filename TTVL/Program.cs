@@ -30,7 +30,7 @@ namespace TTVL
 
             string n = EncDec.Encrypt("workstation id=MySchools.mssql.somee.com;packet size=4096;user id=thanhtungttvl_SQLLogin_1;pwd=n8fdnk7rs7;data source=MySchools.mssql.somee.com;persist security info=False;initial catalog=MySchools");
             
-            demo t = new demo();
+            Intro t = new Intro();
             t.Show();
 
             //#region Intro

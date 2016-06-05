@@ -22,7 +22,7 @@ namespace TTVL.DangNhap
             CheckGhiNho.Checked = Properties.Settings.Default.Check;
         }
 
-        private void btDangNhap_Click(object sender, EventArgs e)
+        void Login()
         {
             if (txtTaiKhoan.Text.Equals(""))
             {
@@ -30,6 +30,7 @@ namespace TTVL.DangNhap
                 txtTaiKhoan.Focus();
                 return;
             }
+
             if (txtMatKhau.Text.Equals(""))
             {
                 DialogBox.Error("Xin vui lòng nhập [Mật khẩu], xin cám ơn");
@@ -64,6 +65,29 @@ namespace TTVL.DangNhap
                     this.DialogResult = DialogResult.OK;
                 }
             }
+        }
+        private void btDangNhap_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+        private void btLienHe_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://thanhtungttvl.somee.com/html.html");
+        }
+
+        private void btQuenMatKhau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter)
+            {
+                Login();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }

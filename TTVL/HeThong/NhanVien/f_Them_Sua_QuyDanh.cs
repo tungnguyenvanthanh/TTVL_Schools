@@ -12,14 +12,14 @@ using TTVL_DLL;
 
 namespace TTVL.Dialog
 {
-    public partial class dialog_Them_Sua_QuyDanh : DevExpress.XtraEditors.XtraForm
+    public partial class f_Them_Sua_QuyDanh : DevExpress.XtraEditors.XtraForm
     {
         public int MaQuyDanhNV { get; set; }
         private QuyDanh objQuyDanh;
         private MasterDataContext db;
         public bool isYesNo = false;
 
-        public dialog_Them_Sua_QuyDanh()
+        public f_Them_Sua_QuyDanh()
         {
             InitializeComponent();
             db = new MasterDataContext();
@@ -48,6 +48,7 @@ namespace TTVL.Dialog
                 MessageBox.Show("Đã có lỗi xảy ra. Code: " + ex.Message);
             }
         }
+
         private void btDongY_Click(object sender, EventArgs e)
         {
             Them_Sua();
@@ -78,7 +79,6 @@ namespace TTVL.Dialog
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-
             if (keyData == Keys.Enter)
             {
                 Them_Sua();

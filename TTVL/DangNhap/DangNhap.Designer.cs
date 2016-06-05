@@ -31,8 +31,8 @@
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.btQuenMatKhau = new DevExpress.XtraBars.BarButtonItem();
+            this.btLienHe = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -40,10 +40,13 @@
             this.txtMatKhau = new DevExpress.XtraEditors.TextEdit();
             this.btDangNhap = new System.Windows.Forms.Button();
             this.CheckGhiNho = new DevExpress.XtraEditors.CheckEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckGhiNho.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -54,8 +57,8 @@
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
-            this.barButtonItem1,
-            this.barButtonItem2});
+            this.btQuenMatKhau,
+            this.btLienHe});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.MaxItemId = 3;
             this.ribbon.Name = "ribbon";
@@ -63,24 +66,26 @@
             this.ribbon.Size = new System.Drawing.Size(435, 49);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
-            // barButtonItem1
+            // btQuenMatKhau
             // 
-            this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem1.Caption = "Quên mật khẩu ?";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.btQuenMatKhau.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.btQuenMatKhau.Caption = "Quên mật khẩu ?";
+            this.btQuenMatKhau.Id = 1;
+            this.btQuenMatKhau.Name = "btQuenMatKhau";
+            this.btQuenMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btQuenMatKhau_ItemClick);
             // 
-            // barButtonItem2
+            // btLienHe
             // 
-            this.barButtonItem2.Caption = "Liên hệ";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.btLienHe.Caption = "Liên hệ";
+            this.btLienHe.Id = 2;
+            this.btLienHe.Name = "btLienHe";
+            this.btLienHe.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btLienHe_ItemClick);
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonStatusBar.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 215);
+            this.ribbonStatusBar.ItemLinks.Add(this.btQuenMatKhau);
+            this.ribbonStatusBar.ItemLinks.Add(this.btLienHe);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 211);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(435, 31);
@@ -144,12 +149,35 @@
             this.CheckGhiNho.Size = new System.Drawing.Size(67, 19);
             this.CheckGhiNho.TabIndex = 8;
             // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = global::TTVL.Properties.Resources.t;
+            this.pictureEdit1.Location = new System.Drawing.Point(24, 68);
+            this.pictureEdit1.MenuManager = this.ribbon;
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit1.Size = new System.Drawing.Size(110, 105);
+            this.pictureEdit1.TabIndex = 11;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl3.Location = new System.Drawing.Point(151, 184);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(166, 13);
+            this.labelControl3.TabIndex = 12;
+            this.labelControl3.Text = "Phần mềm quản lý - TTVL Việt Nam";
+            // 
             // DangNhap
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 246);
+            this.ClientSize = new System.Drawing.Size(435, 242);
+            this.Controls.Add(this.labelControl3);
+            this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.CheckGhiNho);
             this.Controls.Add(this.btDangNhap);
             this.Controls.Add(this.txtMatKhau);
@@ -170,6 +198,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTaiKhoan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckGhiNho.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,13 +208,15 @@
 
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem btQuenMatKhau;
+        private DevExpress.XtraBars.BarButtonItem btLienHe;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txtTaiKhoan;
         private DevExpress.XtraEditors.TextEdit txtMatKhau;
         private System.Windows.Forms.Button btDangNhap;
         private DevExpress.XtraEditors.CheckEdit CheckGhiNho;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

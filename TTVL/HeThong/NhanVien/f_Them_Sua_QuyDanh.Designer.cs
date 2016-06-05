@@ -1,6 +1,6 @@
 ﻿namespace TTVL.Dialog
 {
-    partial class dialog_Them_Sua_QuyDanh
+    partial class f_Them_Sua_QuyDanh
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dialog_Them_Sua_QuyDanh));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_Them_Sua_QuyDanh));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtTenQuyDanh = new DevExpress.XtraEditors.TextEdit();
             this.btDongY = new DevExpress.XtraEditors.SimpleButton();
@@ -47,7 +47,7 @@
             // 
             this.txtTenQuyDanh.Location = new System.Drawing.Point(98, 34);
             this.txtTenQuyDanh.Name = "txtTenQuyDanh";
-            this.txtTenQuyDanh.Size = new System.Drawing.Size(256, 20);
+            this.txtTenQuyDanh.Size = new System.Drawing.Size(260, 20);
             this.txtTenQuyDanh.TabIndex = 1;
             // 
             // btDongY
@@ -64,7 +64,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 108);
+            this.ClientSize = new System.Drawing.Size(384, 111);
             this.Controls.Add(this.btDongY);
             this.Controls.Add(this.txtTenQuyDanh);
             this.Controls.Add(this.labelControl1);

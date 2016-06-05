@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraTab;
 using TTVL.Dialog;
+using TTVL.HeThong.NhanVien;
 using TTVL.UserControl;
 using TTVL_DLL;
 
@@ -83,7 +84,7 @@ namespace TTVL
 
         private void Item_HeThong_NhanVien_QuyDanh_ItemClick(object sender, ItemClickEventArgs e)
         {
-            dialogQuyDanh quyDanh = new dialogQuyDanh();
+            f_QuyDanh quyDanh = new f_QuyDanh();
             quyDanh.ShowDialog();
         }
 
@@ -100,6 +101,17 @@ namespace TTVL
         private void itemSkins_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
         {
             Common.Skins = e.Item.Caption;
+        }
+
+        private void Item_HeThong_NhanVien_ChucVu_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            f_ChucVu cv = new f_ChucVu();
+            cv.ShowDialog();
+        }
+
+        private void Item_HeThong_NhanVien_ThemMoi_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }

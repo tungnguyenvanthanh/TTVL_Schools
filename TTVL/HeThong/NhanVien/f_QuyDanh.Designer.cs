@@ -1,6 +1,6 @@
 ﻿namespace TTVL.Dialog
 {
-    partial class dialogQuyDanh
+    partial class f_QuyDanh
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dialogQuyDanh));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f_QuyDanh));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barButtonItem_Nap = new DevExpress.XtraBars.BarButtonItem();
@@ -45,7 +45,6 @@
             this.gvQuyDanh = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcQuyDanh)).BeginInit();
@@ -122,28 +121,28 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(552, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(484, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 386);
-            this.barDockControlBottom.Size = new System.Drawing.Size(552, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 361);
+            this.barDockControlBottom.Size = new System.Drawing.Size(484, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 355);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 330);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(552, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 355);
+            this.barDockControlRight.Location = new System.Drawing.Point(484, 31);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 330);
             // 
             // imageCollection1
             // 
@@ -160,7 +159,7 @@
             this.gcQuyDanh.MainView = this.gvQuyDanh;
             this.gcQuyDanh.MenuManager = this.barManager1;
             this.gcQuyDanh.Name = "gcQuyDanh";
-            this.gcQuyDanh.Size = new System.Drawing.Size(552, 355);
+            this.gcQuyDanh.Size = new System.Drawing.Size(484, 330);
             this.gcQuyDanh.TabIndex = 4;
             this.gcQuyDanh.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvQuyDanh});
@@ -169,11 +168,11 @@
             // 
             this.gvQuyDanh.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3});
+            this.gridColumn2});
             this.gvQuyDanh.GridControl = this.gcQuyDanh;
             this.gvQuyDanh.Name = "gvQuyDanh";
             this.gvQuyDanh.OptionsView.ShowAutoFilterRow = true;
+            this.gvQuyDanh.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn1
             // 
@@ -193,33 +192,21 @@
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
             // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Ngày update";
-            this.gridColumn3.DisplayFormat.FormatString = "{0:hh:mm tt | dd/MM/yyyy}";
-            this.gridColumn3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.gridColumn3.FieldName = "NgayUpdate";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.OptionsColumn.AllowEdit = false;
-            this.gridColumn3.OptionsColumn.AllowFocus = false;
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
-            // 
-            // dialogQuyDanh
+            // f_QuyDanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 386);
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.gcQuyDanh);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "dialogQuyDanh";
+            this.Name = "f_QuyDanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quý danh";
-            this.Load += new System.EventHandler(this.QuyDanh_Load);
+            this.Load += new System.EventHandler(this.f_QuyDanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcQuyDanh)).EndInit();
@@ -246,6 +233,5 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gvQuyDanh;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
     }
 }

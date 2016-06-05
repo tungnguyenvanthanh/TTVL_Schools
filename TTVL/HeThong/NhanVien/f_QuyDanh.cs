@@ -12,9 +12,9 @@ using TTVL_DLL;
 
 namespace TTVL.Dialog
 {
-    public partial class dialogQuyDanh : DevExpress.XtraEditors.XtraForm
+    public partial class f_QuyDanh : DevExpress.XtraEditors.XtraForm
     {
-        public dialogQuyDanh()
+        public f_QuyDanh()
         {
             InitializeComponent();
         }
@@ -26,7 +26,12 @@ namespace TTVL.Dialog
             {
                 try
                 {
-                    
+                    var query = from qd in db.QuyDanhs select new
+                    {
+                        MaQuyDanh = qd.MaQuyDanh,
+                        TenQuyDanh = qd.TenQuyDanh
+                    };
+                    gcQuyDanh.DataSource = query;
                 }
                 catch (Exception)
                 {
@@ -39,31 +44,11 @@ namespace TTVL.Dialog
             DialogBox.HideWaitForm();
         }
 
-        private void QuyDanh_Load(object sender, EventArgs e)
-        {
-            LoadData_QuyDanh();
-        }
-
-        private void barButtonItem_Them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            dialog_Them_Sua_QuyDanh d = new dialog_Them_Sua_QuyDanh();
-            d.Text = "Thêm quý danh";
-            d.ShowDialog();
-
-            if (d.isYesNo == true)
-                LoadData_QuyDanh();
-        }
-
-        private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Edit();
-        }
-
         void Edit()
         {
             if (gvQuyDanh.GetFocusedRowCellValue(gridColumn1) != null)
             {
-                dialog_Them_Sua_QuyDanh d = new dialog_Them_Sua_QuyDanh();
+                f_Them_Sua_QuyDanh d = new f_Them_Sua_QuyDanh();
                 d.Text = "Thông tin quý danh";
                 d.MaQuyDanhNV = Convert.ToInt32(gvQuyDanh.GetFocusedRowCellValue(gridColumn1).ToString());
                 d.ShowDialog();
@@ -102,6 +87,26 @@ namespace TTVL.Dialog
             }
         }
 
+        private void f_QuyDanh_Load(object sender, EventArgs e)
+        {
+            LoadData_QuyDanh();
+        }
+
+        private void barButtonItem_Them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            f_Them_Sua_QuyDanh d = new f_Them_Sua_QuyDanh();
+            d.Text = "Thêm quý danh";
+            d.ShowDialog();
+
+            if (d.isYesNo == true)
+                LoadData_QuyDanh();
+        }
+
+        private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Edit();
+        }
+        
         private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             if (gvQuyDanh.GetFocusedRowCellValue(gridColumn1) != null)
