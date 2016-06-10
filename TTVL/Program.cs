@@ -28,7 +28,7 @@ namespace TTVL
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
 
-            string n = EncDec.Encrypt("workstation id=MySchools.mssql.somee.com;packet size=4096;user id=thanhtungttvl_SQLLogin_1;pwd=n8fdnk7rs7;data source=MySchools.mssql.somee.com;persist security info=False;initial catalog=MySchools");
+            string n = EncDec.Encrypt("workstation id=MySchoolsttvl.mssql.somee.com;packet size=4096;user id=thanhtungnvtt_SQLLogin_1;pwd=fxxy3eg6wz;data source=MySchoolsttvl.mssql.somee.com;persist security info=False;initial catalog=MySchoolsttvl");
             
             Intro t = new Intro();
             t.Show();
