@@ -92,6 +92,7 @@
             this.Controls.Add(this.btHuy);
             this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.btLuuDong);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ThietLapKetNoi";

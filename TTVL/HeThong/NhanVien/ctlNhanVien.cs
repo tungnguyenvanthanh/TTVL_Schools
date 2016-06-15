@@ -63,5 +63,10 @@ namespace TTVL.UserControl
         {
             LoadData_ThongTinNhanVien();
         }
+
+        private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

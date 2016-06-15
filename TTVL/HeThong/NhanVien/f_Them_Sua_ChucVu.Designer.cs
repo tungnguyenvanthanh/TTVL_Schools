@@ -69,6 +69,7 @@
             this.Controls.Add(this.txtTenQuyDanh);
             this.Controls.Add(this.labelControl1);
             this.Name = "f_Them_Sua_ChucVu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.f_Them_Sua_ChucVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTenQuyDanh.Properties)).EndInit();
             this.ResumeLayout(false);
