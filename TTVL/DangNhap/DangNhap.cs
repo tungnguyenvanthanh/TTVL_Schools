@@ -17,6 +17,7 @@ namespace TTVL.DangNhap
         public DangNhap()
         {
             InitializeComponent();
+            defaultLookAndFeel1.LookAndFeel.SkinName = Common.Skins;
             txtTaiKhoan.Text = Properties.Settings.Default.TaiKhoan;
             txtMatKhau.Text = Properties.Settings.Default.MatKhau;
             CheckGhiNho.Checked = Properties.Settings.Default.Check;
@@ -40,14 +41,18 @@ namespace TTVL.DangNhap
 
             using (var db = new MasterDataContext())
             {
-                var QueryIP = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == txtMatKhau.Text);
+                var QueryID = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text);
 
-                if (QueryIP == null)
+                if (QueryID == null)
                 {
                     DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");
                 }
                 else
                 {
+                    string a = txtTaiKhoan.Text + txtMatKhau.Text + "thanhtungttvl";
+
+                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == MyCodeTTVL.MaHoaMd5(a));
+
                     if (CheckGhiNho.Checked)
                     {
                         Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;

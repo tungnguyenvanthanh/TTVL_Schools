@@ -175,12 +175,6 @@
   <data name="comment_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\comment-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="delete_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="delete_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -360,5 +354,8 @@
   </data>
   <data name="key_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnXoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnXoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

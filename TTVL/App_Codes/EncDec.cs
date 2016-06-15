@@ -12,12 +12,12 @@ namespace TTVL.App_Codes
     {
         public static string Encrypt(string Password)
         {
-            return Encrypt(Password, "kjfahek43@iuwyt4iu5vnadfnwuiehiq34u@thanhtungttvl2");
+            return Encrypt(Password, "kjfahek43@iuwyt4iu5vnadfnwuiehiq34u@thanhtungttvl");
         }
 
         public static string Decrypt(string Password)
         {
-            return Decrypt(Password, "kjfahek43@iuwyt4iu5vnadfnwuiehiq34u@thanhtungttvl2");
+            return Decrypt(Password, "kjfahek43@iuwyt4iu5vnadfnwuiehiq34u@thanhtungttvl");
         }
 
         public static byte[] Encrypt(byte[] clearData, byte[] Key, byte[] IV)
