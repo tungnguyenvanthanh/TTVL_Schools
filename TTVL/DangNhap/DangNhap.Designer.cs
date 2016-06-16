@@ -166,11 +166,11 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.labelControl3.Location = new System.Drawing.Point(151, 184);
+            this.labelControl3.Location = new System.Drawing.Point(163, 181);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(166, 13);
+            this.labelControl3.Size = new System.Drawing.Size(120, 13);
             this.labelControl3.TabIndex = 12;
-            this.labelControl3.Text = "Phần mềm quản lý - TTVL Việt Nam";
+            this.labelControl3.Text = "Phần mềm quản lý - TTVL";
             // 
             // DangNhap
             // 

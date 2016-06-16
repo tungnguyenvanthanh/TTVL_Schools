@@ -281,7 +281,6 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Properties.Resources.resources
-C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.UserControl.ctlNhanVien.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.dll
@@ -329,8 +328,9 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.ThietLapKetNoi.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Form.Form1.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_ChucVu.resources
-C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.f_QuyDanh.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_ChucVu.resources
-C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.f_Them_Sua_QuyDanh.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_NhanVien.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_QuyDanh.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.ctlNhanVien.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_QuyDanh.resources

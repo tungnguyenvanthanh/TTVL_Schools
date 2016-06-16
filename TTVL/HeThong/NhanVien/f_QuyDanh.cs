@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using TTVL_DLL;
 
-namespace TTVL.Dialog
+namespace TTVL.HeThong.NhanVien
 {
     public partial class f_QuyDanh : DevExpress.XtraEditors.XtraForm
     {

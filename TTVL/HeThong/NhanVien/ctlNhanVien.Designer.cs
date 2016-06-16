@@ -1,4 +1,4 @@
-﻿namespace TTVL.UserControl
+﻿namespace TTVL.HeThong.NhanVien
 {
     partial class ctlNhanVien
     {

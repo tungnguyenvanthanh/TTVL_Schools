@@ -1,4 +1,4 @@
-﻿namespace TTVL.Dialog
+﻿namespace TTVL.HeThong.NhanVien
 {
     partial class f_Them_Sua_QuyDanh
     {

@@ -50,24 +50,31 @@ namespace TTVL.DangNhap
                 else
                 {
                     string a = txtTaiKhoan.Text + txtMatKhau.Text + "thanhtungttvl";
+                    string test = MyCodeTTVL.MaHoaMd5(a);
 
-                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == MyCodeTTVL.MaHoaMd5(a));
-
-                    if (CheckGhiNho.Checked)
+                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == test);
+                    if (QueryPass == null)
                     {
-                        Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;
-                        Properties.Settings.Default.MatKhau = txtMatKhau.Text;
-                        Properties.Settings.Default.Check = CheckGhiNho.Checked;
-                        Properties.Settings.Default.Save();
+                        DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");
                     }
                     else
                     {
-                        Properties.Settings.Default.TaiKhoan = "";
-                        Properties.Settings.Default.MatKhau = "";
-                        Properties.Settings.Default.Check = CheckGhiNho.Checked;
-                        Properties.Settings.Default.Save();
+                        if (CheckGhiNho.Checked)
+                        {
+                            Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;
+                            Properties.Settings.Default.MatKhau = txtMatKhau.Text;
+                            Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                            Properties.Settings.Default.Save();
+                        }
+                        else
+                        {
+                            Properties.Settings.Default.TaiKhoan = "";
+                            Properties.Settings.Default.MatKhau = "";
+                            Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                            Properties.Settings.Default.Save();
+                        }
+                        this.DialogResult = DialogResult.OK;
                     }
-                    this.DialogResult = DialogResult.OK;
                 }
             }
         }

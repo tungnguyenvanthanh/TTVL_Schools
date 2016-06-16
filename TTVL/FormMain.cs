@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraTab;
-using TTVL.Dialog;
 using TTVL.HeThong.NhanVien;
-using TTVL.UserControl;
 using TTVL_DLL;
 
 namespace TTVL
@@ -76,7 +74,7 @@ namespace TTVL
             }
             if (t == 0)
             {
-                MyCodeTTVL.AddTabPageToXtraTabControl(xtraTabControl_TTVL, -1, "Danh sách nhân viên", new ctlNhanVien());
+                MyCodeTTVL.AddTabPageToXtraTabControl(xtraTabControl_TTVL, 7, "Danh sách nhân viên", new ctlNhanVien());
             }
             DialogBox.HideWaitForm();
         }

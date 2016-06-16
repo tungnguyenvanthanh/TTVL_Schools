@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TTVL.UserControl
+namespace TTVL.HeThong.NhanVien
 {
     public partial class ctlNhanVien : System.Windows.Forms.UserControl
     {
