@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraTab;
 using TTVL.HeThong.NhanVien;
+using TTVL.HeThong.TaiKhoan;
 using TTVL_DLL;
 
 namespace TTVL
@@ -110,6 +111,12 @@ namespace TTVL
         {
             f_Them_Sua_NhanVien nv = new f_Them_Sua_NhanVien();
             nv.ShowDialog();
+        }
+
+        private void Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            f_DoiMatKhau f = new f_DoiMatKhau();
+            f.ShowDialog();
         }
     }
 }

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.Item_HeThong_TaiKhoan_DanhMuc_ThongTinTaiKhoan = new DevExpress.XtraBars.BarButtonItem();
@@ -48,6 +49,8 @@
             this.itemSkins = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.Item_HeThong_BaoMat_PhanQuyen = new DevExpress.XtraBars.BarButtonItem();
             this.Item_HeThong_BaoMat_KhoaDangNhap = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -59,8 +62,6 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
-            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
@@ -198,6 +199,7 @@
             this.Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau.Id = 4;
             this.Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau.ImageIndex = 46;
             this.Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau.Name = "Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau";
+            this.Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau_ItemClick);
             // 
             // Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai
             // 
@@ -300,6 +302,22 @@
             this.Item_HeThong_BaoMat_KhoaDangNhap.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "Người dùng: Admin";
+            this.barStaticItem1.Id = 5;
+            this.barStaticItem1.ImageIndex = 4;
+            this.barStaticItem1.Name = "barStaticItem1";
+            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // barStaticItem2
+            // 
+            this.barStaticItem2.Caption = "Quyền truy cập: Full control";
+            this.barStaticItem2.Id = 6;
+            this.barStaticItem2.ImageIndex = 27;
+            this.barStaticItem2.Name = "barStaticItem2";
+            this.barStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -391,22 +409,6 @@
             this.xtraTabPage1.Name = "xtraTabPage1";
             this.xtraTabPage1.Size = new System.Drawing.Size(1383, 497);
             this.xtraTabPage1.Text = "Home main";
-            // 
-            // barStaticItem1
-            // 
-            this.barStaticItem1.Caption = "Người dùng: Admin";
-            this.barStaticItem1.Id = 5;
-            this.barStaticItem1.ImageIndex = 4;
-            this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // barStaticItem2
-            // 
-            this.barStaticItem2.Caption = "Quyền truy cập: Full control";
-            this.barStaticItem2.Id = 6;
-            this.barStaticItem2.ImageIndex = 27;
-            this.barStaticItem2.Name = "barStaticItem2";
-            this.barStaticItem2.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // FormMain
             // 
