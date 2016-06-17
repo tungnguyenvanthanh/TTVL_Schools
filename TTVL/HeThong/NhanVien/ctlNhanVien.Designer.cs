@@ -64,6 +64,9 @@
             this.gridColumn14 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gcLichSu = new DevExpress.XtraGrid.GridControl();
             this.gvLichSu = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -255,7 +258,10 @@
             this.gridColumn11,
             this.gridColumn12,
             this.gridColumn13,
-            this.gridColumn14});
+            this.gridColumn14,
+            this.gridColumn15,
+            this.gridColumn16,
+            this.gridColumn17});
             this.gvNhanVien.GridControl = this.gcNhanVien;
             this.gvNhanVien.Name = "gvNhanVien";
             this.gvNhanVien.OptionsBehavior.Editable = false;
@@ -376,11 +382,11 @@
             this.gridColumn14.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn14.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn14.Caption = "Khóa";
-            this.gridColumn14.FieldName = "Khoa";
+            this.gridColumn14.FieldName = "Lock_Khoa";
             this.gridColumn14.Name = "gridColumn14";
             this.gridColumn14.OptionsColumn.AllowEdit = false;
             this.gridColumn14.Visible = true;
-            this.gridColumn14.VisibleIndex = 13;
+            this.gridColumn14.VisibleIndex = 14;
             // 
             // gcLichSu
             // 
@@ -399,6 +405,30 @@
             this.gvLichSu.GridControl = this.gcLichSu;
             this.gvLichSu.Name = "gvLichSu";
             this.gvLichSu.OptionsView.ShowAutoFilterRow = true;
+            // 
+            // gridColumn15
+            // 
+            this.gridColumn15.Caption = "Tài khoản";
+            this.gridColumn15.FieldName = "Tai_Khoan";
+            this.gridColumn15.Name = "gridColumn15";
+            this.gridColumn15.Visible = true;
+            this.gridColumn15.VisibleIndex = 13;
+            // 
+            // gridColumn16
+            // 
+            this.gridColumn16.Caption = "Quản lý 1";
+            this.gridColumn16.FieldName = "QL_1";
+            this.gridColumn16.Name = "gridColumn16";
+            this.gridColumn16.Visible = true;
+            this.gridColumn16.VisibleIndex = 15;
+            // 
+            // gridColumn17
+            // 
+            this.gridColumn17.Caption = "Quản lý 2";
+            this.gridColumn17.FieldName = "QL_2";
+            this.gridColumn17.Name = "gridColumn17";
+            this.gridColumn17.Visible = true;
+            this.gridColumn17.VisibleIndex = 16;
             // 
             // ctlNhanVien
             // 
@@ -461,5 +491,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn13;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn14;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
     }
 }

@@ -22,6 +22,17 @@ namespace TTVL
             InitializeComponent();
         }
 
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+
         // Đóng TabControl
         private void xtraTabControl_TTVL_CloseButtonClick(object sender, EventArgs e)
         {
@@ -118,5 +129,6 @@ namespace TTVL
             f_DoiMatKhau f = new f_DoiMatKhau();
             f.ShowDialog();
         }
+        
     }
 }

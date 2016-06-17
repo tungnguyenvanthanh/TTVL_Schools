@@ -69,7 +69,7 @@ namespace TTVL.HeThong.NhanVien
                                select new
                                {
                                    tableNhanVienQLs.MaNhanVien,
-                                   tableNhanVienQLs.Ten
+                                   tableNhanVienQLs.HoVaTen
                                };
 
                 cbbQL1.Properties.Items.Clear();
@@ -81,8 +81,8 @@ namespace TTVL.HeThong.NhanVien
                     {
                         try
                         {
-                            cbbQL1.Properties.Items.Add(tbnhanvienql.Ten);
-                            cbbQL2.Properties.Items.Add(tbnhanvienql.Ten);
+                            cbbQL1.Properties.Items.Add(tbnhanvienql.HoVaTen);
+                            cbbQL2.Properties.Items.Add(tbnhanvienql.HoVaTen);
                         }
                         catch (Exception)
                         {
@@ -96,6 +96,91 @@ namespace TTVL.HeThong.NhanVien
         private void f_Them_Sua_NhanVien_Load(object sender, EventArgs e)
         {
 
+        }
+
+        void LoadDuLieu(string maNV)
+        {
+            using (var dbDuLieu = new MasterDataContext())
+            {
+                var load = from nv in dbDuLieu.NhanViens
+
+                           join cv in dbDuLieu.ChucVus on nv.MaChuVu equals cv.MaChucVu
+                               into mcv
+                           from cv in mcv.DefaultIfEmpty()
+
+                           join qd in dbDuLieu.QuyDanhs on nv.MaQuyDanh equals qd.MaQuyDanh
+                               into mqd
+                           from tqd in mqd.DefaultIfEmpty()
+
+                           join nvQl1 in dbDuLieu.NhanViens on nv.QuanLy1 equals nvQl1.MaNhanVien
+                               into mql1
+                           from nvQl1 in mql1.DefaultIfEmpty()
+
+                           join nvQl2 in dbDuLieu.NhanViens on nv.QuanLy2 equals nvQl2.MaNhanVien
+                               into mql2
+                           from nvQl2 in mql2.DefaultIfEmpty()
+
+                           where nv.MaNhanVien == maNV
+
+                           select new
+                           {
+                               nv.MaNhanVien,
+                               tqd.TenQuyDanh,
+                               nv.HoVaTen,
+                               nv.GioiTinh,
+                               nv.NgaySinh,
+                               nv.CMND,
+                               nv.NgayCap,
+                               nv.NoiCap,
+                               nv.QueQuan,
+                               nv.DiaChiThuongTru,
+                               nv.Email,
+                               nv.SoDienThoai,
+                               cv.TenChuVu,
+                               nv.TaiKhoan,
+                               nv.GhiChu,
+                               nvQl1.QuanLy1,
+                               nvQl2.QuanLy2
+                           };
+                foreach (var l in load)
+                {
+                    txtMaNV.Text = l.MaNhanVien;
+                    cbbQuyDanh.Text = l.TenQuyDanh;
+                    txtHoVaTen.Text = l.HoVaTen;
+                    txtGioiTinh.Text = l.GioiTinh;
+                    dateNgaySinh.Text = l.NgaySinh.ToString();
+                    txtCMND.Text = l.CMND;
+                    dateNgayCap.Text = l.NgayCap.ToString();
+                    txtNoiCap.Text = l.NoiCap;
+                    txtQueQuan.Text = l.QueQuan;
+                    txtThuongTru.Text = l.DiaChiThuongTru;
+                    txtEmail.Text = l.Email;
+                    txtDienThoai.Text = l.SoDienThoai;
+                    cbbChucVu.Text = l.TenChuVu;
+                    txtTaiKhoan.Text = l.TaiKhoan;
+                    memoEditGhiChu.Text = l.GhiChu;
+                    
+                    var QL1 = dbDuLieu.NhanViens.SingleOrDefault(p => l.QuanLy1 == p.MaNhanVien);
+                    try
+                    {
+                        cbbQL1.Text = QL1.HoVaTen;
+                    }
+                    catch (Exception)
+                    {
+                        break;
+                    }
+                    var QL2 = dbDuLieu.NhanViens.SingleOrDefault(p => l.QuanLy2 == p.MaNhanVien);
+                    try
+                    {
+                        cbbQL2.Text = QL2.HoVaTen;
+                    }
+                    catch (Exception)
+                    {
+                        break;
+                    }
+
+                }
+            }
         }
     }
 }
