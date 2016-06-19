@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTVL_DLL;
 
 namespace TTVL.HeThong.NhanVien
 {
@@ -45,23 +46,23 @@ namespace TTVL.HeThong.NhanVien
 
                                    select new
                                    {
-                                       Ma_Nhan_Vien = nv.MaNhanVien,
-                                       Quy_Danh = tqd.TenQuyDanh,
-                                       Ho_Ten = nv.HoVaTen,
-                                       Gioi_Tinh = nv.GioiTinh,
-                                       Ngay_Sinh = nv.NgaySinh,
-                                       C_M_N_D = nv.CMND,
-                                       Ngay_Cap = nv.NgayCap,
-                                       Noi_Cap = nv.NoiCap,
-                                       Que_Quan = nv.QueQuan,
-                                       Dia_Chi_Thuong_Tru = nv.DiaChiThuongTru,
-                                       Mail = nv.Email,
-                                       So_DT = nv.SoDienThoai,
-                                       Chuc_Vu = cv.TenChuVu,
-                                       Tai_Khoan = nv.TaiKhoan,
+                                       nv.MaNhanVien,
+                                       tqd.TenQuyDanh,
+                                       nv.HoVaTen,
+                                       nv.GioiTinh,
+                                       nv.NgaySinh,
+                                       nv.CMND,
+                                       nv.NgayCap,
+                                       nv.NoiCap,
+                                       nv.QueQuan,
+                                       nv.DiaChiThuongTru,
+                                       nv.Email,
+                                       nv.SoDienThoai,
+                                       cv.TenChuVu,
+                                       nv.TaiKhoan,
                                        QL_1 = nvQl1.HoVaTen,
                                        QL_2 = nvQl2.HoVaTen,
-                                       Lock_Khoa = nv.Lock
+                                       nv.Lock
                                    };
 
                     gcNhanVien.DataSource = nhanvien;
@@ -87,7 +88,74 @@ namespace TTVL.HeThong.NhanVien
 
         private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            Sua();
+        }
 
+        private void barButtonItem_Them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Them();
+        }
+
+        void Them()
+        {
+            var f = new f_Them_Sua_NhanVien();
+            f.ShowDialog();
+            if (f.DialogResult == DialogResult.OK)
+            {
+                LoadData_ThongTinNhanVien();
+            }
+        }
+
+        void Sua()
+        {
+            try
+            {
+                string maNV = gvNhanVien.GetFocusedRowCellValue("MaNhanVien").ToString();
+
+                var f = new f_Them_Sua_NhanVien();
+                f.MaNv = maNV;
+                f.ShowDialog();
+                if (f.DialogResult == DialogResult.OK)
+                {
+                    LoadData_ThongTinNhanVien();
+                }
+            }
+            catch (Exception)
+            {
+                DialogBox.Error("Vui lòng chọn [Nhân viên] cần sửa, xin cám ơn");
+            }
+            
+        }
+
+        private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (gvNhanVien.GetFocusedRowCellValue("MaNhanVien") != null)
+            {
+                if (DialogBox.Question("Bạn có chắc chắn muốn xóa nhân viên: <" + gvNhanVien.GetFocusedRowCellValue("MaNhanVien") + "> ra khỏi hệ thống không ?") == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using (var db = new MasterDataContext())
+                        {
+                            var queryNhanViens = from NhanViens in db.NhanViens
+                                                 where NhanViens.MaNhanVien == gvNhanVien.GetFocusedRowCellValue("MaNhanVien").ToString()
+                                                 select NhanViens;
+                            foreach (var del in queryNhanViens)
+                            {
+                                db.NhanViens.DeleteOnSubmit(del);
+                            }
+                            db.SubmitChanges();
+                        }
+                        gvNhanVien.DeleteSelectedRows();
+                    }
+                    catch
+                    {
+                        DialogBox.Infomation("Xóa không thành công vì nhân viên: <" + gvNhanVien.GetFocusedRowCellValue("MaNhanVien") + "> đã được sử dụng. Vui lòng kiểm tra lại.");
+                    }
+                }
+            }
+            else
+                DialogBox.Infomation("Vui lòng chọn nhân viên cần xóa. Xin cảm ơn");
         }
     }
 }

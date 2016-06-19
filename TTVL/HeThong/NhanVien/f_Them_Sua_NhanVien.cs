@@ -8,6 +8,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Internal;
+using DevExpress.XtraGrid;
+using TTVL.App_Codes;
+using TTVL_DLL;
 
 namespace TTVL.HeThong.NhanVien
 {
@@ -26,76 +30,55 @@ namespace TTVL.HeThong.NhanVien
 
         void LoadDataCobobox()
         {
-            using (var dbCombobox = new MasterDataContext())
+            using (var dbLookUp = new MasterDataContext())
             {
-                // load comboBox quý danh
-                var tbQuyDanh = from tableQuyDanhs in dbCombobox.QuyDanhs
-                                 select new
-                                 {
-                                     tableQuyDanhs.MaQuyDanh,
-                                     tableQuyDanhs.TenQuyDanh
-                                 };
+                #region load lookUpEdit quý danh
+                var tbQuyDanh = (from tableQuyDanhs in dbLookUp.QuyDanhs
+                    select tableQuyDanhs).ToList();
 
-                cbbQuyDanh.Properties.Items.Clear();
+                lookUpEdit_QuyDanh.Properties.DataSource = tbQuyDanh;
+                #endregion
 
-                if (tbQuyDanh != null)
-                {
-                    foreach (var tbchinhanh in tbQuyDanh)
-                    {
-                        cbbQuyDanh.Properties.Items.Add(tbchinhanh.TenQuyDanh);
-                    }
-                }
+                #region load lookUpEdit chức vụ
 
-                // load comboBox chức vụ
-                var tbChucVu = from tableChucVus in dbCombobox.ChucVus
-                                select new
-                                {
-                                    tableChucVus.MaChucVu,
-                                    tableChucVus.TenChuVu
-                                };
+                var tbChucVu = (from tableChucVus in dbLookUp.ChucVus
+                    select tableChucVus).ToList();
 
-                cbbChucVu.Properties.Items.Clear();
+                lookUpEdit_ChucVu.Properties.DataSource = tbChucVu;
+                #endregion
 
-                if (tbChucVu != null)
-                {
-                    foreach (var tbchucvu in tbChucVu)
-                    {
-                        cbbChucVu.Properties.Items.Add(tbchucvu.TenChuVu);
-                    }
-                }
-                    
-                // load comboBox QL
-                var tbNhanVienQL = from tableNhanVienQLs in dbCombobox.NhanViens
-                               select new
-                               {
-                                   tableNhanVienQLs.MaNhanVien,
-                                   tableNhanVienQLs.HoVaTen
-                               };
+                #region load lookUpEdit QL
 
-                cbbQL1.Properties.Items.Clear();
-                cbbQL2.Properties.Items.Clear();
+                var tbNhanVienQL = (from tableNhanVienQLs in dbLookUp.NhanViens
+                    select tableNhanVienQLs).ToList();
 
-                if (tbNhanVienQL != null)
-                {
-                    foreach (var tbnhanvienql in tbNhanVienQL)
-                    {
-                        try
-                        {
-                            cbbQL1.Properties.Items.Add(tbnhanvienql.HoVaTen);
-                            cbbQL2.Properties.Items.Add(tbnhanvienql.HoVaTen);
-                        }
-                        catch (Exception)
-                        {
-                            
-                        }
-                    }
-                }
+                lookUpEdit_QL1.Properties.DataSource = tbNhanVienQL;
+                lookUpEdit_QL2.Properties.DataSource = tbNhanVienQL;
+                #endregion
             }
         }
 
         private void f_Them_Sua_NhanVien_Load(object sender, EventArgs e)
         {
+            if (MaNv != null)
+            {
+                objNhanVien = db.NhanViens.SingleOrDefault(p => p.MaNhanVien == MaNv);
 
+                if (objNhanVien != null)
+                {
+                    LoadDuLieu(MaNv); // load dữ liệu
+                }
+                else
+                {
+                    DialogBox.Error("[Nhân viên] này không có trong hệ thống. Vui lòng kiểm tra lại, xin cảm ơn.");
+                    this.Close();
+                }
+            }
+            else
+            {
+                objNhanVien = new TTVL.NhanVien();
+                db.NhanViens.InsertOnSubmit(objNhanVien);
+            }
         }
 
         void LoadDuLieu(string maNV)
@@ -125,7 +108,6 @@ namespace TTVL.HeThong.NhanVien
                            select new
                            {
                                nv.MaNhanVien,
-                               tqd.TenQuyDanh,
                                nv.HoVaTen,
                                nv.GioiTinh,
                                nv.NgaySinh,
@@ -136,18 +118,20 @@ namespace TTVL.HeThong.NhanVien
                                nv.DiaChiThuongTru,
                                nv.Email,
                                nv.SoDienThoai,
-                               cv.TenChuVu,
                                nv.TaiKhoan,
+                               nv.Lock,
                                nv.GhiChu,
-                               nvQl1.QuanLy1,
-                               nvQl2.QuanLy2
+
+                               tqd.TenQuyDanh,
+                               cv.TenChuVu,
+                               QL_1 = nvQl1.HoVaTen,
+                               QL_2 = nvQl2.HoVaTen
                            };
                 foreach (var l in load)
                 {
                     txtMaNV.Text = l.MaNhanVien;
-                    cbbQuyDanh.Text = l.TenQuyDanh;
                     txtHoVaTen.Text = l.HoVaTen;
-                    txtGioiTinh.Text = l.GioiTinh;
+                    cbbGioiTinh.Text = l.GioiTinh;
                     dateNgaySinh.Text = l.NgaySinh.ToString();
                     txtCMND.Text = l.CMND;
                     dateNgayCap.Text = l.NgayCap.ToString();
@@ -156,29 +140,87 @@ namespace TTVL.HeThong.NhanVien
                     txtThuongTru.Text = l.DiaChiThuongTru;
                     txtEmail.Text = l.Email;
                     txtDienThoai.Text = l.SoDienThoai;
-                    cbbChucVu.Text = l.TenChuVu;
                     txtTaiKhoan.Text = l.TaiKhoan;
                     memoEditGhiChu.Text = l.GhiChu;
-                    
-                    var QL1 = dbDuLieu.NhanViens.SingleOrDefault(p => l.QuanLy1 == p.MaNhanVien);
+
+                    lookUpEdit_QuyDanh.Properties.NullText = l.TenQuyDanh;
+                    lookUpEdit_ChucVu.Properties.NullText = l.TenChuVu;
+                    lookUpEdit_QL1.Properties.NullText = l.QL_1;
+                    lookUpEdit_QL2.Properties.NullText = l.QL_2;
                     try
                     {
-                        cbbQL1.Text = QL1.HoVaTen;
+                        checkKhoaTaiKhoan.Checked = (bool)l.Lock;
                     }
                     catch (Exception)
                     {
-                        break;
+                        // ignored
                     }
-                    var QL2 = dbDuLieu.NhanViens.SingleOrDefault(p => l.QuanLy2 == p.MaNhanVien);
+                }
+            }
+        }
+
+        private void btLuu_Click(object sender, EventArgs e)
+        {
+            if (DialogBox.Question("Bạn có chắc chắn muốn lưu ?") == DialogResult.Yes)
+            {
+                if (txtMaNV.Text.Trim() == "")
+                {
+                    DialogBox.Error("Vui lòng nhập [Mã nhân viên], xin cảm ơn");
+                    txtMaNV.Focus();
+                    return;
+                }
+
+                if (txtHoVaTen.Text.Trim() == "")
+                {
+                    DialogBox.Error("Vui lòng nhập [Họ và tên], xin cảm ơn");
+                    txtHoVaTen.Focus();
+                    return;
+                }
+
+                try
+                {
+                    objNhanVien.HoVaTen = txtHoVaTen.Text;
+                    objNhanVien.GioiTinh = cbbGioiTinh.Text;
+                    objNhanVien.NgaySinh = dateNgaySinh.DateTime;
+                    objNhanVien.CMND = txtCMND.Text;
+                    objNhanVien.NgayCap = dateNgayCap.DateTime;
+                    objNhanVien.NoiCap = txtNoiCap.Text;
+                    objNhanVien.QueQuan = txtQueQuan.Text;
+                    objNhanVien.DiaChiThuongTru = txtThuongTru.Text;
+                    objNhanVien.MaNhanVien = txtMaNV.Text;
+                    objNhanVien.TaiKhoan = txtTaiKhoan.Text;
+                    objNhanVien.Email = txtEmail.Text;
+                    objNhanVien.SoDienThoai = txtDienThoai.Text;
+                    objNhanVien.Lock = checkKhoaTaiKhoan.Checked;
+
+                    if (Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh")) != 0)
+                        objNhanVien.MaQuyDanh = Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh"));
+                    if(Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu")) != 0)
+                        objNhanVien.MaChuVu = Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu"));
                     try
                     {
-                        cbbQL2.Text = QL2.HoVaTen;
+                        objNhanVien.QuanLy1 = lookUpEdit_QL1.GetColumnValue("MaNhanVien").ToString();
                     }
                     catch (Exception)
                     {
-                        break;
+                        // ignored
+                    }
+                    try
+                    {
+                        objNhanVien.QuanLy2 = lookUpEdit_QL2.GetColumnValue("MaNhanVien").ToString();
+                    }
+                    catch (Exception)
+                    {
+                        // ignored
                     }
 
+                    db.SubmitChanges();
+                    DialogBox.Infomation("Dữ liệu đã được cập nhật");
+                    DialogResult = DialogResult.OK;
+                }
+                catch (Exception ex)
+                {
+                    DialogBox.Error("Đã có lỗi xảy ra. Code: " + ex.Message);
                 }
             }
         }
