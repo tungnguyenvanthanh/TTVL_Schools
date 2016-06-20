@@ -61,11 +61,9 @@
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
-            this.xtraTabControl_TTVL.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -395,20 +393,10 @@
             this.xtraTabControl_TTVL.Images = this.imageCollection1;
             this.xtraTabControl_TTVL.Location = new System.Drawing.Point(0, 146);
             this.xtraTabControl_TTVL.Name = "xtraTabControl_TTVL";
-            this.xtraTabControl_TTVL.SelectedTabPage = this.xtraTabPage1;
             this.xtraTabControl_TTVL.Size = new System.Drawing.Size(1389, 528);
             this.xtraTabControl_TTVL.TabIndex = 2;
-            this.xtraTabControl_TTVL.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1});
             this.xtraTabControl_TTVL.CloseButtonClick += new System.EventHandler(this.xtraTabControl_TTVL_CloseButtonClick);
             this.xtraTabControl_TTVL.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.xtraTabControl_TTVL_ControlAdded);
-            // 
-            // xtraTabPage1
-            // 
-            this.xtraTabPage1.ImageIndex = 51;
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1383, 497);
-            this.xtraTabPage1.Text = "Home main";
             // 
             // FormMain
             // 
@@ -429,7 +417,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).EndInit();
-            this.xtraTabControl_TTVL.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,7 +436,6 @@
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai;
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_TaiKhoan_DanhMuc_Thoat;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl_TTVL;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_NhanVien_ThemMoi;
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_NhanVien_DanhSach;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;

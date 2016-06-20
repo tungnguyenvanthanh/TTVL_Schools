@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using TTVL_DLL;
 
 namespace TTVL.App_Codes
 {
@@ -109,6 +110,7 @@ namespace TTVL.App_Codes
         public static string Decrypt(string cipherText, string Password)
         {
             byte[] cipherBytes = Convert.FromBase64String(cipherText);
+
             PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password, new byte[] {0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76});
 
             byte[] decryptedData = Decrypt(cipherBytes, pdb.GetBytes(32), pdb.GetBytes(16));

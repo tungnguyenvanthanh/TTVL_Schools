@@ -47,6 +47,8 @@
     <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -68,6 +70,12 @@
     <Compile Include="App_Codes\CommonCls.cs" />
     <Compile Include="App_Codes\EncDec.cs" />
     <Compile Include="App_Codes\Common.cs" />
+    <Compile Include="ctlHomeMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlHomeMain.Designer.cs">
+      <DependentUpon>ctlHomeMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhap\Intro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +155,9 @@
     <Compile Include="HeThong\NhanVien\ctlNhanVien.Designer.cs">
       <DependentUpon>ctlNhanVien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ctlHomeMain.resx">
+      <DependentUpon>ctlHomeMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap\Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +229,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="HeThong\BaoMat\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\briefcase-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messages-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

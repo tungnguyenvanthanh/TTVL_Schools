@@ -102,9 +102,17 @@ namespace TTVL
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(itemSkins, true);
         }
 
+        void LoadHomeMain()
+        {
+            DialogBox.ShowWaitForm();
+            MyCodeTTVL.AddTabPageToXtraTabControl(xtraTabControl_TTVL, 51, "Home main", new ctlHomeMain());
+            DialogBox.HideWaitForm();
+        }
+
         private void FormMain_Load(object sender, EventArgs e)
         {
             InitSkinGallery();
+            LoadHomeMain();
         }
 
         private void itemSkins_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
@@ -120,8 +128,8 @@ namespace TTVL
 
         private void Item_HeThong_NhanVien_ThemMoi_ItemClick(object sender, ItemClickEventArgs e)
         {
-            f_Them_Sua_NhanVien nv = new f_Them_Sua_NhanVien();
-            nv.ShowDialog();
+            var f = new f_Them_Sua_NhanVien();
+            f.ShowDialog();
         }
 
         private void Item_HeThong_TaiKhoan_DanhMuc_DoiMatKhau_ItemClick(object sender, ItemClickEventArgs e)

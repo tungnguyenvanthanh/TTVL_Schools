@@ -123,6 +123,7 @@
             this.barButtonItem_Nap.Id = 0;
             this.barButtonItem_Nap.ImageIndex = 0;
             this.barButtonItem_Nap.Name = "barButtonItem_Nap";
+            this.barButtonItem_Nap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_Nap_ItemClick);
             // 
             // barButtonItem_Them
             // 

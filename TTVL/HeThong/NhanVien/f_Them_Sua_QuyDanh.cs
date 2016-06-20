@@ -29,7 +29,7 @@ namespace TTVL.HeThong.NhanVien
         {
             if (txtTenQuyDanh.Text.Trim() == "")
             {
-                MessageBox.Show("Vui lòng nhập [Tên quý danh], xin cảm ơn");
+                DialogBox.Infomation("Vui lòng nhập [Tên quý danh], xin cảm ơn");
                 txtTenQuyDanh.Focus();
                 return;
             }
@@ -39,13 +39,13 @@ namespace TTVL.HeThong.NhanVien
             try
             {
                 db.SubmitChanges();
-                MessageBox.Show("Thành công", "TTVL");
+                DialogBox.Infomation("Thành công");
                 isYesNo = true;
                 this.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã có lỗi xảy ra. Code: " + ex.Message);
+                DialogBox.Error("Đã có lỗi xảy ra. Code: " + ex.Message);
             }
         }
 

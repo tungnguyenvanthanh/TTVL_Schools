@@ -26,16 +26,26 @@ namespace TTVL.DangNhap
             DialogBox.ShowWaitForm();
             if (xtraTabControl1.SelectedTabPageIndex == 0)
             {
-                //Nhap chuoi ket noi                
-                ConnectString = EncDec.Decrypt(txtKey.Text);
-                Common.SqlConnString = ConnectString;
-                Common.Conn = txtKey.Text;
-
-                if (!CommonCls.TestConnect(ConnectString))
-                    DialogBox.Infomation("Kết nối không thành công. Vui lòng kiểm tra lại, xin cảm ơn.");
-                else
-                    this.Hide();
+                //Nhap chuoi ket noi   
+                try
+                {
+                    ConnectString = EncDec.Decrypt(txtKey.Text);
+                    Common.SqlConnString = ConnectString;
+                    Common.Conn = txtKey.Text;
+                }
+                catch (Exception)
+                {
+                    DialogBox.Infomation("Chuổi kết nối không đúng.");
+                }
             }
+            
+            if (!CommonCls.TestConnect(ConnectString))
+            {
+                DialogBox.Infomation("Kết nối không thành công. Vui lòng kiểm tra lại, xin cảm ơn.");
+                DialogBox.HideWaitForm();
+                return;
+            }
+
             DialogBox.HideWaitForm();
             this.DialogResult = DialogResult.OK;
         }

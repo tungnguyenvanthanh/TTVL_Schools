@@ -157,5 +157,10 @@ namespace TTVL.HeThong.NhanVien
             else
                 DialogBox.Infomation("Vui lòng chọn nhân viên cần xóa. Xin cảm ơn");
         }
+
+        private void barButtonItem_Nap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadData_ThongTinNhanVien();
+        }
     }
 }

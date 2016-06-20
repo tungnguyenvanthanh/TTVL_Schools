@@ -233,6 +233,16 @@ namespace TTVL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap briefcase_icon {
+            get {
+                object obj = ResourceManager.GetObject("briefcase_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnXoa {
             get {
                 object obj = ResourceManager.GetObject("btnXoa", resourceCulture);
@@ -356,6 +366,16 @@ namespace TTVL.Properties {
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap earth_icon {
+            get {
+                object obj = ResourceManager.GetObject("earth_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -566,6 +586,16 @@ namespace TTVL.Properties {
         internal static System.Drawing.Bitmap mail_send {
             get {
                 object obj = ResourceManager.GetObject("mail_send", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Messages_icon {
+            get {
+                object obj = ResourceManager.GetObject("Messages_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
