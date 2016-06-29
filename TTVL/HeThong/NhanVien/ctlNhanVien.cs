@@ -124,7 +124,6 @@ namespace TTVL.HeThong.NhanVien
             {
                 DialogBox.Error("Vui lòng chọn [Nhân viên] cần sửa, xin cám ơn");
             }
-            
         }
 
         private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

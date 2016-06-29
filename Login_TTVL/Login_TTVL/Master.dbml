@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TTVL_Login" Class="MasterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=TTVL-PC;Initial Catalog=TTVL_Login;Persist Security Info=True;User ID=sa" SettingsObjectName="Login_TTVL.Properties.Settings" SettingsPropertyName="TTVL_LoginConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Login" Member="Logins">
+    <Type Name="Login">
+      <Column Name="RowID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenMay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KeyPC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lock" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DateBatDau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateKetThuc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GhiChu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

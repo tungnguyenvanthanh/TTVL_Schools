@@ -61,6 +61,7 @@
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
@@ -97,6 +98,7 @@
             this.ribbon.PageHeaderItemLinks.Add(this.barButtonItem3);
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
+            this.ribbonPage5,
             this.ribbonPage2,
             this.ribbonPage3,
             this.ribbonPage4});
@@ -398,6 +400,12 @@
             this.xtraTabControl_TTVL.CloseButtonClick += new System.EventHandler(this.xtraTabControl_TTVL_CloseButtonClick);
             this.xtraTabControl_TTVL.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.xtraTabControl_TTVL_ControlAdded);
             // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.ImageIndex = 11;
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "QUẢN LÝ NHÂN SỰ";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,5 +463,6 @@
         private DevExpress.XtraBars.BarButtonItem Item_HeThong_BaoMat_KhoaDangNhap;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
     }
 }

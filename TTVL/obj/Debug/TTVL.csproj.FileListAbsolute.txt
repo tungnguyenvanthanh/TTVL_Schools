@@ -347,3 +347,4 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TT
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.ctlHomeMain.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
