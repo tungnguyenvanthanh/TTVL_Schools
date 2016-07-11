@@ -41,19 +41,25 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
-            this.gc = new DevExpress.XtraGrid.GridControl();
-            this.gv = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gcKey = new DevExpress.XtraGrid.GridControl();
+            this.gvKey = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.RowID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.KeyComputer = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.gcPc = new DevExpress.XtraGrid.GridControl();
+            this.gvPc = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcKey)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvKey)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+            this.splitContainerControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcPc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPc)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -154,33 +160,33 @@
             this.imageCollection1.Images.SetKeyName(2, "plus-icon.png");
             this.imageCollection1.Images.SetKeyName(3, "key-icon.png");
             // 
-            // gc
+            // gcKey
             // 
-            this.gc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc.Location = new System.Drawing.Point(0, 31);
-            this.gc.MainView = this.gv;
-            this.gc.MenuManager = this.barManager1;
-            this.gc.Name = "gc";
-            this.gc.Size = new System.Drawing.Size(914, 540);
-            this.gc.TabIndex = 4;
-            this.gc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gv});
+            this.gcKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcKey.Location = new System.Drawing.Point(0, 0);
+            this.gcKey.MainView = this.gvKey;
+            this.gcKey.MenuManager = this.barManager1;
+            this.gcKey.Name = "gcKey";
+            this.gcKey.Size = new System.Drawing.Size(914, 330);
+            this.gcKey.TabIndex = 4;
+            this.gcKey.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvKey});
             // 
-            // gv
+            // gvKey
             // 
-            this.gv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvKey.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.RowID,
+            this.KeyComputer,
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
-            this.gv.GridControl = this.gc;
-            this.gv.Name = "gv";
-            this.gv.OptionsBehavior.Editable = false;
-            this.gv.OptionsView.ColumnAutoWidth = false;
-            this.gv.OptionsView.ShowAutoFilterRow = true;
+            this.gridColumn5});
+            this.gvKey.GridControl = this.gcKey;
+            this.gvKey.Name = "gvKey";
+            this.gvKey.OptionsBehavior.Editable = false;
+            this.gvKey.OptionsView.ColumnAutoWidth = false;
+            this.gvKey.OptionsView.ShowAutoFilterRow = true;
+            this.gvKey.OptionsView.ShowGroupPanel = false;
             // 
             // RowID
             // 
@@ -188,59 +194,85 @@
             this.RowID.FieldName = "RowID";
             this.RowID.Name = "RowID";
             // 
+            // KeyComputer
+            // 
+            this.KeyComputer.Caption = "Key";
+            this.KeyComputer.FieldName = "KeyComputer";
+            this.KeyComputer.Name = "KeyComputer";
+            this.KeyComputer.Visible = true;
+            this.KeyComputer.VisibleIndex = 0;
+            // 
             // gridColumn2
             // 
-            this.gridColumn2.Caption = "Tên máy";
-            this.gridColumn2.FieldName = "TenMay";
+            this.gridColumn2.Caption = "Loại Key";
+            this.gridColumn2.FieldName = "Loai";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 0;
+            this.gridColumn2.VisibleIndex = 1;
             // 
             // gridColumn3
             // 
-            this.gridColumn3.Caption = "Key PC";
-            this.gridColumn3.FieldName = "KeyPC";
+            this.gridColumn3.Caption = "Ngày kích hoạt";
+            this.gridColumn3.FieldName = "NgayKichHoat";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
+            this.gridColumn3.VisibleIndex = 2;
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Lock";
-            this.gridColumn4.FieldName = "Lock";
+            this.gridColumn4.Caption = "Ngày hết hạn";
+            this.gridColumn4.FieldName = "NgayHetHan";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
+            this.gridColumn4.VisibleIndex = 3;
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "Ngày bắt đầu";
-            this.gridColumn5.FieldName = "DateBatDau";
+            this.gridColumn5.Caption = "Khóa Key";
+            this.gridColumn5.FieldName = "Lock";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
+            this.gridColumn5.VisibleIndex = 4;
             // 
-            // gridColumn6
+            // splitContainerControl1
             // 
-            this.gridColumn6.Caption = "Ngày kết thúc";
-            this.gridColumn6.FieldName = "DateKetThuc";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
+            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl1.FixedPanel = DevExpress.XtraEditors.SplitFixedPanel.Panel2;
+            this.splitContainerControl1.Horizontal = false;
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 31);
+            this.splitContainerControl1.Name = "splitContainerControl1";
+            this.splitContainerControl1.Panel1.Controls.Add(this.gcKey);
+            this.splitContainerControl1.Panel1.Text = "Panel1";
+            this.splitContainerControl1.Panel2.Controls.Add(this.gcPc);
+            this.splitContainerControl1.Panel2.Text = "Panel2";
+            this.splitContainerControl1.Size = new System.Drawing.Size(914, 540);
+            this.splitContainerControl1.SplitterPosition = 205;
+            this.splitContainerControl1.TabIndex = 9;
+            this.splitContainerControl1.Text = "splitContainerControl1";
             // 
-            // gridColumn7
+            // gcPc
             // 
-            this.gridColumn7.Caption = "Ghi chú";
-            this.gridColumn7.FieldName = "GhiChu";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 5;
+            this.gcPc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcPc.Location = new System.Drawing.Point(0, 0);
+            this.gcPc.MainView = this.gvPc;
+            this.gcPc.MenuManager = this.barManager1;
+            this.gcPc.Name = "gcPc";
+            this.gcPc.Size = new System.Drawing.Size(914, 205);
+            this.gcPc.TabIndex = 0;
+            this.gcPc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvPc});
+            // 
+            // gvPc
+            // 
+            this.gvPc.GridControl = this.gcPc;
+            this.gvPc.Name = "gvPc";
+            this.gvPc.OptionsView.ShowGroupPanel = false;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gc);
+            this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -250,8 +282,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcKey)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvKey)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+            this.splitContainerControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcPc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,14 +306,16 @@
         private DevExpress.XtraBars.BarButtonItem btXoa;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.Utils.ImageCollection imageCollection1;
-        private DevExpress.XtraGrid.GridControl gc;
-        private DevExpress.XtraGrid.Views.Grid.GridView gv;
+        private DevExpress.XtraGrid.GridControl gcKey;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvKey;
         private DevExpress.XtraGrid.Columns.GridColumn RowID;
+        private DevExpress.XtraGrid.Columns.GridColumn KeyComputer;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private DevExpress.XtraGrid.GridControl gcPc;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvPc;
     }
 }

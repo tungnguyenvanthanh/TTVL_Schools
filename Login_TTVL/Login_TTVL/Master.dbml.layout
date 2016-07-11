@@ -2,11 +2,37 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Master">
   <DataContextMoniker Name="/MasterDataContext" />
   <nestedChildShapes>
-    <classShape Id="c22a6288-f69c-46d8-8a64-497865ae9152" absoluteBounds="4.625, 2.625, 2, 2.1554996744791666">
-      <DataClassMoniker Name="/MasterDataContext/Login" />
+    <classShape Id="9eb24b6c-fbcc-4230-b1dc-aa3a620f7b79" absoluteBounds="3.5, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MasterDataContext/KeyPC" />
       <nestedChildShapes>
-        <elementListCompartment Id="1e87b9a8-4bf4-49c3-9968-d6f6eab1467f" absoluteBounds="4.64, 3.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="425994e2-5196-48cf-84f3-03e1fbd423a9" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="5c94fc82-8760-4d11-a46a-29f0f4f7ee88" absoluteBounds="6.25, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/MasterDataContext/PC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3dade7ef-2982-42f2-bba8-b3eaff1f5b02" absoluteBounds="6.265, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d114006-e857-4b1a-9792-b3207d3a84ff" absoluteBounds="0.75, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/MasterDataContext/LoaiKey" />
+      <nestedChildShapes>
+        <elementListCompartment Id="887d0ffb-791e-4c51-bfa3-fa18c8b977a9" absoluteBounds="0.765, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.06814697265625); (6.25 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MasterDataContext/KeyPC/KeyPC_PC" />
+      <nodes>
+        <classShapeMoniker Id="9eb24b6c-fbcc-4230-b1dc-aa3a620f7b79" />
+        <classShapeMoniker Id="5c94fc82-8760-4d11-a46a-29f0f4f7ee88" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MasterDataContext/LoaiKey/LoaiKey_KeyPC" />
+      <nodes>
+        <classShapeMoniker Id="4d114006-e857-4b1a-9792-b3207d3a84ff" />
+        <classShapeMoniker Id="9eb24b6c-fbcc-4230-b1dc-aa3a620f7b79" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>
