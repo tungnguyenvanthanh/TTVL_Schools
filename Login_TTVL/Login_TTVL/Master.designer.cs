@@ -30,15 +30,15 @@ namespace Login_TTVL
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertLoaiKey(LoaiKey instance);
+    partial void UpdateLoaiKey(LoaiKey instance);
+    partial void DeleteLoaiKey(LoaiKey instance);
     partial void InsertKeyPC(KeyPC instance);
     partial void UpdateKeyPC(KeyPC instance);
     partial void DeleteKeyPC(KeyPC instance);
     partial void InsertPC(PC instance);
     partial void UpdatePC(PC instance);
     partial void DeletePC(PC instance);
-    partial void InsertLoaiKey(LoaiKey instance);
-    partial void UpdateLoaiKey(LoaiKey instance);
-    partial void DeleteLoaiKey(LoaiKey instance);
     #endregion
 		
 		public MasterDataContext() : 
@@ -71,6 +71,14 @@ namespace Login_TTVL
 			OnCreated();
 		}
 		
+		public System.Data.Linq.Table<LoaiKey> LoaiKeys
+		{
+			get
+			{
+				return this.GetTable<LoaiKey>();
+			}
+		}
+		
 		public System.Data.Linq.Table<KeyPC> KeyPCs
 		{
 			get
@@ -86,13 +94,119 @@ namespace Login_TTVL
 				return this.GetTable<PC>();
 			}
 		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LoaiKey")]
+	public partial class LoaiKey : INotifyPropertyChanging, INotifyPropertyChanged
+	{
 		
-		public System.Data.Linq.Table<LoaiKey> LoaiKeys
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _RowID;
+		
+		private string _Loai;
+		
+		private EntitySet<KeyPC> _KeyPCs;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnRowIDChanging(int value);
+    partial void OnRowIDChanged();
+    partial void OnLoaiChanging(string value);
+    partial void OnLoaiChanged();
+    #endregion
+		
+		public LoaiKey()
+		{
+			this._KeyPCs = new EntitySet<KeyPC>(new Action<KeyPC>(this.attach_KeyPCs), new Action<KeyPC>(this.detach_KeyPCs));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int RowID
 		{
 			get
 			{
-				return this.GetTable<LoaiKey>();
+				return this._RowID;
 			}
+			set
+			{
+				if ((this._RowID != value))
+				{
+					this.OnRowIDChanging(value);
+					this.SendPropertyChanging();
+					this._RowID = value;
+					this.SendPropertyChanged("RowID");
+					this.OnRowIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loai", DbType="NVarChar(50)")]
+		public string Loai
+		{
+			get
+			{
+				return this._Loai;
+			}
+			set
+			{
+				if ((this._Loai != value))
+				{
+					this.OnLoaiChanging(value);
+					this.SendPropertyChanging();
+					this._Loai = value;
+					this.SendPropertyChanged("Loai");
+					this.OnLoaiChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKey_KeyPC", Storage="_KeyPCs", ThisKey="RowID", OtherKey="IDKey")]
+		public EntitySet<KeyPC> KeyPCs
+		{
+			get
+			{
+				return this._KeyPCs;
+			}
+			set
+			{
+				this._KeyPCs.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_KeyPCs(KeyPC entity)
+		{
+			this.SendPropertyChanging();
+			entity.LoaiKey = this;
+		}
+		
+		private void detach_KeyPCs(KeyPC entity)
+		{
+			this.SendPropertyChanging();
+			entity.LoaiKey = null;
 		}
 	}
 	
@@ -107,6 +221,8 @@ namespace Login_TTVL
 		private string _KeyComputer;
 		
 		private System.Nullable<int> _IDKey;
+		
+		private System.Nullable<bool> _KichHoat;
 		
 		private System.Nullable<System.DateTime> _NgayKichHoat;
 		
@@ -130,6 +246,8 @@ namespace Login_TTVL
     partial void OnKeyComputerChanged();
     partial void OnIDKeyChanging(System.Nullable<int> value);
     partial void OnIDKeyChanged();
+    partial void OnKichHoatChanging(System.Nullable<bool> value);
+    partial void OnKichHoatChanged();
     partial void OnNgayKichHoatChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayKichHoatChanged();
     partial void OnNgayHetHanChanging(System.Nullable<System.DateTime> value);
@@ -207,6 +325,26 @@ namespace Login_TTVL
 					this._IDKey = value;
 					this.SendPropertyChanged("IDKey");
 					this.OnIDKeyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_KichHoat", DbType="Bit")]
+		public System.Nullable<bool> KichHoat
+		{
+			get
+			{
+				return this._KichHoat;
+			}
+			set
+			{
+				if ((this._KichHoat != value))
+				{
+					this.OnKichHoatChanging(value);
+					this.SendPropertyChanging();
+					this._KichHoat = value;
+					this.SendPropertyChanged("KichHoat");
+					this.OnKichHoatChanged();
 				}
 			}
 		}
@@ -383,6 +521,14 @@ namespace Login_TTVL
 		
 		private string _TenMay;
 		
+		private System.Nullable<bool> _Lock;
+		
+		private System.Nullable<System.DateTime> _NgayKichHoat;
+		
+		private System.Nullable<System.DateTime> _NgayHetHan;
+		
+		private string _GhiChu;
+		
 		private EntityRef<KeyPC> _KeyPC;
 		
     #region Extensibility Method Definitions
@@ -395,6 +541,14 @@ namespace Login_TTVL
     partial void OnKeyComputerChanged();
     partial void OnTenMayChanging(string value);
     partial void OnTenMayChanged();
+    partial void OnLockChanging(System.Nullable<bool> value);
+    partial void OnLockChanged();
+    partial void OnNgayKichHoatChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayKichHoatChanged();
+    partial void OnNgayHetHanChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayHetHanChanged();
+    partial void OnGhiChuChanging(string value);
+    partial void OnGhiChuChanged();
     #endregion
 		
 		public PC()
@@ -467,6 +621,86 @@ namespace Login_TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Lock", DbType="Bit")]
+		public System.Nullable<bool> Lock
+		{
+			get
+			{
+				return this._Lock;
+			}
+			set
+			{
+				if ((this._Lock != value))
+				{
+					this.OnLockChanging(value);
+					this.SendPropertyChanging();
+					this._Lock = value;
+					this.SendPropertyChanged("Lock");
+					this.OnLockChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKichHoat", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayKichHoat
+		{
+			get
+			{
+				return this._NgayKichHoat;
+			}
+			set
+			{
+				if ((this._NgayKichHoat != value))
+				{
+					this.OnNgayKichHoatChanging(value);
+					this.SendPropertyChanging();
+					this._NgayKichHoat = value;
+					this.SendPropertyChanged("NgayKichHoat");
+					this.OnNgayKichHoatChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayHetHan", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayHetHan
+		{
+			get
+			{
+				return this._NgayHetHan;
+			}
+			set
+			{
+				if ((this._NgayHetHan != value))
+				{
+					this.OnNgayHetHanChanging(value);
+					this.SendPropertyChanging();
+					this._NgayHetHan = value;
+					this.SendPropertyChanged("NgayHetHan");
+					this.OnNgayHetHanChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GhiChu", DbType="NVarChar(500)")]
+		public string GhiChu
+		{
+			get
+			{
+				return this._GhiChu;
+			}
+			set
+			{
+				if ((this._GhiChu != value))
+				{
+					this.OnGhiChuChanging(value);
+					this.SendPropertyChanging();
+					this._GhiChu = value;
+					this.SendPropertyChanged("GhiChu");
+					this.OnGhiChuChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KeyPC_PC", Storage="_KeyPC", ThisKey="KeyComputer", OtherKey="KeyComputer", IsForeignKey=true)]
 		public KeyPC KeyPC
 		{
@@ -519,120 +753,6 @@ namespace Login_TTVL
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LoaiKey")]
-	public partial class LoaiKey : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _RowID;
-		
-		private string _Loai;
-		
-		private EntitySet<KeyPC> _KeyPCs;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnRowIDChanging(int value);
-    partial void OnRowIDChanged();
-    partial void OnLoaiChanging(string value);
-    partial void OnLoaiChanged();
-    #endregion
-		
-		public LoaiKey()
-		{
-			this._KeyPCs = new EntitySet<KeyPC>(new Action<KeyPC>(this.attach_KeyPCs), new Action<KeyPC>(this.detach_KeyPCs));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RowID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int RowID
-		{
-			get
-			{
-				return this._RowID;
-			}
-			set
-			{
-				if ((this._RowID != value))
-				{
-					this.OnRowIDChanging(value);
-					this.SendPropertyChanging();
-					this._RowID = value;
-					this.SendPropertyChanged("RowID");
-					this.OnRowIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Loai", DbType="NVarChar(50)")]
-		public string Loai
-		{
-			get
-			{
-				return this._Loai;
-			}
-			set
-			{
-				if ((this._Loai != value))
-				{
-					this.OnLoaiChanging(value);
-					this.SendPropertyChanging();
-					this._Loai = value;
-					this.SendPropertyChanged("Loai");
-					this.OnLoaiChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKey_KeyPC", Storage="_KeyPCs", ThisKey="RowID", OtherKey="IDKey")]
-		public EntitySet<KeyPC> KeyPCs
-		{
-			get
-			{
-				return this._KeyPCs;
-			}
-			set
-			{
-				this._KeyPCs.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_KeyPCs(KeyPC entity)
-		{
-			this.SendPropertyChanging();
-			entity.LoaiKey = this;
-		}
-		
-		private void detach_KeyPCs(KeyPC entity)
-		{
-			this.SendPropertyChanging();
-			entity.LoaiKey = null;
 		}
 	}
 }

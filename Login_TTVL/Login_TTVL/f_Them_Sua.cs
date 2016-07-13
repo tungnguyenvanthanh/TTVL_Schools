@@ -18,7 +18,7 @@ namespace Login_TTVL
         public string maKey { get; set; }
         private KeyPC objKeyPC;
         private MasterDataContext db;
-        private bool iSua = false;
+        public bool iSo { get; set; }
 
         public f_Them_Sua()
         {
@@ -58,10 +58,9 @@ namespace Login_TTVL
             }
             else
             {
-                iSua = true;
                 dateEdit_NgayHetHan.Properties.ReadOnly = true;
                 objKeyPC = new KeyPC();
-                txtKey.Text = DateTime.Now.ToString();
+                txtKey.Text = MyCodeTTVL.MaHoaMd5($"{DateTime.Now}TTVLThanhtungP@ssword");
                 db.KeyPCs.InsertOnSubmit(objKeyPC);
             }
         }
@@ -76,14 +75,14 @@ namespace Login_TTVL
                     if(dateEdit_NgayKichHoat.Text != "")
                         objKeyPC.NgayKichHoat = dateEdit_NgayKichHoat.DateTime;
                     if(dateEdit_NgayHetHan.Text != "")
-                    objKeyPC.NgayHetHan = dateEdit_NgayHetHan.DateTime;
+                        objKeyPC.NgayHetHan = dateEdit_NgayHetHan.DateTime;
                     objKeyPC.Lock = checkEdit_Khoa.Checked;
                     objKeyPC.GhiChu = memoEdit_GhiChu.Text;
-                    if (iSua)
+                    if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) != 0)
+                        objKeyPC.IDKey = Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID"));
+                    else
                     {
-                        if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) != 0)
-                            objKeyPC.IDKey = Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID"));
-                        else
+                        if (!iSo)
                         {
                             DialogBox.Error("Vui lòng chọn [Loại Key], xin cảm ơn");
                             lookUpEdit_LoaiKEY.Focus();

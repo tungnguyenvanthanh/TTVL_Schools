@@ -34,6 +34,7 @@ namespace Login_TTVL
                                    keypc.RowID,
                                    keypc.KeyComputer,
                                    loaikey.Loai,
+                                   keypc.KichHoat,
                                    keypc.NgayKichHoat,
                                    keypc.NgayHetHan,
                                    keypc.Lock,
@@ -69,6 +70,7 @@ namespace Login_TTVL
                 var f = new f_Them_Sua();
                 f.Text = "Sửa Key PC";
                 f.maKey = maKey;
+                f.iSo = true;
                 f.ShowDialog();
                 if (f.DialogResult == DialogResult.OK)
                 {
@@ -83,6 +85,16 @@ namespace Login_TTVL
         private void Main_Load(object sender, EventArgs e)
         {
             LoadData();
+
+            try
+            {
+                string k = gvKey.GetFocusedRowCellValue("KeyComputer").ToString();
+                LoadPc(k);
+            }
+            catch (Exception)
+            {
+                gvPc.Columns.Clear();
+            }
         }
 
         private void btThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -97,7 +109,7 @@ namespace Login_TTVL
 
         private void btXoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (gvKey.GetFocusedRowCellValue("KeyComputer") == null)
+            if (gvKey.GetFocusedRowCellValue("RowID") != null)
             {
                 if (DialogBox.Question("Bạn có chắc chắn muốn xóa \n Key: <" + gvKey.GetFocusedRowCellValue("KeyComputer") + "> \n ra khỏi hệ thống không ?") == DialogResult.Yes)
                 {
@@ -106,7 +118,7 @@ namespace Login_TTVL
                         using (var db = new MasterDataContext())
                         {
                             var queryKeyPCs = from KeyPCs in db.KeyPCs
-                                                 where KeyPCs.RowID == Convert.ToInt32(gvKey.GetFocusedRowCellValue("KeyComputer"))
+                                                 where KeyPCs.RowID == Convert.ToInt32(gvKey.GetFocusedRowCellValue("RowID"))
                                                  select KeyPCs;
                             foreach (var del in queryKeyPCs)
                             {
@@ -116,14 +128,57 @@ namespace Login_TTVL
                         }
                         gvKey.DeleteSelectedRows();
                     }
-                    catch
+                    catch(Exception x)
                     {
-                        DialogBox.Infomation("Key: <" + gvKey.GetFocusedRowCellValue("KeyComputer") + "> \n Xóa không thành công. Vui lòng kiểm tra lại.");
+                        DialogBox.Infomation("Key: <" + gvKey.GetFocusedRowCellValue("KeyComputer") + "> \n Xóa không thành công. Vui lòng kiểm tra lại. \n\n " + x);
                     }
                 }
             }
             else
                 DialogBox.Infomation("Vui lòng chọn nhân viên cần xóa. Xin cảm ơn");
+        }
+
+        private void gvKey_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            try
+            {
+                string k = gvKey.GetFocusedRowCellValue("KeyComputer").ToString();
+                LoadPc(k);
+            }
+            catch (Exception)
+            {
+                gvPc.Columns.Clear();
+            }
+        }
+
+        private void LoadPc(string k)
+        {
+            using (var db = new MasterDataContext())
+            {
+                try
+                {
+                    var load = from pc in db.PCs
+                               where pc.KeyComputer == k
+                               select new
+                               {
+                                   pc.RowID,
+                                   pc.KeyComputer,
+                                   pc.TenMay,
+                                   pc.Lock,
+                                   pc.NgayKichHoat,
+                                   pc.NgayHetHan,
+                                   pc.GhiChu
+                               };
+
+                    gcPc.DataSource = load;
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Kết nối server thất bại, hãy kiểm tra lại mạng Internet của bạn.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                if (gvPc.FocusedRowHandle == 0) gvPc.FocusedRowHandle = -1;
+                gvPc.BestFitColumns();
+            }
         }
     }
 }
