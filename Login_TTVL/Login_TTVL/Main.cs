@@ -72,7 +72,6 @@ namespace Login_TTVL
                 var f = new f_Them_Sua();
                 f.Text = "Sửa Key PC";
                 f.maKey = maKey;
-                f.iSo = true;
                 f.ShowDialog();
                 if (f.DialogResult == DialogResult.OK)
                 {

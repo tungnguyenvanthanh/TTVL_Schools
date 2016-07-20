@@ -19,7 +19,6 @@ namespace Login_TTVL
         public string maKey { get; set; }
         private KeyPC objKeyPC;
         private MasterDataContext db;
-        public bool iSo { get; set; }
 
         public f_Them_Sua()
         {
@@ -66,6 +65,33 @@ namespace Login_TTVL
             }
         }
 
+        bool check()
+        {
+            #region Check số lượng PC dưới data để chọn loại KEY
+            if (maKey != null)
+            {
+                using (var dbPc = new MasterDataContext())
+                {
+                    var iPc = dbPc.PCs.Count(p => p.KeyComputer == maKey);
+                    if (iPc > Convert.ToInt32(spinEdit_SoLuong.Text))
+                    {
+                        DialogBox.Error("Không thể giảm số lượng PC nhỏ hơn số lượng hiện tại đã kích hoạt");
+                        return false;
+                    }
+                }
+            }
+            #endregion
+
+            #region Check loại KEY để nhập số lượng PC
+            if (Convert.ToInt32(spinEdit_SoLuong.Text) > 1 && lookUpEdit_LoaiKEY.Text.Equals("Cá nhân"))
+            {
+                DialogBox.Error("Loại Key [cá nhân] tối da chỉ được 1 KEY PC");
+                return false;
+            }
+            #endregion
+
+            return true;
+        }
         private void bt_Luu_Click(object sender, EventArgs e)
         {
             if (DialogBox.Question("Bạn có chắc chắn muốn lưu ?") == DialogResult.Yes)
@@ -80,40 +106,23 @@ namespace Login_TTVL
                         objKeyPC.NgayHetHan = dateEdit_NgayHetHan.DateTime;
                     objKeyPC.Lock = checkEdit_Khoa.Checked;
                     objKeyPC.GhiChu = memoEdit_GhiChu.Text;
-                    if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) != 0)
+                    if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) != 0)       //chọn lookUp
                     {
-                        #region Check số lượng PC để nhập loại KEY
-                        using (var dbPc = new MasterDataContext())
+                        if (!check())
                         {
-                            var iPc = dbPc.PCs.Count(p => p.KeyComputer == maKey);
-                            if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) == 1 && iPc > 1)
-                            {
-                                DialogBox.Error("Số lượng PC đã kích hoạt \n KEY <" + maKey + "> \n hiện tại lớn hơn 1 nên không thể chuyển về KEY [cá nhân]");
-                                return;
-                            }
-                        }
-                        #endregion
-
-                        #region Check loại KEY để nhập số lượng PC
-                        if (Convert.ToInt32(spinEdit_SoLuong.Text) > 1 && lookUpEdit_LoaiKEY.Text.Equals("Cá nhân"))
-                        {
-                            DialogBox.Error("Loại Key [cá nhân] tối da chỉ được 1 KEY PC");
                             return;
                         }
-                        #endregion
-
                         objKeyPC.IDKey = Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID"));
                     }
-                    else
+                    else                                       // không chọn lookUp 
                     {
-                        #region Check loại KEY để nhập số lượng PC
-                        if (Convert.ToInt32(spinEdit_SoLuong.Text) > 1 && lookUpEdit_LoaiKEY.Text.Equals("Cá nhân"))
+
+                        if (!check())
                         {
-                            DialogBox.Error("Loại Key [cá nhân] tối da chỉ được 1 KEY PC");
                             return;
                         }
-                        #endregion
-                        if (!iSo)
+
+                        if (maKey == null)
                         {
                             DialogBox.Error("Vui lòng chọn [Loại Key], xin cảm ơn");
                             lookUpEdit_LoaiKEY.Focus();
