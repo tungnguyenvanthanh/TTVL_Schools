@@ -7,6 +7,7 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.Data.WcfLinq.Helpers;
 using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
 using DevExpress.XtraEditors;
 using TTVL_DLL;
@@ -72,6 +73,7 @@ namespace Login_TTVL
                 try
                 {
                     objKeyPC.KeyComputer = txtKey.Text;
+                    objKeyPC.SoLuong = Convert.ToInt32(spinEdit_SoLuong.Text);
                     if(dateEdit_NgayKichHoat.Text != "")
                         objKeyPC.NgayKichHoat = dateEdit_NgayKichHoat.DateTime;
                     if(dateEdit_NgayHetHan.Text != "")
@@ -79,9 +81,38 @@ namespace Login_TTVL
                     objKeyPC.Lock = checkEdit_Khoa.Checked;
                     objKeyPC.GhiChu = memoEdit_GhiChu.Text;
                     if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) != 0)
+                    {
+                        #region Check số lượng PC để nhập loại KEY
+                        using (var dbPc = new MasterDataContext())
+                        {
+                            var iPc = dbPc.PCs.Count(p => p.KeyComputer == maKey);
+                            if (Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID")) == 1 && iPc > 1)
+                            {
+                                DialogBox.Error("Số lượng PC đã kích hoạt \n KEY <" + maKey + "> \n hiện tại lớn hơn 1 nên không thể chuyển về KEY [cá nhân]");
+                                return;
+                            }
+                        }
+                        #endregion
+
+                        #region Check loại KEY để nhập số lượng PC
+                        if (Convert.ToInt32(spinEdit_SoLuong.Text) > 1 && lookUpEdit_LoaiKEY.Text.Equals("Cá nhân"))
+                        {
+                            DialogBox.Error("Loại Key [cá nhân] tối da chỉ được 1 KEY PC");
+                            return;
+                        }
+                        #endregion
+
                         objKeyPC.IDKey = Convert.ToInt32(lookUpEdit_LoaiKEY.GetColumnValue("RowID"));
+                    }
                     else
                     {
+                        #region Check loại KEY để nhập số lượng PC
+                        if (Convert.ToInt32(spinEdit_SoLuong.Text) > 1 && lookUpEdit_LoaiKEY.Text.Equals("Cá nhân"))
+                        {
+                            DialogBox.Error("Loại Key [cá nhân] tối da chỉ được 1 KEY PC");
+                            return;
+                        }
+                        #endregion
                         if (!iSo)
                         {
                             DialogBox.Error("Vui lòng chọn [Loại Key], xin cảm ơn");
@@ -117,6 +148,7 @@ namespace Login_TTVL
                            {
                                keypc.KeyComputer,
                                loaikey.Loai,
+                               keypc.SoLuong,
                                keypc.NgayKichHoat,
                                keypc.NgayHetHan,
                                keypc.Lock,
@@ -126,6 +158,7 @@ namespace Login_TTVL
                 {
                     txtKey.Text = l.KeyComputer;
                     lookUpEdit_LoaiKEY.Properties.NullText = l.Loai;
+                    spinEdit_SoLuong.Text = l.SoLuong.ToString();
                     dateEdit_NgayKichHoat.Text = l.NgayKichHoat.ToString();
                     dateEdit_NgayHetHan.Text = l.NgayHetHan.ToString();
                     memoEdit_GhiChu.Text = l.GhiChu;

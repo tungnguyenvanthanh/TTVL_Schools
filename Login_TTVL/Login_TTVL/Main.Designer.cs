@@ -41,6 +41,10 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.barButtonItem_Xoa = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem_Sua = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.gcKey = new DevExpress.XtraGrid.GridControl();
             this.gvKey = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.RowID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,6 +54,7 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.gcPc = new DevExpress.XtraGrid.GridControl();
             this.gvPc = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -59,7 +64,8 @@
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcKey)).BeginInit();
@@ -68,6 +74,7 @@
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcPc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -84,8 +91,12 @@
             this.btThem,
             this.btSua,
             this.btXoa,
-            this.barButtonItem4});
-            this.barManager1.MaxItemId = 4;
+            this.barButtonItem4,
+            this.barButtonItem_Xoa,
+            this.barButtonItem_Sua,
+            this.barButtonItem3,
+            this.barButtonItem5});
+            this.barManager1.MaxItemId = 8;
             // 
             // bar1
             // 
@@ -168,6 +179,34 @@
             this.imageCollection1.Images.SetKeyName(2, "plus-icon.png");
             this.imageCollection1.Images.SetKeyName(3, "key-icon.png");
             // 
+            // barButtonItem_Xoa
+            // 
+            this.barButtonItem_Xoa.Caption = "Xóa";
+            this.barButtonItem_Xoa.Id = 4;
+            this.barButtonItem_Xoa.ImageIndex = 0;
+            this.barButtonItem_Xoa.Name = "barButtonItem_Xoa";
+            this.barButtonItem_Xoa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_Xoa_ItemClick);
+            // 
+            // barButtonItem_Sua
+            // 
+            this.barButtonItem_Sua.Caption = "Sửa";
+            this.barButtonItem_Sua.Id = 5;
+            this.barButtonItem_Sua.ImageIndex = 1;
+            this.barButtonItem_Sua.Name = "barButtonItem_Sua";
+            this.barButtonItem_Sua.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_Sua_ItemClick);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "barButtonItem3";
+            this.barButtonItem3.Id = 6;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "barButtonItem5";
+            this.barButtonItem5.Id = 7;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
             // gcKey
             // 
             this.gcKey.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -187,6 +226,7 @@
             this.KeyComputer,
             this.gridColumn2,
             this.gridColumn1,
+            this.gridColumn12,
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
@@ -198,6 +238,7 @@
             this.gvKey.OptionsView.ShowAutoFilterRow = true;
             this.gvKey.OptionsView.ShowGroupPanel = false;
             this.gvKey.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gvKey_RowClick);
+            this.gvKey.DoubleClick += new System.EventHandler(this.gvKey_DoubleClick);
             // 
             // RowID
             // 
@@ -235,7 +276,7 @@
             this.gridColumn3.FieldName = "NgayKichHoat";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.VisibleIndex = 4;
             // 
             // gridColumn4
             // 
@@ -243,7 +284,7 @@
             this.gridColumn4.FieldName = "NgayHetHan";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.VisibleIndex = 5;
             // 
             // gridColumn5
             // 
@@ -251,7 +292,15 @@
             this.gridColumn5.FieldName = "Lock";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.VisibleIndex = 6;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Ghi chú";
+            this.gridColumn6.FieldName = "GhiChu";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 7;
             // 
             // splitContainerControl1
             // 
@@ -296,6 +345,7 @@
             this.gvPc.OptionsView.ColumnAutoWidth = false;
             this.gvPc.OptionsView.ShowAutoFilterRow = true;
             this.gvPc.OptionsView.ShowGroupPanel = false;
+            this.gvPc.MouseUp += new System.Windows.Forms.MouseEventHandler(this.gvPc_MouseUp);
             // 
             // RowIDpc
             // 
@@ -343,13 +393,23 @@
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 4;
             // 
-            // gridColumn6
+            // popupMenu1
             // 
-            this.gridColumn6.Caption = "Ghi chú";
-            this.gridColumn6.FieldName = "GhiChu";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 6;
+            this.popupMenu1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Xoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem_Sua, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.popupMenu1.Manager = this.barManager1;
+            this.popupMenu1.Name = "popupMenu1";
+            // 
+            // gridColumn12
+            // 
+            this.gridColumn12.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn12.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn12.Caption = "Số lượng";
+            this.gridColumn12.FieldName = "SoLuong";
+            this.gridColumn12.Name = "gridColumn12";
+            this.gridColumn12.Visible = true;
+            this.gridColumn12.VisibleIndex = 3;
             // 
             // Main
             // 
@@ -371,6 +431,7 @@
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcPc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvPc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,5 +469,11 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_Xoa;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem_Sua;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
     }
 }

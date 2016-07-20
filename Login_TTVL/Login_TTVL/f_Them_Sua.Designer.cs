@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.spinEdit_SoLuong = new DevExpress.XtraEditors.SpinEdit();
             this.lookUpEdit_LoaiKEY = new DevExpress.XtraEditors.LookUpEdit();
             this.checkEdit_Khoa = new DevExpress.XtraEditors.CheckEdit();
             this.dateEdit_NgayHetHan = new DevExpress.XtraEditors.DateEdit();
@@ -40,6 +41,7 @@
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
@@ -47,6 +49,7 @@
             this.bt_Luu = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spinEdit_SoLuong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_LoaiKEY.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit_Khoa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayHetHan.Properties.CalendarTimeProperties)).BeginInit();
@@ -60,6 +63,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -72,6 +76,7 @@
             this.layoutControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.layoutControl1.Controls.Add(this.spinEdit_SoLuong);
             this.layoutControl1.Controls.Add(this.lookUpEdit_LoaiKEY);
             this.layoutControl1.Controls.Add(this.checkEdit_Khoa);
             this.layoutControl1.Controls.Add(this.dateEdit_NgayHetHan);
@@ -80,9 +85,36 @@
             this.layoutControl1.Location = new System.Drawing.Point(3, 3);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(336, 140);
+            this.layoutControl1.Size = new System.Drawing.Size(336, 163);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // spinEdit_SoLuong
+            // 
+            this.spinEdit_SoLuong.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.spinEdit_SoLuong.Location = new System.Drawing.Point(90, 60);
+            this.spinEdit_SoLuong.Name = "spinEdit_SoLuong";
+            this.spinEdit_SoLuong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.spinEdit_SoLuong.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.spinEdit_SoLuong.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.spinEdit_SoLuong.Properties.MaxValue = new decimal(new int[] {
+            -1,
+            -1,
+            -1,
+            0});
+            this.spinEdit_SoLuong.Properties.MinValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.spinEdit_SoLuong.Size = new System.Drawing.Size(234, 20);
+            this.spinEdit_SoLuong.StyleController = this.layoutControl1;
+            this.spinEdit_SoLuong.TabIndex = 12;
             // 
             // lookUpEdit_LoaiKEY
             // 
@@ -101,7 +133,7 @@
             // 
             // checkEdit_Khoa
             // 
-            this.checkEdit_Khoa.Location = new System.Drawing.Point(90, 108);
+            this.checkEdit_Khoa.Location = new System.Drawing.Point(90, 132);
             this.checkEdit_Khoa.Name = "checkEdit_Khoa";
             this.checkEdit_Khoa.Properties.Caption = "";
             this.checkEdit_Khoa.Size = new System.Drawing.Size(234, 19);
@@ -111,7 +143,7 @@
             // dateEdit_NgayHetHan
             // 
             this.dateEdit_NgayHetHan.EditValue = null;
-            this.dateEdit_NgayHetHan.Location = new System.Drawing.Point(90, 84);
+            this.dateEdit_NgayHetHan.Location = new System.Drawing.Point(90, 108);
             this.dateEdit_NgayHetHan.Name = "dateEdit_NgayHetHan";
             this.dateEdit_NgayHetHan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -124,7 +156,7 @@
             // dateEdit_NgayKichHoat
             // 
             this.dateEdit_NgayKichHoat.EditValue = null;
-            this.dateEdit_NgayKichHoat.Location = new System.Drawing.Point(90, 60);
+            this.dateEdit_NgayKichHoat.Location = new System.Drawing.Point(90, 84);
             this.dateEdit_NgayKichHoat.Name = "dateEdit_NgayKichHoat";
             this.dateEdit_NgayKichHoat.Properties.Appearance.ForeColor = System.Drawing.Color.Blue;
             this.dateEdit_NgayKichHoat.Properties.Appearance.Options.UseForeColor = true;
@@ -158,10 +190,11 @@
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem2,
-            this.layoutControlItem3});
+            this.layoutControlItem3,
+            this.layoutControlItem6});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(336, 140);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(336, 163);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -176,7 +209,7 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.dateEdit_NgayKichHoat;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(316, 24);
             this.layoutControlItem4.Text = "Ngày kích hoạt:";
@@ -185,7 +218,7 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.dateEdit_NgayHetHan;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 72);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(316, 24);
             this.layoutControlItem5.Text = "Ngày hết hạn:";
@@ -194,9 +227,9 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.checkEdit_Khoa;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(316, 23);
             this.layoutControlItem2.Text = "Khóa KEY:";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(75, 13);
             // 
@@ -209,12 +242,21 @@
             this.layoutControlItem3.Text = "Loại KEY:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(75, 13);
             // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.spinEdit_SoLuong;
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(316, 24);
+            this.layoutControlItem6.Text = "Số lượng:";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(75, 13);
+            // 
             // xtraTabControl1
             // 
             this.xtraTabControl1.Location = new System.Drawing.Point(12, 12);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(350, 173);
+            this.xtraTabControl1.Size = new System.Drawing.Size(350, 196);
             this.xtraTabControl1.TabIndex = 1;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -224,14 +266,14 @@
             // 
             this.xtraTabPage1.Controls.Add(this.layoutControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(344, 145);
+            this.xtraTabPage1.Size = new System.Drawing.Size(344, 168);
             this.xtraTabPage1.Text = "Thông tin";
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Controls.Add(this.memoEdit_GhiChu);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(344, 145);
+            this.xtraTabPage2.Size = new System.Drawing.Size(344, 168);
             this.xtraTabPage2.Text = "Ghi chú";
             // 
             // memoEdit_GhiChu
@@ -239,13 +281,13 @@
             this.memoEdit_GhiChu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.memoEdit_GhiChu.Location = new System.Drawing.Point(0, 0);
             this.memoEdit_GhiChu.Name = "memoEdit_GhiChu";
-            this.memoEdit_GhiChu.Size = new System.Drawing.Size(344, 145);
+            this.memoEdit_GhiChu.Size = new System.Drawing.Size(344, 168);
             this.memoEdit_GhiChu.TabIndex = 0;
             // 
             // bt_Luu
             // 
             this.bt_Luu.Image = global::Login_TTVL.Properties.Resources.test;
-            this.bt_Luu.Location = new System.Drawing.Point(264, 191);
+            this.bt_Luu.Location = new System.Drawing.Point(269, 209);
             this.bt_Luu.Name = "bt_Luu";
             this.bt_Luu.Size = new System.Drawing.Size(93, 23);
             this.bt_Luu.TabIndex = 2;
@@ -256,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 222);
+            this.ClientSize = new System.Drawing.Size(371, 238);
             this.Controls.Add(this.bt_Luu);
             this.Controls.Add(this.xtraTabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -267,6 +309,7 @@
             this.Load += new System.EventHandler(this.f_Them_Sua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.spinEdit_SoLuong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit_LoaiKEY.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit_Khoa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayHetHan.Properties.CalendarTimeProperties)).EndInit();
@@ -280,6 +323,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
@@ -308,5 +352,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraEditors.LookUpEdit lookUpEdit_LoaiKEY;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraEditors.SpinEdit spinEdit_SoLuong;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
     }
 }

@@ -34,6 +34,7 @@ namespace Login_TTVL
                                    keypc.RowID,
                                    keypc.KeyComputer,
                                    loaikey.Loai,
+                                   keypc.SoLuong,
                                    keypc.KichHoat,
                                    keypc.NgayKichHoat,
                                    keypc.NgayHetHan,
@@ -59,6 +60,7 @@ namespace Login_TTVL
             if (f.DialogResult == DialogResult.OK)
             {
                 LoadData();
+                gvPc.Columns.Clear();
             }
         }
         void Sua()
@@ -75,6 +77,7 @@ namespace Login_TTVL
                 if (f.DialogResult == DialogResult.OK)
                 {
                     LoadData();
+                    gvPc.Columns.Clear();
                 }
             }
             catch (Exception)
@@ -151,6 +154,11 @@ namespace Login_TTVL
             }
         }
 
+        private void gvKey_DoubleClick(object sender, EventArgs e)
+        {
+            Sua();
+        }
+
         private void LoadPc(string k)
         {
             using (var db = new MasterDataContext())
@@ -179,6 +187,22 @@ namespace Login_TTVL
                 if (gvPc.FocusedRowHandle == 0) gvPc.FocusedRowHandle = -1;
                 gvPc.BestFitColumns();
             }
+        }
+
+        private void gvPc_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                popupMenu1.ShowPopup(Control.MousePosition);
+        }
+
+        private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
