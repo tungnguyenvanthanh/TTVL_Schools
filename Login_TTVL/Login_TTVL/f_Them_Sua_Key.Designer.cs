@@ -1,6 +1,6 @@
 ﻿namespace Login_TTVL
 {
-    partial class f_Them_Sua
+    partial class f_Them_Sua_Key
     {
         /// <summary>
         /// Required designer variable.

@@ -92,4 +92,4 @@ C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Lo
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Login_TTVL\Login_TTVL\obj\Debug\Login_TTVL.csprojResolveAssemblyReference.cache
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Login_TTVL\Login_TTVL\obj\Debug\Login_TTVL.Main.resources
 C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Login_TTVL\Login_TTVL\bin\Debug\Login_TTVL.exe.config
-C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Login_TTVL\Login_TTVL\obj\Debug\Login_TTVL.f_Them_Sua.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\Login_TTVL\Login_TTVL\obj\Debug\Login_TTVL.f_Them_Sua_Key.resources

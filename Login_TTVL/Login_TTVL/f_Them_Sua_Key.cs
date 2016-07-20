@@ -14,13 +14,13 @@ using TTVL_DLL;
 
 namespace Login_TTVL
 {
-    public partial class f_Them_Sua : DevExpress.XtraEditors.XtraForm
+    public partial class f_Them_Sua_Key : DevExpress.XtraEditors.XtraForm
     {
         public string maKey { get; set; }
         private KeyPC objKeyPC;
         private MasterDataContext db;
 
-        public f_Them_Sua()
+        public f_Them_Sua_Key()
         {
             InitializeComponent();
             db = new MasterDataContext();

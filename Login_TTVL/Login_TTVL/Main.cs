@@ -54,7 +54,7 @@ namespace Login_TTVL
         }
         void Them()
         {
-            var f = new f_Them_Sua();
+            var f = new f_Them_Sua_Key();
             f.Text = "Thêm Key PC";
             f.ShowDialog();
             if (f.DialogResult == DialogResult.OK)
@@ -69,7 +69,7 @@ namespace Login_TTVL
             {
                 string maKey = gvKey.GetFocusedRowCellValue("KeyComputer").ToString();
 
-                var f = new f_Them_Sua();
+                var f = new f_Them_Sua_Key();
                 f.Text = "Sửa Key PC";
                 f.maKey = maKey;
                 f.ShowDialog();
@@ -196,7 +196,33 @@ namespace Login_TTVL
 
         private void barButtonItem_Xoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            if (gvPc.GetFocusedRowCellValue("RowID") != null)
+            {
+                if (DialogBox.Question("Bạn có chắc chắn muốn xóa \n PC: <" + gvPc.GetFocusedRowCellValue("TenMay") + "> \n ra khỏi hệ thống không ?") == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using (var db = new MasterDataContext())
+                        {
+                            var queryPCs = from PCs in db.PCs
+                                              where PCs.RowID == Convert.ToInt32(gvPc.GetFocusedRowCellValue("RowID"))
+                                              select PCs;
+                            foreach (var del in queryPCs)
+                            {
+                                db.PCs.DeleteOnSubmit(del);
+                            }
+                            db.SubmitChanges();
+                        }
+                        gvPc.DeleteSelectedRows();
+                    }
+                    catch (Exception x)
+                    {
+                        DialogBox.Infomation("PC: <" + gvPc.GetFocusedRowCellValue("TenMay") + "> \n Xóa không thành công. Vui lòng kiểm tra lại. \n\n " + x);
+                    }
+                }
+            }
+            else
+                DialogBox.Infomation("Vui lòng chọn PC cần xóa. Xin cảm ơn");
         }
 
         private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
