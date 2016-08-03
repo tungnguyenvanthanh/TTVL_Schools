@@ -65,16 +65,28 @@
             this.gridColumn15 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn16 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcLichSu = new DevExpress.XtraGrid.GridControl();
-            this.gvLichSu = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.splitContainerControl3 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvNhanVien)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcLichSu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvLichSu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+            this.splitContainerControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).BeginInit();
+            this.splitContainerControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -226,10 +238,11 @@
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.gcNhanVien);
             this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.gcLichSu);
+            this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
+            this.splitContainerControl1.Panel2.MinSize = 220;
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(1380, 647);
-            this.splitContainerControl1.SplitterPosition = 276;
+            this.splitContainerControl1.SplitterPosition = 220;
             this.splitContainerControl1.TabIndex = 9;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -240,7 +253,7 @@
             this.gcNhanVien.MainView = this.gvNhanVien;
             this.gcNhanVien.MenuManager = this.barManager1;
             this.gcNhanVien.Name = "gcNhanVien";
-            this.gcNhanVien.Size = new System.Drawing.Size(1380, 366);
+            this.gcNhanVien.Size = new System.Drawing.Size(1380, 422);
             this.gcNhanVien.TabIndex = 0;
             this.gcNhanVien.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvNhanVien});
@@ -270,6 +283,7 @@
             this.gvNhanVien.OptionsBehavior.Editable = false;
             this.gvNhanVien.OptionsView.ColumnAutoWidth = false;
             this.gvNhanVien.OptionsView.ShowAutoFilterRow = true;
+            this.gvNhanVien.DoubleClick += new System.EventHandler(this.gvNhanVien_DoubleClick);
             // 
             // gridColumn1
             // 
@@ -373,7 +387,7 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "Chức vụ";
-            this.gridColumn13.FieldName = "ChucVu";
+            this.gridColumn13.FieldName = "TenChuVu";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 12;
@@ -415,23 +429,92 @@
             this.gridColumn17.Visible = true;
             this.gridColumn17.VisibleIndex = 16;
             // 
-            // gcLichSu
+            // splitContainerControl2
             // 
-            this.gcLichSu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcLichSu.Location = new System.Drawing.Point(0, 0);
-            this.gcLichSu.MainView = this.gvLichSu;
-            this.gcLichSu.MenuManager = this.barManager1;
-            this.gcLichSu.Name = "gcLichSu";
-            this.gcLichSu.Size = new System.Drawing.Size(1380, 276);
-            this.gcLichSu.TabIndex = 0;
-            this.gcLichSu.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvLichSu});
+            this.splitContainerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl2.Name = "splitContainerControl2";
+            this.splitContainerControl2.Panel1.Controls.Add(this.labelControl1);
+            this.splitContainerControl2.Panel1.Controls.Add(this.pictureEdit1);
+            this.splitContainerControl2.Panel1.MinSize = 180;
+            this.splitContainerControl2.Panel1.Text = "Panel1";
+            this.splitContainerControl2.Panel2.Controls.Add(this.splitContainerControl3);
+            this.splitContainerControl2.Panel2.Text = "Panel2";
+            this.splitContainerControl2.Size = new System.Drawing.Size(1380, 220);
+            this.splitContainerControl2.SplitterPosition = 180;
+            this.splitContainerControl2.TabIndex = 0;
+            this.splitContainerControl2.Text = "splitContainerControl2";
             // 
-            // gvLichSu
+            // labelControl1
             // 
-            this.gvLichSu.GridControl = this.gcLichSu;
-            this.gvLichSu.Name = "gvLichSu";
-            this.gvLichSu.OptionsView.ShowAutoFilterRow = true;
+            this.labelControl1.Location = new System.Drawing.Point(57, 198);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(59, 13);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Ảnh đại diện";
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = global::TTVL.Properties.Resources._13661863_505582149646990_4637431588548373473_o;
+            this.pictureEdit1.Location = new System.Drawing.Point(25, 20);
+            this.pictureEdit1.MenuManager = this.barManager1;
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit1.Size = new System.Drawing.Size(132, 160);
+            this.pictureEdit1.TabIndex = 0;
+            // 
+            // splitContainerControl3
+            // 
+            this.splitContainerControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerControl3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl3.Name = "splitContainerControl3";
+            this.splitContainerControl3.Panel1.Controls.Add(this.labelControl2);
+            this.splitContainerControl3.Panel1.Controls.Add(this.pictureEdit2);
+            this.splitContainerControl3.Panel1.MinSize = 180;
+            this.splitContainerControl3.Panel1.Text = "Panel1";
+            this.splitContainerControl3.Panel2.Controls.Add(this.gridControl1);
+            this.splitContainerControl3.Panel2.Text = "Panel2";
+            this.splitContainerControl3.Size = new System.Drawing.Size(1195, 220);
+            this.splitContainerControl3.SplitterPosition = 180;
+            this.splitContainerControl3.TabIndex = 0;
+            this.splitContainerControl3.Text = "splitContainerControl3";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(68, 198);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(34, 13);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Chữ ký";
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.EditValue = global::TTVL.Properties.Resources._1398769_443378385867367_1500684026259219344_o;
+            this.pictureEdit2.Location = new System.Drawing.Point(24, 20);
+            this.pictureEdit2.MenuManager = this.barManager1;
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit2.Size = new System.Drawing.Size(132, 160);
+            this.pictureEdit2.TabIndex = 0;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.MenuManager = this.barManager1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1010, 220);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // ctlNhanVien
             // 
@@ -451,8 +534,14 @@
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcNhanVien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvNhanVien)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcLichSu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvLichSu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+            this.splitContainerControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl3)).EndInit();
+            this.splitContainerControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,8 +567,6 @@
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private DevExpress.XtraGrid.GridControl gcNhanVien;
         private DevExpress.XtraGrid.Views.Grid.GridView gvNhanVien;
-        private DevExpress.XtraGrid.GridControl gcLichSu;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvLichSu;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
@@ -497,5 +584,13 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn15;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn16;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn17;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl3;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

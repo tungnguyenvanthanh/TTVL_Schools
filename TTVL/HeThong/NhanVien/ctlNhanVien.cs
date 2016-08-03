@@ -76,11 +76,6 @@ namespace TTVL.HeThong.NhanVien
             }
         }
 
-        void LoadData_LichSuNhanVien()
-        {
-
-        }
-
         private void ctlNhanVien_Load(object sender, EventArgs e)
         {
             LoadData_ThongTinNhanVien();
@@ -160,6 +155,11 @@ namespace TTVL.HeThong.NhanVien
         private void barButtonItem_Nap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             LoadData_ThongTinNhanVien();
+        }
+
+        private void gvNhanVien_DoubleClick(object sender, EventArgs e)
+        {
+            Sua();
         }
     }
 }

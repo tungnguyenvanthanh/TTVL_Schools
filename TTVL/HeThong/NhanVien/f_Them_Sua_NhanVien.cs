@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ namespace TTVL.HeThong.NhanVien
             {
                 #region load lookUpEdit quý danh
                 var tbQuyDanh = (from tableQuyDanhs in dbLookUp.QuyDanhs
-                    select tableQuyDanhs).ToList();
+                                 select tableQuyDanhs).ToList();
 
                 lookUpEdit_QuyDanh.Properties.DataSource = tbQuyDanh;
                 #endregion
@@ -42,7 +43,7 @@ namespace TTVL.HeThong.NhanVien
                 #region load lookUpEdit chức vụ
 
                 var tbChucVu = (from tableChucVus in dbLookUp.ChucVus
-                    select tableChucVus).ToList();
+                                select tableChucVus).ToList();
 
                 lookUpEdit_ChucVu.Properties.DataSource = tbChucVu;
                 #endregion
@@ -50,7 +51,7 @@ namespace TTVL.HeThong.NhanVien
                 #region load lookUpEdit QL
 
                 var tbNhanVienQL = (from tableNhanVienQLs in dbLookUp.NhanViens
-                    select tableNhanVienQLs).ToList();
+                                    select tableNhanVienQLs).ToList();
 
                 lookUpEdit_QL1.Properties.DataSource = tbNhanVienQL;
                 lookUpEdit_QL2.Properties.DataSource = tbNhanVienQL;
@@ -77,6 +78,18 @@ namespace TTVL.HeThong.NhanVien
             else
             {
                 objNhanVien = new TTVL.NhanVien();
+                dateNgaySinh.Text = DateTime.Today.ToString();
+                dateNgayCap.Text = DateTime.Today.ToString();
+
+                #region Auto Mã nhân viên
+                string autoMaNv = "";
+                using (db = new MasterDataContext())
+                {
+                    var auto = from nv in db.NhanViens.Max(p => p.MaNhanVien)
+                }
+                txtMaNV.Text = autoMaNv;
+                #endregion;
+
                 db.NhanViens.InsertOnSubmit(objNhanVien);
             }
         }
@@ -119,6 +132,7 @@ namespace TTVL.HeThong.NhanVien
                                nv.Email,
                                nv.SoDienThoai,
                                nv.TaiKhoan,
+                               nv.MatKhau,
                                nv.Lock,
                                nv.GhiChu,
 
@@ -189,13 +203,14 @@ namespace TTVL.HeThong.NhanVien
                     objNhanVien.DiaChiThuongTru = txtThuongTru.Text;
                     objNhanVien.MaNhanVien = txtMaNV.Text;
                     objNhanVien.TaiKhoan = txtTaiKhoan.Text;
+                    if (MaNv == null) { objNhanVien.MatKhau = MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtTaiKhoan.Text + "P@ssword09113van"); }
                     objNhanVien.Email = txtEmail.Text;
                     objNhanVien.SoDienThoai = txtDienThoai.Text;
                     objNhanVien.Lock = checkKhoaTaiKhoan.Checked;
 
                     if (Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh")) != 0)
                         objNhanVien.MaQuyDanh = Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh"));
-                    if(Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu")) != 0)
+                    if (Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu")) != 0)
                         objNhanVien.MaChuVu = Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu"));
                     try
                     {

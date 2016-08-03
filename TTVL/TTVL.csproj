@@ -239,6 +239,12 @@
   <ItemGroup>
     <None Include="Resources\Messages-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13661863_505582149646990_4637431588548373473_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1398769_443378385867367_1500684026259219344_o.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

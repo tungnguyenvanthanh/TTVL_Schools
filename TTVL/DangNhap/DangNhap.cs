@@ -49,10 +49,8 @@ namespace TTVL.DangNhap
                 }
                 else
                 {
-                    string a = txtTaiKhoan.Text + txtMatKhau.Text + "thanhtungttvl";
-                    string test = MyCodeTTVL.MaHoaMd5(a);
-
-                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == test);
+                    string a = MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtMatKhau.Text + "P@ssword09113van");
+                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtMatKhau.Text + "P@ssword09113van"));
                     if (QueryPass == null)
                     {
                         DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");

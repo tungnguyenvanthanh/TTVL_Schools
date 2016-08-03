@@ -63,6 +63,26 @@ namespace TTVL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _13661863_505582149646990_4637431588548373473_o {
+            get {
+                object obj = ResourceManager.GetObject("13661863_505582149646990_4637431588548373473_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1398769_443378385867367_1500684026259219344_o {
+            get {
+                object obj = ResourceManager.GetObject("1398769_443378385867367_1500684026259219344_o", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1463561052_star {
             get {
                 object obj = ResourceManager.GetObject("_1463561052_star", resourceCulture);

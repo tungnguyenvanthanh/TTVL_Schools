@@ -238,6 +238,9 @@
             // 
             this.txtMaNV.Location = new System.Drawing.Point(68, 12);
             this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.txtMaNV.Properties.Appearance.Options.UseForeColor = true;
+            this.txtMaNV.Properties.ReadOnly = true;
             this.txtMaNV.Size = new System.Drawing.Size(167, 20);
             this.txtMaNV.StyleController = this.layoutControl2;
             this.txtMaNV.TabIndex = 4;
@@ -583,7 +586,7 @@
             this.MinimizeBox = false;
             this.Name = "f_Them_Sua_NhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Thông tin  nhân viên";
+            this.Text = "Thông tin nhân viên";
             this.Load += new System.EventHandler(this.f_Them_Sua_NhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
