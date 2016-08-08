@@ -56,12 +56,12 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
@@ -207,6 +207,7 @@
             this.Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai.Id = 5;
             this.Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai.ImageIndex = 18;
             this.Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai.Name = "Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai";
+            this.Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai_ItemClick);
             // 
             // Item_HeThong_TaiKhoan_DanhMuc_Thoat
             // 
@@ -361,6 +362,12 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "GIAO DIỆN";
             // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.ImageIndex = 11;
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "QUẢN LÝ NHÂN SỰ";
+            // 
             // ribbonPage2
             // 
             this.ribbonPage2.ImageIndex = 7;
@@ -399,12 +406,6 @@
             this.xtraTabControl_TTVL.TabIndex = 2;
             this.xtraTabControl_TTVL.CloseButtonClick += new System.EventHandler(this.xtraTabControl_TTVL_CloseButtonClick);
             this.xtraTabControl_TTVL.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.xtraTabControl_TTVL_ControlAdded);
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.ImageIndex = 11;
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "QUẢN LÝ NHÂN SỰ";
             // 
             // FormMain
             // 

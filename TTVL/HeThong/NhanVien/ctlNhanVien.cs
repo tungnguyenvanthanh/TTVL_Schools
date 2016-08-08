@@ -125,7 +125,7 @@ namespace TTVL.HeThong.NhanVien
         {
             if (gvNhanVien.GetFocusedRowCellValue("MaNhanVien") != null)
             {
-                if (DialogBox.Question("Bạn có chắc chắn muốn xóa nhân viên: <" + gvNhanVien.GetFocusedRowCellValue("MaNhanVien") + "> ra khỏi hệ thống không ?") == DialogResult.Yes)
+                if (DialogBox.Question($"Bạn có chắc chắn muốn xóa nhân viên: <{gvNhanVien.GetFocusedRowCellValue("MaNhanVien")}> ra khỏi hệ thống không ?") == DialogResult.Yes)
                 {
                     try
                     {
@@ -144,7 +144,7 @@ namespace TTVL.HeThong.NhanVien
                     }
                     catch
                     {
-                        DialogBox.Infomation("Xóa không thành công vì nhân viên: <" + gvNhanVien.GetFocusedRowCellValue("MaNhanVien") + "> đã được sử dụng. Vui lòng kiểm tra lại.");
+                        DialogBox.Infomation($"Xóa không thành công vì nhân viên: <{gvNhanVien.GetFocusedRowCellValue("MaNhanVien")}> đã được sử dụng. Vui lòng kiểm tra lại.");
                     }
                 }
             }
@@ -160,6 +160,40 @@ namespace TTVL.HeThong.NhanVien
         private void gvNhanVien_DoubleClick(object sender, EventArgs e)
         {
             Sua();
+        }
+
+        private void barButtonItem_Rest_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (gvNhanVien.GetFocusedRowCellValue("MaNhanVien") != null)
+            {
+                if (DialogBox.Question($"Bạn có chắc chắn muốn Rest password nhân viên: <{gvNhanVien.GetFocusedRowCellValue("MaNhanVien")}> không ?") == DialogResult.Yes)
+                {
+                    TTVL.NhanVien nv = new TTVL.NhanVien();
+                    try
+                    {
+                        using (var db = new MasterDataContext())
+                        {
+                            nv = db.NhanViens.SingleOrDefault(p => p.MaNhanVien == gvNhanVien.GetFocusedRowCellValue("MaNhanVien").ToString());
+                            if (nv == null)
+                            {
+                                MessageBox.Show("[Nhân viên] này không có trong hệ thống. Vui lòng kiểm tra lại, xin cảm ơn.");
+                            }
+                            else
+                            {
+                                nv.MatKhau = MyCodeTTVL.MaHoaMd5($"{gvNhanVien.GetFocusedRowCellValue("TaiKhoan")}{gvNhanVien.GetFocusedRowCellValue("TaiKhoan")}P@ssword09113van");
+                                db.SubmitChanges();
+                                DialogBox.Infomation("Thành công");
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        DialogBox.Infomation($"Xóa không thành công vì nhân viên: <{gvNhanVien.GetFocusedRowCellValue("MaNhanVien")}> đã được sử dụng. Vui lòng kiểm tra lại.");
+                    }
+                }
+            }
+            else
+                DialogBox.Infomation("Vui lòng chọn nhân viên cần Rest password. Xin cảm ơn");
         }
     }
 }

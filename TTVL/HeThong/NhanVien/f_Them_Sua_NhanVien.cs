@@ -8,6 +8,7 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraCharts.Native;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Internal;
 using DevExpress.XtraGrid;
@@ -80,18 +81,36 @@ namespace TTVL.HeThong.NhanVien
                 objNhanVien = new TTVL.NhanVien();
                 dateNgaySinh.Text = DateTime.Today.ToString();
                 dateNgayCap.Text = DateTime.Today.ToString();
-
+                
                 #region Auto Mã nhân viên
                 string autoMaNv = "";
-                using (db = new MasterDataContext())
+                using (var f = new MasterDataContext())
                 {
-                    var auto = from nv in db.NhanViens.Max(p => p.MaNhanVien)
+                    int max = f.NhanViens.Count(p => p.MaNhanVien != "Admin");
+                    autoMaNv = $"NV-{DateTime.Now:ddMMyyyy}-{++max:d4}";
+                    while (KTmax(autoMaNv))
+                    {
+                        autoMaNv = $"NV-{DateTime.Now:ddMMyyyy}-{++max:d4}";
+                    }
                 }
                 txtMaNV.Text = autoMaNv;
                 #endregion;
 
                 db.NhanViens.InsertOnSubmit(objNhanVien);
             }
+        }
+
+        bool KTmax(string a)
+        {
+            bool kt = true;
+            using (var f = new MasterDataContext())
+            {
+                if (f.NhanViens.FirstOrDefault(p => p.MaNhanVien == a) == null)
+                {
+                    kt = false;
+                }
+            }
+            return kt;
         }
 
         void LoadDuLieu(string maNV)
@@ -177,17 +196,17 @@ namespace TTVL.HeThong.NhanVien
         {
             if (DialogBox.Question("Bạn có chắc chắn muốn lưu ?") == DialogResult.Yes)
             {
-                if (txtMaNV.Text.Trim() == "")
-                {
-                    DialogBox.Error("Vui lòng nhập [Mã nhân viên], xin cảm ơn");
-                    txtMaNV.Focus();
-                    return;
-                }
-
                 if (txtHoVaTen.Text.Trim() == "")
                 {
                     DialogBox.Error("Vui lòng nhập [Họ và tên], xin cảm ơn");
                     txtHoVaTen.Focus();
+                    return;
+                }
+
+                if (txtTaiKhoan.Text.Trim() == "")
+                {
+                    DialogBox.Error("Vui lòng nhập [Tên tài khoản], xin cảm ơn");
+                    txtTaiKhoan.Focus();
                     return;
                 }
 
@@ -203,7 +222,7 @@ namespace TTVL.HeThong.NhanVien
                     objNhanVien.DiaChiThuongTru = txtThuongTru.Text;
                     objNhanVien.MaNhanVien = txtMaNV.Text;
                     objNhanVien.TaiKhoan = txtTaiKhoan.Text;
-                    if (MaNv == null) { objNhanVien.MatKhau = MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtTaiKhoan.Text + "P@ssword09113van"); }
+                    if (MaNv == null) { objNhanVien.MatKhau = MyCodeTTVL.MaHoaMd5($"{txtTaiKhoan.Text}{txtTaiKhoan.Text}P@ssword09113van"); }
                     objNhanVien.Email = txtEmail.Text;
                     objNhanVien.SoDienThoai = txtDienThoai.Text;
                     objNhanVien.Lock = checkKhoaTaiKhoan.Checked;

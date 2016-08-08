@@ -137,6 +137,19 @@ namespace TTVL
             f_DoiMatKhau f = new f_DoiMatKhau();
             f.ShowDialog();
         }
-        
+
+        private void Item_HeThong_TaiKhoan_DanhMuc_DangNhapLai_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            this.Hide();
+
+            using (DangNhap.DangNhap frmLogin = new DangNhap.DangNhap())
+            {
+                frmLogin.ShowDialog();
+                if (frmLogin.DialogResult == DialogResult.OK)
+                {
+                    new FormMain().Show();
+                }
+            }
+        }
     }
 }

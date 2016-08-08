@@ -181,6 +181,7 @@
             this.barButtonItem_Rest.Id = 6;
             this.barButtonItem_Rest.ImageIndex = 7;
             this.barButtonItem_Rest.Name = "barButtonItem_Rest";
+            this.barButtonItem_Rest.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem_Rest_ItemClick);
             // 
             // barDockControlTop
             // 
