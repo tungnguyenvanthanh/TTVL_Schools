@@ -103,15 +103,6 @@ namespace TTVL.HeThong.NhanVien
                 DialogBox.Infomation("Vui lòng chọn [Chức vụ] cần xóa. Xin cảm ơn");
         }
 
-        private void barButtonItem_Them_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            f_Them_Sua_ChucVu d = new f_Them_Sua_ChucVu();
-            d.Text = "Thêm chức vụ";
-            d.ShowDialog();
-
-            if (d.isYesNo == true)
-                LoadData_QuyDanh();
-        }
 
         private void barButtonItem_Sua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
