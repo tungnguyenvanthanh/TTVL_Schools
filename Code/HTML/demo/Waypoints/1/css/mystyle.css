@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 5000px;
+}
+.contenner{
+    width: 400px;
+    height: 300px;
+    background-color: #999999;
+    margin: 0 auto;
+    text-align: center;
+}
+.contenner .img {
+    margin-top: 50px;
+    right: 500px;
+    opacity: 0;
+    transition: all 400ms ease-in;
+}
+.contenner .js-img-animate{
+    opacity: 1;
+    animation: img-jiggle 300ms linear;
+}
+
+@keyframes img-jiggle {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(30deg);
+    }
+    66%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

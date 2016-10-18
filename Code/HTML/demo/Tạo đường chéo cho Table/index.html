@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table
+        {
+            min-width: 100%;
+        }
+
+        table td
+        {
+            border: 1px solid silver;
+            position: relative;
+        }
+
+        table td.crossed
+        {
+            background-image: linear-gradient(to bottom right,  transparent calc(50% - 1px), red, transparent calc(50% + 1px));
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tbody>
+    <tr>
+        <td>Content</td>
+        <td>Content</td>
+        <td>Content</td>
+    </tr>
+    <tr>
+        <td>Content</td>
+        <td class="crossed">Content <br>Content <br>Content <br>Content <br></td>
+        <td>Content</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
