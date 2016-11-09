@@ -1,0 +1,10 @@
+body{width: 1000px; margin: 0 auto;}
+#header{height: 100px; background-color: #dddddd;}
+#logo{height: 60px}
+#main{height: 300px; background-color: #666666}
+
+#nav {text-align:center;}
+#nav ul {display:inline-block; list-style:none; background-color: #F9E6A7; padding: 15px 5px}
+#nav li {display:inline;}
+#nav a {text-decoration:none; padding:10px 30px; border-radius: 0; transition: 0.5s}
+#nav li:hover a{background-color: #999999; border-radius: 10px}

@@ -11,3 +11,7 @@ nav ul ul li {float: none; border-top: 1px solid #000000; border-bottom: 1px sol
 nav ul ul li a {color: #000000;}
 nav ul ul li a:hover {color: #666666;}
 nav ul ul ul {position: absolute; top:0;}
+
+a:hover{
+    background-color: hotpink;
+}

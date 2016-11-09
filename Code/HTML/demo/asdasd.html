@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    div{background-color: red; width: 100px; height: 100px}
+</style>
+</head>
+<body>
+    <form>
+        <input type="submit" value="Submit" id="dv" disabled style="width: 100px; height: 50px">
+        <br><br>
+        Convert to upper case
+        <input type="checkbox" onclick="if(this.checked){myFunctionON()} else if(!this.checked){myFunctionOFF()}">
+    </form>
+<img src="images">
+    <script>
+        function myFunctionON() {
+            document.getElementById("dv").removeAttribute("disabled");
+        }
+        function myFunctionOFF() {
+            document.getElementById("dv").setAttribute("disabled", "true");
+        }
+    </script>
+</body>
+</html>

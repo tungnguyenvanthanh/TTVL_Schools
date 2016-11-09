@@ -1,0 +1,14 @@
+body{width: 1000px; margin: 0 auto;}
+
+#header{width: 1000px; height: 100px; background-color: #dddddd;}
+#logo{height: 60px}
+#main{width: 1000px; height: 300px; background-color: #666666}
+
+#nav {width:1000px; list-style:none; margin: 0 auto; padding: 0}
+#nav li {float:left; background-color: #999999}
+#nav a {display:block; text-align:center; width:200px; text-decoration:none; padding: 10px 0}
+#nav a:hover{background-color: #F9E6A7}
+
+#nav ul{padding-left: 0}
+#nav ul li{list-style: none; float: none; display: none;}
+#nav li:hover ul li{display: block;}
