@@ -1,0 +1,5 @@
+.lightbox-img{margin: 0 auto; width: 1000px; border: 1px solid #999999; padding: 10px}
+.lightbox-img ul{display: inline-flex; width: 100%; padding: 0}
+.lightbox-img ul li{list-style-type: none; text-align: center; width: 100%}
+
+.b ul li a{border: 1px solid #deb887; padding: 5px}
