@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a {
+            color: #0254EB
+        }
+        a:visited {
+            color: #0254EB
+        }
+        a.morelink {
+            text-decoration:none;
+            outline: none;
+        }
+        .morecontent span {
+            display: none;
+        }
+        .comment {
+            width: 400px;
+            background-color: #f0f0f0;
+            margin: 10px;
+            padding:10px;
+        }
+    </style>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body>
+<div class="comment">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Vestibulum laoreet, nunc eget laoreet sagittis,
+    quam ligula sodales orci, congue imperdiet eros tortor ac lectus.
+    Duis eget nisl orci. Aliquam mattis purus non mauris
+    blandit id luctus felis convallis.
+    Integer varius egestas vestibulum.
+    Nullam a dolor arcu, ac tempor elit. Donec.
+    Duis nisl nibh, egestas at fermentum at, viverra et purus.
+    Maecenas lobortis odio id sapien facilisis elementum.
+    Curabitur et magna justo, et gravida augue.
+    Sed tristique pellentesque arcu quis tempor.
+</div>
+<script type="text/javascript">
+    $(".comment").shorten({
+        "showChars" : 200,
+        "moreText"  : "Xem thêm",
+        "lessText"  : "Rút gọn"
+    });
+</script>
+</body>
+</html>
