@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/slideshow.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.slideshow img:gt(0)').hide();
+            setInterval(function () {
+                $('.slideshow :first-child').fadeOut()
+                    .next('img').fadeIn()
+                    .end().appendTo('.slideshow');
+            }, 2000);
+        })
+    </script>
+</head>
+<body>
+<div class="slideshow">
+    <img src="images/img1.jpg" width="100%">
+    <img src="images/img2.jpg" width="100%">
+    <img src="images/img3.jpg" width="100%">
+</div>
+</body>
+</html>
