@@ -1,0 +1,7 @@
+﻿.alert-red ul{
+    padding-left: 0;
+}
+.alert-red ul li {
+    color: red;
+    list-style: none;
+}
