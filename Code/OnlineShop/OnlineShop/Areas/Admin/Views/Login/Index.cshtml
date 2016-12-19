@@ -40,12 +40,14 @@
                         @using (Html.BeginForm())
                         {
                             @Html.AntiForgeryToken()
-                            @Html.ValidationSummary(true, null, new {@class = "alert alert-red"})
+                            @Html.ValidationSummary(true, null, new {@class = "alert text-red" })
                             <fieldset>
                                 <div class="form-group">
+                                    @Html.ValidationMessageFor(model => model.UserName, null, new { @class = "text-red" })
                                     @Html.TextBoxFor(model => model.UserName, new {@class = "form-control", @placeholder = "Username", @autofocus = "autofocus" })
                                 </div>
                                 <div class="form-group">
+                                    @Html.ValidationMessageFor(model => model.Password, null, new { @class = "text-red" })
                                     @Html.TextBoxFor(model => model.Password, new { @class = "form-control", @placeholder = "Password", @type = "password" })
                                 </div>
                                 <div class="checkbox">

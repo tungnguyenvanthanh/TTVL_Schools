@@ -23,22 +23,16 @@ namespace OnlineShop.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(LoginModel model)
         {
-            if (model.UserName == null)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "[Tài khoản] không được để tróng");
-                return View(model);
-            }
-            else if (model.Password == null)
-            {
-                ModelState.AddModelError("", "[Mật khẩu] không được để tróng");
-                return View(model);
+                ModelState.AddModelError("", "Chưa hoàn thành");
             }
             else
             {
                 var result = new AccountModel().Login(model.UserName, model.Password);
-                if (result && ModelState.IsValid)
+                if (result)
                 {
-                    SessionHelper.SetSession(new UserSession() { UserName = model.UserName });
+                    SessionHelper.SetSession(new UserSession() {UserName = model.UserName});
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -47,6 +41,7 @@ namespace OnlineShop.Areas.Admin.Controllers
                 }
                 return View(model);
             }
+            return View(model);
         }
     }
 }

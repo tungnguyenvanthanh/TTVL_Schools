@@ -8,8 +8,9 @@ namespace OnlineShop.Areas.Admin.Models
 {
     public class LoginModel
     {
-        [Required]
+        [Required(ErrorMessage = "Title UserName is required")]
         public string UserName { get; set; }
+        [Required(ErrorMessage = "Title Password is required")]
         public string Password { get; set; }
         public bool RememberMe { get; set; }
     }
