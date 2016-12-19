@@ -1,7 +1,7 @@
 
 $(function(){
 	var $setElm = $('.loopslider01');
-	var slideTime =5000;
+	var slideTime =50000;
 
 	$setElm.each(function(){
 		var classFilter = $(this).attr('rel'); // 'loopleft' or 'loopright'
