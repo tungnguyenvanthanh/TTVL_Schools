@@ -40,7 +40,7 @@
                         @using (Html.BeginForm())
                         {
                             @Html.AntiForgeryToken()
-                            @Html.ValidationSummary(true, null, new {@class = "alert text-red" })
+                            @Html.ValidationSummary(true, null, new {@class = "alert text-red background-color-dddddd" })
                             <fieldset>
                                 <div class="form-group">
                                     @Html.ValidationMessageFor(model => model.UserName, null, new { @class = "text-red" })

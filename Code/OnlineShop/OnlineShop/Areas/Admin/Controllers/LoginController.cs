@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using Models;
 using OnlineShop.Areas.Admin.Code;
 using OnlineShop.Areas.Admin.Models;
@@ -26,13 +27,13 @@ namespace OnlineShop.Areas.Admin.Controllers
             if (!ModelState.IsValid)
             {
                 ModelState.AddModelError("", "Chưa hoàn thành");
+                return View(model);
             }
             else
             {
-                var result = new AccountModel().Login(model.UserName, model.Password);
-                if (result)
+                if (Membership.ValidateUser(model.UserName, model.Password))
                 {
-                    SessionHelper.SetSession(new UserSession() {UserName = model.UserName});
+                    FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -41,7 +42,12 @@ namespace OnlineShop.Areas.Admin.Controllers
                 }
                 return View(model);
             }
-            return View(model);
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
