@@ -33,6 +33,7 @@ namespace OnlineShop.Areas.Admin.Controllers
 
         // POST: Admin/Category/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Category collection)
         {
             try

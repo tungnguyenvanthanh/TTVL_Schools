@@ -98,3 +98,5 @@ D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\bin\EntityFramework.
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\obj\Debug\OnlineShop.csprojResolveAssemblyReference.cache
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\obj\Debug\OnlineShop.dll
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\obj\Debug\OnlineShop.pdb
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\bin\EntityFramework.SqlServer.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\OnlineShop\bin\EntityFramework.SqlServer.xml

@@ -26,6 +26,7 @@ namespace Models.Framework
 
         [StringLength(50)]
         [DisplayName("Tiêu để SEO")]
+        [Required(ErrorMessage = "Bạn chưa nhập Tiêu đề SEO")]
         public string Alias { get; set; }
 
         [DisplayName("Danh mục cha")]
