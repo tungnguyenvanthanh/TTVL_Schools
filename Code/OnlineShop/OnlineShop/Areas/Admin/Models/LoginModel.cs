@@ -8,9 +8,9 @@ namespace OnlineShop.Areas.Admin.Models
 {
     public class LoginModel
     {
-        [Required(ErrorMessage = "Username không được để tróng")]
+        [Required(ErrorMessage = "Mời nhập Username")]
         public string UserName { get; set; }
-        [Required(ErrorMessage = "Password không được để tróng")]
+        [Required(ErrorMessage = "Mời nhập Password")]
         public string Password { get; set; }
         public bool RememberMe { get; set; }
     }

@@ -20,7 +20,6 @@ namespace OnlineShop.Areas.Admin
                 new { action = "Index", Controller = "Home", id = UrlParameter.Optional },
                 namespaces: new string[] { "OnlineShop.Areas.Admin.Controllers" }
             );
-
         }
     }
 }
