@@ -30,7 +30,7 @@ namespace Model.DAO
 
         public bool Login(string userName, string passWord)
         {
-            var result = db.Users.Count(x => x.Username == userName && x.Passsword == userName);
+            var result = db.Users.Count(x => x.Username == userName && x.Password == passWord);
             if (result > 0)
             {
                 return true;

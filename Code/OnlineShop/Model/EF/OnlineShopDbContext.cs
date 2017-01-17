@@ -110,7 +110,7 @@ namespace Model.EF
                 .IsUnicode(false);
 
             modelBuilder.Entity<User>()
-                .Property(e => e.Passsword)
+                .Property(e => e.Password)
                 .IsUnicode(false);
 
             modelBuilder.Entity<User>()

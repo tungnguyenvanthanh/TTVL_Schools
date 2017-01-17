@@ -15,7 +15,7 @@ namespace Model.EF
         public string Username { get; set; }
 
         [StringLength(50)]
-        public string Passsword { get; set; }
+        public string Password { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
@@ -39,6 +39,6 @@ namespace Model.EF
         [StringLength(50)]
         public string ModifiedBy { get; set; }
 
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
     }
 }
