@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.txtMaNhanVien = new System.Windows.Forms.TextBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.textBox_code = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -77,11 +78,19 @@
             this.txtTenDangNhap.Size = new System.Drawing.Size(162, 20);
             this.txtTenDangNhap.TabIndex = 4;
             // 
+            // textBox_code
+            // 
+            this.textBox_code.Location = new System.Drawing.Point(56, 84);
+            this.textBox_code.Name = "textBox_code";
+            this.textBox_code.Size = new System.Drawing.Size(394, 20);
+            this.textBox_code.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 347);
+            this.Controls.Add(this.textBox_code);
             this.Controls.Add(this.txtTenDangNhap);
             this.Controls.Add(this.txtMaNhanVien);
             this.Controls.Add(this.button1);
@@ -101,5 +110,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtMaNhanVien;
         private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.TextBox textBox_code;
     }
 }

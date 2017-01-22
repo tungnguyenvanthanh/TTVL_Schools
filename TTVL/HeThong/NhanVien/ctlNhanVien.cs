@@ -26,7 +26,7 @@ namespace TTVL.HeThong.NhanVien
                 {
                     var nhanvien = from nv in db.NhanViens
 
-                                   join cv in db.ChucVus on nv.MaChuVu equals cv.MaChucVu
+                                   join cv in db.ChucVus on nv.MaChucVu equals cv.MaChucVu
                                        into mcv
                                    from cv in mcv.DefaultIfEmpty()
 
@@ -58,7 +58,7 @@ namespace TTVL.HeThong.NhanVien
                                        nv.DiaChiThuongTru,
                                        nv.Email,
                                        nv.SoDienThoai,
-                                       cv.TenChuVu,
+                                       cv.TenChucVu,
                                        nv.TaiKhoan,
                                        QL_1 = nvQl1.HoVaTen,
                                        QL_2 = nvQl2.HoVaTen,

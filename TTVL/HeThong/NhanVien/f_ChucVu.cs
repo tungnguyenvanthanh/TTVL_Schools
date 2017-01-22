@@ -30,7 +30,7 @@ namespace TTVL.HeThong.NhanVien
                                 select new
                                 {
                                     MaChucVu = qd.MaChucVu,
-                                    TenChucVu = qd.TenChuVu
+                                    TenChucVu = qd.TenChucVu
                                 };
                     gcChucVu.DataSource = query;
                 }

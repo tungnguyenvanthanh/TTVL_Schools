@@ -119,7 +119,7 @@ namespace TTVL.HeThong.NhanVien
             {
                 var load = from nv in dbDuLieu.NhanViens
 
-                           join cv in dbDuLieu.ChucVus on nv.MaChuVu equals cv.MaChucVu
+                           join cv in dbDuLieu.ChucVus on nv.MaChucVu equals cv.MaChucVu
                                into mcv
                            from cv in mcv.DefaultIfEmpty()
 
@@ -156,7 +156,7 @@ namespace TTVL.HeThong.NhanVien
                                nv.GhiChu,
 
                                tqd.TenQuyDanh,
-                               cv.TenChuVu,
+                               cv.TenChucVu,
                                QL_1 = nvQl1.HoVaTen,
                                QL_2 = nvQl2.HoVaTen
                            };
@@ -177,7 +177,7 @@ namespace TTVL.HeThong.NhanVien
                     memoEditGhiChu.Text = l.GhiChu;
 
                     lookUpEdit_QuyDanh.Properties.NullText = l.TenQuyDanh;
-                    lookUpEdit_ChucVu.Properties.NullText = l.TenChuVu;
+                    lookUpEdit_ChucVu.Properties.NullText = l.TenChucVu;
                     lookUpEdit_QL1.Properties.NullText = l.QL_1;
                     lookUpEdit_QL2.Properties.NullText = l.QL_2;
                     try
@@ -230,7 +230,7 @@ namespace TTVL.HeThong.NhanVien
                     if (Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh")) != 0)
                         objNhanVien.MaQuyDanh = Convert.ToInt32(lookUpEdit_QuyDanh.GetColumnValue("MaQuyDanh"));
                     if (Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu")) != 0)
-                        objNhanVien.MaChuVu = Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu"));
+                        objNhanVien.MaChucVu = Convert.ToInt32(lookUpEdit_ChucVu.GetColumnValue("MaChucVu"));
                     try
                     {
                         objNhanVien.QuanLy1 = lookUpEdit_QL1.GetColumnValue("MaNhanVien").ToString();

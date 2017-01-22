@@ -60,12 +60,12 @@ namespace TTVL
     partial void InsertNganh_MonHoc(Nganh_MonHoc instance);
     partial void UpdateNganh_MonHoc(Nganh_MonHoc instance);
     partial void DeleteNganh_MonHoc(Nganh_MonHoc instance);
-    partial void InsertQuyDanh(QuyDanh instance);
-    partial void UpdateQuyDanh(QuyDanh instance);
-    partial void DeleteQuyDanh(QuyDanh instance);
     partial void InsertNhanVien(NhanVien instance);
     partial void UpdateNhanVien(NhanVien instance);
     partial void DeleteNhanVien(NhanVien instance);
+    partial void InsertQuyDanh(QuyDanh instance);
+    partial void UpdateQuyDanh(QuyDanh instance);
+    partial void DeleteQuyDanh(QuyDanh instance);
     #endregion
 		
 		public MasterDataContext() : 
@@ -178,19 +178,19 @@ namespace TTVL
 			}
 		}
 		
-		public System.Data.Linq.Table<QuyDanh> QuyDanhs
-		{
-			get
-			{
-				return this.GetTable<QuyDanh>();
-			}
-		}
-		
 		public System.Data.Linq.Table<NhanVien> NhanViens
 		{
 			get
 			{
 				return this.GetTable<NhanVien>();
+			}
+		}
+		
+		public System.Data.Linq.Table<QuyDanh> QuyDanhs
+		{
+			get
+			{
+				return this.GetTable<QuyDanh>();
 			}
 		}
 	}
@@ -205,7 +205,11 @@ namespace TTVL
 		
 		private string _TenBoMon;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
 		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntitySet<MonHoc> _MonHocs;
 		
@@ -217,8 +221,12 @@ namespace TTVL
     partial void OnMaBoMonChanged();
     partial void OnTenBoMonChanging(string value);
     partial void OnTenBoMonChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
     partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public BoMon()
@@ -267,6 +275,26 @@ namespace TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
 		public System.Nullable<System.DateTime> NgayUpdate
 		{
@@ -283,6 +311,26 @@ namespace TTVL
 					this._NgayUpdate = value;
 					this.SendPropertyChanged("NgayUpdate");
 					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -367,6 +415,12 @@ namespace TTVL
 		
 		private string _MaLop;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
+		
 		private EntitySet<Diem> _Diems;
 		
 		private EntityRef<Lop> _Lop;
@@ -405,6 +459,12 @@ namespace TTVL
     partial void OnSoDienThoaiChanged();
     partial void OnMaLopChanging(string value);
     partial void OnMaLopChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public SinhVien()
@@ -703,6 +763,66 @@ namespace TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="SinhVien_Diem", Storage="_Diems", ThisKey="MaSinhVien", OtherKey="MaSinhVien")]
 		public EntitySet<Diem> Diems
 		{
@@ -825,7 +945,13 @@ namespace TTVL
 		
 		private int _MaChucVu;
 		
-		private string _TenChuVu;
+		private string _TenChucVu;
+		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntitySet<GiangVien> _GiangViens;
 		
@@ -837,8 +963,14 @@ namespace TTVL
     partial void OnCreated();
     partial void OnMaChucVuChanging(int value);
     partial void OnMaChucVuChanged();
-    partial void OnTenChuVuChanging(string value);
-    partial void OnTenChuVuChanged();
+    partial void OnTenChucVuChanging(string value);
+    partial void OnTenChucVuChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public ChucVu()
@@ -868,22 +1000,82 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenChuVu", DbType="NVarChar(200)")]
-		public string TenChuVu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenChucVu", DbType="NVarChar(50)")]
+		public string TenChucVu
 		{
 			get
 			{
-				return this._TenChuVu;
+				return this._TenChucVu;
 			}
 			set
 			{
-				if ((this._TenChuVu != value))
+				if ((this._TenChucVu != value))
 				{
-					this.OnTenChuVuChanging(value);
+					this.OnTenChucVuChanging(value);
 					this.SendPropertyChanging();
-					this._TenChuVu = value;
-					this.SendPropertyChanged("TenChuVu");
-					this.OnTenChuVuChanged();
+					this._TenChucVu = value;
+					this.SendPropertyChanged("TenChucVu");
+					this.OnTenChucVuChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -901,7 +1093,7 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NhanVien", Storage="_NhanViens", ThisKey="MaChucVu", OtherKey="MaChuVu")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NhanVien", Storage="_NhanViens", ThisKey="MaChucVu", OtherKey="MaChucVu")]
 		public EntitySet<NhanVien> NhanViens
 		{
 			get
@@ -977,7 +1169,11 @@ namespace TTVL
 		
 		private System.Nullable<bool> _QuaMon;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
 		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntityRef<SinhVien> _SinhVien;
 		
@@ -1001,8 +1197,12 @@ namespace TTVL
     partial void OnDiemThiChanged();
     partial void OnQuaMonChanging(System.Nullable<bool> value);
     partial void OnQuaMonChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
     partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public Diem()
@@ -1145,6 +1345,26 @@ namespace TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
 		public System.Nullable<System.DateTime> NgayUpdate
 		{
@@ -1161,6 +1381,26 @@ namespace TTVL
 					this._NgayUpdate = value;
 					this.SendPropertyChanged("NgayUpdate");
 					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -1199,7 +1439,7 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Diem", Storage="_GiangVien", ThisKey="MaGiangVien", OtherKey="MaGiangVIen", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Diem", Storage="_GiangVien", ThisKey="MaGiangVien", OtherKey="MaGiangVien", IsForeignKey=true)]
 		public GiangVien GiangVien
 		{
 			get
@@ -1222,7 +1462,7 @@ namespace TTVL
 					if ((value != null))
 					{
 						value.Diems.Add(this);
-						this._MaGiangVien = value.MaGiangVIen;
+						this._MaGiangVien = value.MaGiangVien;
 					}
 					else
 					{
@@ -1296,7 +1536,7 @@ namespace TTVL
 		
 		private int _RowID;
 		
-		private string _MaGiangVIen;
+		private string _MaGiangVien;
 		
 		private System.Nullable<int> _MaQuyDanh;
 		
@@ -1310,7 +1550,7 @@ namespace TTVL
 		
 		private string _CMND;
 		
-		private string _NgayCap;
+		private System.Nullable<System.DateTime> _NgayCap;
 		
 		private string _NoiCap;
 		
@@ -1323,6 +1563,12 @@ namespace TTVL
 		private string _SoDienThoai;
 		
 		private System.Nullable<int> _MaChucVu;
+		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntitySet<Diem> _Diems;
 		
@@ -1338,8 +1584,8 @@ namespace TTVL
     partial void OnCreated();
     partial void OnRowIDChanging(int value);
     partial void OnRowIDChanged();
-    partial void OnMaGiangVIenChanging(string value);
-    partial void OnMaGiangVIenChanged();
+    partial void OnMaGiangVienChanging(string value);
+    partial void OnMaGiangVienChanged();
     partial void OnMaQuyDanhChanging(System.Nullable<int> value);
     partial void OnMaQuyDanhChanged();
     partial void OnHoChanging(string value);
@@ -1352,7 +1598,7 @@ namespace TTVL
     partial void OnNgaySinhChanged();
     partial void OnCMNDChanging(string value);
     partial void OnCMNDChanged();
-    partial void OnNgayCapChanging(string value);
+    partial void OnNgayCapChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayCapChanged();
     partial void OnNoiCapChanging(string value);
     partial void OnNoiCapChanged();
@@ -1366,6 +1612,12 @@ namespace TTVL
     partial void OnSoDienThoaiChanged();
     partial void OnMaChucVuChanging(System.Nullable<int> value);
     partial void OnMaChucVuChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public GiangVien()
@@ -1397,22 +1649,22 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaGiangVIen", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaGiangVIen
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaGiangVien", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaGiangVien
 		{
 			get
 			{
-				return this._MaGiangVIen;
+				return this._MaGiangVien;
 			}
 			set
 			{
-				if ((this._MaGiangVIen != value))
+				if ((this._MaGiangVien != value))
 				{
-					this.OnMaGiangVIenChanging(value);
+					this.OnMaGiangVienChanging(value);
 					this.SendPropertyChanging();
-					this._MaGiangVIen = value;
-					this.SendPropertyChanged("MaGiangVIen");
-					this.OnMaGiangVIenChanged();
+					this._MaGiangVien = value;
+					this.SendPropertyChanged("MaGiangVien");
+					this.OnMaGiangVienChanged();
 				}
 			}
 		}
@@ -1541,8 +1793,8 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayCap", DbType="NVarChar(50)")]
-		public string NgayCap
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayCap", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayCap
 		{
 			get
 			{
@@ -1685,7 +1937,67 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Diem", Storage="_Diems", ThisKey="MaGiangVIen", OtherKey="MaGiangVien")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Diem", Storage="_Diems", ThisKey="MaGiangVien", OtherKey="MaGiangVien")]
 		public EntitySet<Diem> Diems
 		{
 			get
@@ -1698,7 +2010,7 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Lop", Storage="_Lops", ThisKey="MaGiangVIen", OtherKey="GiangVienChuNHiem")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Lop", Storage="_Lops", ThisKey="MaGiangVien", OtherKey="GiangVienChuNhiem")]
 		public EntitySet<Lop> Lops
 		{
 			get
@@ -1834,6 +2146,12 @@ namespace TTVL
 		
 		private string _TenKhoa;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
+		
 		private EntitySet<Nganh> _Nganhs;
 		
     #region Extensibility Method Definitions
@@ -1844,6 +2162,12 @@ namespace TTVL
     partial void OnMaKhoaChanged();
     partial void OnTenKhoaChanging(string value);
     partial void OnTenKhoaChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public Khoa()
@@ -1888,6 +2212,66 @@ namespace TTVL
 					this._TenKhoa = value;
 					this.SendPropertyChanged("TenKhoa");
 					this.OnTenKhoaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -1952,7 +2336,7 @@ namespace TTVL
 		
 		private System.Nullable<int> _MaNganh;
 		
-		private string _GiangVienChuNHiem;
+		private string _GiangVienChuNhiem;
 		
 		private System.Nullable<System.DateTime> _TimeBatDau;
 		
@@ -1982,8 +2366,8 @@ namespace TTVL
     partial void OnSoLuongChanged();
     partial void OnMaNganhChanging(System.Nullable<int> value);
     partial void OnMaNganhChanged();
-    partial void OnGiangVienChuNHiemChanging(string value);
-    partial void OnGiangVienChuNHiemChanged();
+    partial void OnGiangVienChuNhiemChanging(string value);
+    partial void OnGiangVienChuNhiemChanged();
     partial void OnTimeBatDauChanging(System.Nullable<System.DateTime> value);
     partial void OnTimeBatDauChanged();
     partial void OnTimeKetThucChanging(System.Nullable<System.DateTime> value);
@@ -2088,26 +2472,26 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiangVienChuNHiem", DbType="NVarChar(50)")]
-		public string GiangVienChuNHiem
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiangVienChuNhiem", DbType="NVarChar(50)")]
+		public string GiangVienChuNhiem
 		{
 			get
 			{
-				return this._GiangVienChuNHiem;
+				return this._GiangVienChuNhiem;
 			}
 			set
 			{
-				if ((this._GiangVienChuNHiem != value))
+				if ((this._GiangVienChuNhiem != value))
 				{
 					if (this._GiangVien.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnGiangVienChuNHiemChanging(value);
+					this.OnGiangVienChuNhiemChanging(value);
 					this.SendPropertyChanging();
-					this._GiangVienChuNHiem = value;
-					this.SendPropertyChanged("GiangVienChuNHiem");
-					this.OnGiangVienChuNHiemChanged();
+					this._GiangVienChuNhiem = value;
+					this.SendPropertyChanged("GiangVienChuNhiem");
+					this.OnGiangVienChuNhiemChanged();
 				}
 			}
 		}
@@ -2225,7 +2609,7 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Lop", Storage="_GiangVien", ThisKey="GiangVienChuNHiem", OtherKey="MaGiangVIen", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="GiangVien_Lop", Storage="_GiangVien", ThisKey="GiangVienChuNhiem", OtherKey="MaGiangVien", IsForeignKey=true)]
 		public GiangVien GiangVien
 		{
 			get
@@ -2248,11 +2632,11 @@ namespace TTVL
 					if ((value != null))
 					{
 						value.Lops.Add(this);
-						this._GiangVienChuNHiem = value.MaGiangVIen;
+						this._GiangVienChuNhiem = value.MaGiangVien;
 					}
 					else
 					{
-						this._GiangVienChuNHiem = default(string);
+						this._GiangVienChuNhiem = default(string);
 					}
 					this.SendPropertyChanged("GiangVien");
 				}
@@ -2334,7 +2718,7 @@ namespace TTVL
 		
 		private int _MaMonHoc;
 		
-		private string _TenMon;
+		private string _TenMonHoc;
 		
 		private System.Nullable<int> _LyThuyet;
 		
@@ -2348,6 +2732,8 @@ namespace TTVL
 		
 		private System.Nullable<int> _MaBoMon;
 		
+		private string _NhanVienUpdate;
+		
 		private EntitySet<Nganh> _Nganhs;
 		
 		private EntitySet<Nganh_MonHoc> _Nganh_MonHocs;
@@ -2360,8 +2746,8 @@ namespace TTVL
     partial void OnCreated();
     partial void OnMaMonHocChanging(int value);
     partial void OnMaMonHocChanged();
-    partial void OnTenMonChanging(string value);
-    partial void OnTenMonChanged();
+    partial void OnTenMonHocChanging(string value);
+    partial void OnTenMonHocChanged();
     partial void OnLyThuyetChanging(System.Nullable<int> value);
     partial void OnLyThuyetChanged();
     partial void OnThucHanhChanging(System.Nullable<int> value);
@@ -2374,6 +2760,8 @@ namespace TTVL
     partial void OnNgayUpdateChanged();
     partial void OnMaBoMonChanging(System.Nullable<int> value);
     partial void OnMaBoMonChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public MonHoc()
@@ -2404,22 +2792,22 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenMon", DbType="NVarChar(50)")]
-		public string TenMon
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenMonHoc", DbType="NVarChar(50)")]
+		public string TenMonHoc
 		{
 			get
 			{
-				return this._TenMon;
+				return this._TenMonHoc;
 			}
 			set
 			{
-				if ((this._TenMon != value))
+				if ((this._TenMonHoc != value))
 				{
-					this.OnTenMonChanging(value);
+					this.OnTenMonHocChanging(value);
 					this.SendPropertyChanging();
-					this._TenMon = value;
-					this.SendPropertyChanged("TenMon");
-					this.OnTenMonChanged();
+					this._TenMonHoc = value;
+					this.SendPropertyChanged("TenMonHoc");
+					this.OnTenMonHocChanged();
 				}
 			}
 		}
@@ -2548,6 +2936,26 @@ namespace TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="MonHoc_Nganh", Storage="_Nganhs", ThisKey="MaMonHoc", OtherKey="MaMonHoc")]
 		public EntitySet<Nganh> Nganhs
 		{
@@ -2667,6 +3075,12 @@ namespace TTVL
 		
 		private System.Nullable<int> _MaMonHoc;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
+		
 		private EntitySet<Lop> _Lops;
 		
 		private EntitySet<Nganh_MonHoc> _Nganh_MonHocs;
@@ -2687,6 +3101,12 @@ namespace TTVL
     partial void OnMaKhoaChanged();
     partial void OnMaMonHocChanging(System.Nullable<int> value);
     partial void OnMaMonHocChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public Nganh()
@@ -2782,6 +3202,66 @@ namespace TTVL
 					this._MaMonHoc = value;
 					this.SendPropertyChanged("MaMonHoc");
 					this.OnMaMonHocChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -2937,7 +3417,11 @@ namespace TTVL
 		
 		private System.Nullable<int> _MaMonHoc;
 		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
 		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntitySet<Diem> _Diems;
 		
@@ -2955,8 +3439,12 @@ namespace TTVL
     partial void OnMaNganhChanged();
     partial void OnMaMonHocChanging(System.Nullable<int> value);
     partial void OnMaMonHocChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
     partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
     partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public Nganh_MonHoc()
@@ -3035,6 +3523,26 @@ namespace TTVL
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
 		public System.Nullable<System.DateTime> NgayUpdate
 		{
@@ -3051,6 +3559,26 @@ namespace TTVL
 					this._NgayUpdate = value;
 					this.SendPropertyChanged("NgayUpdate");
 					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -3169,176 +3697,6 @@ namespace TTVL
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QuyDanh")]
-	public partial class QuyDanh : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MaQuyDanh;
-		
-		private string _TenQuyDanh;
-		
-		private EntitySet<SinhVien> _SinhViens;
-		
-		private EntitySet<GiangVien> _GiangViens;
-		
-		private EntitySet<NhanVien> _NhanViens;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaQuyDanhChanging(int value);
-    partial void OnMaQuyDanhChanged();
-    partial void OnTenQuyDanhChanging(string value);
-    partial void OnTenQuyDanhChanged();
-    #endregion
-		
-		public QuyDanh()
-		{
-			this._SinhViens = new EntitySet<SinhVien>(new Action<SinhVien>(this.attach_SinhViens), new Action<SinhVien>(this.detach_SinhViens));
-			this._GiangViens = new EntitySet<GiangVien>(new Action<GiangVien>(this.attach_GiangViens), new Action<GiangVien>(this.detach_GiangViens));
-			this._NhanViens = new EntitySet<NhanVien>(new Action<NhanVien>(this.attach_NhanViens), new Action<NhanVien>(this.detach_NhanViens));
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaQuyDanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int MaQuyDanh
-		{
-			get
-			{
-				return this._MaQuyDanh;
-			}
-			set
-			{
-				if ((this._MaQuyDanh != value))
-				{
-					this.OnMaQuyDanhChanging(value);
-					this.SendPropertyChanging();
-					this._MaQuyDanh = value;
-					this.SendPropertyChanged("MaQuyDanh");
-					this.OnMaQuyDanhChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenQuyDanh", DbType="NVarChar(50)")]
-		public string TenQuyDanh
-		{
-			get
-			{
-				return this._TenQuyDanh;
-			}
-			set
-			{
-				if ((this._TenQuyDanh != value))
-				{
-					this.OnTenQuyDanhChanging(value);
-					this.SendPropertyChanging();
-					this._TenQuyDanh = value;
-					this.SendPropertyChanged("TenQuyDanh");
-					this.OnTenQuyDanhChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_SinhVien", Storage="_SinhViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
-		public EntitySet<SinhVien> SinhViens
-		{
-			get
-			{
-				return this._SinhViens;
-			}
-			set
-			{
-				this._SinhViens.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_GiangVien", Storage="_GiangViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
-		public EntitySet<GiangVien> GiangViens
-		{
-			get
-			{
-				return this._GiangViens;
-			}
-			set
-			{
-				this._GiangViens.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_NhanVien", Storage="_NhanViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
-		public EntitySet<NhanVien> NhanViens
-		{
-			get
-			{
-				return this._NhanViens;
-			}
-			set
-			{
-				this._NhanViens.Assign(value);
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-		
-		private void attach_SinhViens(SinhVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = this;
-		}
-		
-		private void detach_SinhViens(SinhVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = null;
-		}
-		
-		private void attach_GiangViens(GiangVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = this;
-		}
-		
-		private void detach_GiangViens(GiangVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = null;
-		}
-		
-		private void attach_NhanViens(NhanVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = this;
-		}
-		
-		private void detach_NhanViens(NhanVien entity)
-		{
-			this.SendPropertyChanging();
-			entity.QuyDanh = null;
-		}
-	}
-	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NhanVien")]
 	public partial class NhanVien : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -3369,7 +3727,7 @@ namespace TTVL
 		
 		private string _SoDienThoai;
 		
-		private System.Nullable<int> _MaChuVu;
+		private System.Nullable<int> _MaChucVu;
 		
 		private string _TaiKhoan;
 		
@@ -3379,9 +3737,15 @@ namespace TTVL
 		
 		private string _QuanLy1;
 		
-		private string _QuanLy2;
+		private string _Quanly2;
 		
 		private System.Nullable<bool> _Lock;
+		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
 		
 		private EntitySet<NhanVien> _NhanViens;
 		
@@ -3423,8 +3787,8 @@ namespace TTVL
     partial void OnEmailChanged();
     partial void OnSoDienThoaiChanging(string value);
     partial void OnSoDienThoaiChanged();
-    partial void OnMaChuVuChanging(System.Nullable<int> value);
-    partial void OnMaChuVuChanged();
+    partial void OnMaChucVuChanging(System.Nullable<int> value);
+    partial void OnMaChucVuChanged();
     partial void OnTaiKhoanChanging(string value);
     partial void OnTaiKhoanChanged();
     partial void OnMatKhauChanging(string value);
@@ -3437,6 +3801,12 @@ namespace TTVL
     partial void OnQuanLy2Changed();
     partial void OnLockChanging(System.Nullable<bool> value);
     partial void OnLockChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
     #endregion
 		
 		public NhanVien()
@@ -3694,26 +4064,26 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaChuVu", DbType="Int")]
-		public System.Nullable<int> MaChuVu
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaChucVu", DbType="Int")]
+		public System.Nullable<int> MaChucVu
 		{
 			get
 			{
-				return this._MaChuVu;
+				return this._MaChucVu;
 			}
 			set
 			{
-				if ((this._MaChuVu != value))
+				if ((this._MaChucVu != value))
 				{
 					if (this._ChucVu.HasLoadedOrAssignedValue)
 					{
 						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
 					}
-					this.OnMaChuVuChanging(value);
+					this.OnMaChucVuChanging(value);
 					this.SendPropertyChanging();
-					this._MaChuVu = value;
-					this.SendPropertyChanged("MaChuVu");
-					this.OnMaChuVuChanged();
+					this._MaChucVu = value;
+					this.SendPropertyChanged("MaChucVu");
+					this.OnMaChucVuChanged();
 				}
 			}
 		}
@@ -3802,24 +4172,20 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_QuanLy2", DbType="NVarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="Quanly2", Storage="_Quanly2", DbType="NVarChar(50)")]
 		public string QuanLy2
 		{
 			get
 			{
-				return this._QuanLy2;
+				return this._Quanly2;
 			}
 			set
 			{
-				if ((this._QuanLy2 != value))
+				if ((this._Quanly2 != value))
 				{
-					if (this._NhanVien2.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnQuanLy2Changing(value);
 					this.SendPropertyChanging();
-					this._QuanLy2 = value;
+					this._Quanly2 = value;
 					this.SendPropertyChanged("QuanLy2");
 					this.OnQuanLy2Changed();
 				}
@@ -3842,6 +4208,66 @@ namespace TTVL
 					this._Lock = value;
 					this.SendPropertyChanged("Lock");
 					this.OnLockChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
 				}
 			}
 		}
@@ -3872,7 +4298,7 @@ namespace TTVL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NhanVien", Storage="_ChucVu", ThisKey="MaChuVu", OtherKey="MaChucVu", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ChucVu_NhanVien", Storage="_ChucVu", ThisKey="MaChucVu", OtherKey="MaChucVu", IsForeignKey=true)]
 		public ChucVu ChucVu
 		{
 			get
@@ -3895,11 +4321,11 @@ namespace TTVL
 					if ((value != null))
 					{
 						value.NhanViens.Add(this);
-						this._MaChuVu = value.MaChucVu;
+						this._MaChucVu = value.MaChucVu;
 					}
 					else
 					{
-						this._MaChuVu = default(Nullable<int>);
+						this._MaChucVu = default(Nullable<int>);
 					}
 					this.SendPropertyChanged("ChucVu");
 				}
@@ -3963,11 +4389,11 @@ namespace TTVL
 					if ((value != null))
 					{
 						value.NhanViens1.Add(this);
-						this._QuanLy2 = value.MaNhanVien;
+						this._Quanly2 = value.MaNhanVien;
 					}
 					else
 					{
-						this._QuanLy2 = default(string);
+						this._Quanly2 = default(string);
 					}
 					this.SendPropertyChanged("NhanVien2");
 				}
@@ -4050,6 +4476,248 @@ namespace TTVL
 		{
 			this.SendPropertyChanging();
 			entity.NhanVien2 = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QuyDanh")]
+	public partial class QuyDanh : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MaQuyDanh;
+		
+		private string _TenQuyDanh;
+		
+		private System.Nullable<System.DateTime> _NgayTao;
+		
+		private System.Nullable<System.DateTime> _NgayUpdate;
+		
+		private string _NhanVienUpdate;
+		
+		private EntitySet<SinhVien> _SinhViens;
+		
+		private EntitySet<GiangVien> _GiangViens;
+		
+		private EntitySet<NhanVien> _NhanViens;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaQuyDanhChanging(int value);
+    partial void OnMaQuyDanhChanged();
+    partial void OnTenQuyDanhChanging(string value);
+    partial void OnTenQuyDanhChanged();
+    partial void OnNgayTaoChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayTaoChanged();
+    partial void OnNgayUpdateChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayUpdateChanged();
+    partial void OnNhanVienUpdateChanging(string value);
+    partial void OnNhanVienUpdateChanged();
+    #endregion
+		
+		public QuyDanh()
+		{
+			this._SinhViens = new EntitySet<SinhVien>(new Action<SinhVien>(this.attach_SinhViens), new Action<SinhVien>(this.detach_SinhViens));
+			this._GiangViens = new EntitySet<GiangVien>(new Action<GiangVien>(this.attach_GiangViens), new Action<GiangVien>(this.detach_GiangViens));
+			this._NhanViens = new EntitySet<NhanVien>(new Action<NhanVien>(this.attach_NhanViens), new Action<NhanVien>(this.detach_NhanViens));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaQuyDanh", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaQuyDanh
+		{
+			get
+			{
+				return this._MaQuyDanh;
+			}
+			set
+			{
+				if ((this._MaQuyDanh != value))
+				{
+					this.OnMaQuyDanhChanging(value);
+					this.SendPropertyChanging();
+					this._MaQuyDanh = value;
+					this.SendPropertyChanged("MaQuyDanh");
+					this.OnMaQuyDanhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenQuyDanh", DbType="NVarChar(50)")]
+		public string TenQuyDanh
+		{
+			get
+			{
+				return this._TenQuyDanh;
+			}
+			set
+			{
+				if ((this._TenQuyDanh != value))
+				{
+					this.OnTenQuyDanhChanging(value);
+					this.SendPropertyChanging();
+					this._TenQuyDanh = value;
+					this.SendPropertyChanged("TenQuyDanh");
+					this.OnTenQuyDanhChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayTao", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayTao
+		{
+			get
+			{
+				return this._NgayTao;
+			}
+			set
+			{
+				if ((this._NgayTao != value))
+				{
+					this.OnNgayTaoChanging(value);
+					this.SendPropertyChanging();
+					this._NgayTao = value;
+					this.SendPropertyChanged("NgayTao");
+					this.OnNgayTaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayUpdate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayUpdate
+		{
+			get
+			{
+				return this._NgayUpdate;
+			}
+			set
+			{
+				if ((this._NgayUpdate != value))
+				{
+					this.OnNgayUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NgayUpdate = value;
+					this.SendPropertyChanged("NgayUpdate");
+					this.OnNgayUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NhanVienUpdate", DbType="NVarChar(50)")]
+		public string NhanVienUpdate
+		{
+			get
+			{
+				return this._NhanVienUpdate;
+			}
+			set
+			{
+				if ((this._NhanVienUpdate != value))
+				{
+					this.OnNhanVienUpdateChanging(value);
+					this.SendPropertyChanging();
+					this._NhanVienUpdate = value;
+					this.SendPropertyChanged("NhanVienUpdate");
+					this.OnNhanVienUpdateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_SinhVien", Storage="_SinhViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
+		public EntitySet<SinhVien> SinhViens
+		{
+			get
+			{
+				return this._SinhViens;
+			}
+			set
+			{
+				this._SinhViens.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_GiangVien", Storage="_GiangViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
+		public EntitySet<GiangVien> GiangViens
+		{
+			get
+			{
+				return this._GiangViens;
+			}
+			set
+			{
+				this._GiangViens.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="QuyDanh_NhanVien", Storage="_NhanViens", ThisKey="MaQuyDanh", OtherKey="MaQuyDanh")]
+		public EntitySet<NhanVien> NhanViens
+		{
+			get
+			{
+				return this._NhanViens;
+			}
+			set
+			{
+				this._NhanViens.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_SinhViens(SinhVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = this;
+		}
+		
+		private void detach_SinhViens(SinhVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = null;
+		}
+		
+		private void attach_GiangViens(GiangVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = this;
+		}
+		
+		private void detach_GiangViens(GiangVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = null;
+		}
+		
+		private void attach_NhanViens(NhanVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = this;
+		}
+		
+		private void detach_NhanViens(NhanVien entity)
+		{
+			this.SendPropertyChanging();
+			entity.QuyDanh = null;
 		}
 	}
 }

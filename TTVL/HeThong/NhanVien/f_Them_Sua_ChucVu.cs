@@ -34,7 +34,7 @@ namespace TTVL.HeThong.NhanVien
                 return;
             }
 
-            objChucVu.TenChuVu = txtTenQuyDanh.Text;
+            objChucVu.TenChucVu = txtTenQuyDanh.Text;
 
             try
             {
@@ -62,7 +62,7 @@ namespace TTVL.HeThong.NhanVien
 
                 if (objChucVu != null)
                 {
-                    txtTenQuyDanh.Text = objChucVu.TenChuVu;
+                    txtTenQuyDanh.Text = objChucVu.TenChucVu;
                 }
                 else
                 {

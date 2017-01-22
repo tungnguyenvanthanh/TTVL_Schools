@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TTVL_DLL;
 
 namespace TTVL.Form
 {
@@ -24,10 +25,11 @@ namespace TTVL.Form
                 NhanVien nv = new NhanVien();
                 nv.MaNhanVien = txtMaNhanVien.Text;
                 nv.TaiKhoan = txtTenDangNhap.Text;
-                nv.MatKhau = txtTenDangNhap.Text;
+                nv.MatKhau = MyCodeTTVL.MaHoaMd5(txtTenDangNhap.Text + txtTenDangNhap.Text + "P@ssword09113van");
                 db.NhanViens.InsertOnSubmit(nv);
                 db.SubmitChanges();
                 MessageBox.Show("Tạo thành công", "Thông báo");
+                textBox_code.Text = nv.MatKhau;
             }
         }
     }

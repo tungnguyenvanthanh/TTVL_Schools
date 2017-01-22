@@ -28,18 +28,11 @@ namespace TTVL
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
 
-            string online = EncDec.Encrypt("workstation id=MySchoolsttvl.mssql.somee.com;packet size=4096;user id=thanhtungnvtt_SQLLogin_1;pwd=fxxy3eg6wz;data source=MySchoolsttvl.mssql.somee.com;persist security info=False;initial catalog=MySchoolsttvl");
+            string online = EncDec.Encrypt("workstation id=ttvlschools.mssql.somee.com;packet size=4096;user id=thanhtungnvtt_SQLLogin_1;pwd=xzv3bnkpen;data source=ttvlschools.mssql.somee.com;persist security info=False;initial catalog=ttvlschools");
             string offline = EncDec.Encrypt("Data Source=TTVL-PC;Initial Catalog=TTVL_Schools;Persist Security Info=True;User ID=sa;Password=P@ssword");
 
             Intro t = new Intro();
             t.Show();
-
-            //#region Intro
-            //for (int i = 0; i < 5000; i++)
-            //{
-            //    Console.WriteLine(i);
-            //}
-            //#endregion
 
             DialogBox.ShowWaitForm();
             
@@ -68,7 +61,6 @@ namespace TTVL
             #endregion
 
             DialogBox.HideWaitForm();
-
             #region Đăng nhập
             using (DangNhap.DangNhap frmLogin = new DangNhap.DangNhap())
             {
@@ -79,14 +71,14 @@ namespace TTVL
                 }
             }
 
-            //using (Form1 f = new Form1())
-            //{
-            //    f.ShowDialog();
-            //    if (f.DialogResult != DialogResult.OK)
-            //    {
-            //        return;
-            //    }
-            //}
+//            using (Form1 f = new Form1())
+//            {
+//                f.ShowDialog();
+//                if (f.DialogResult != DialogResult.OK)
+//                {
+//                    return;
+//                }
+//            }
             #endregion
 
             t.Close();
