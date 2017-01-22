@@ -1,0 +1,20 @@
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\Models.dll.config
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\Models.dll
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\Models.pdb
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\EntityFramework.dll
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\EntityFramework.xml
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\obj\Debug\Models.dll
+D:\Lap Trinh\C Sharp\Web MVC\Project\OnlineShop\Models\obj\Debug\Models.pdb
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\Models.dll.config
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\Models.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\Models.pdb
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\EntityFramework.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\EntityFramework.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\obj\Debug\Models.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Models\obj\Debug\Models.pdb

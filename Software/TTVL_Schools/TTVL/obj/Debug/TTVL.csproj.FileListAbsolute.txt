@@ -1,0 +1,574 @@
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\TTVL.exe
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\TTVL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.BonusSkins.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.Properties.Resources.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.UserControl.ctlNhanVien.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialogQuyDanh.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialog_Them_Sua_QuyDanh.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.BonusSkins.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.pdb
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialogQuyDanh.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Dialog.dialog_Them_Sua_QuyDanh.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Properties.Resources.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.UserControl.ctlNhanVien.resources
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
+C:\Users\Tùng\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\nnam2\OneDrive\Project\SchoolManager\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.pdb
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.BonusSkins.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.pdb
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v15.2.Drawing.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraBars.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Sparkline.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraLayout.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraPrinting.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.RichEdit.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraTreeList.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Office.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Properties.Resources.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.DangNhap.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Charts.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.UI.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.UI.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraNavBar.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraRichEdit.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.UI.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v15.2.Wizard.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v15.2.UI.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraVerticalGrid.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraNavBar.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraRichEdit.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraCharts.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraCharts.v15.2.Wizard.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v15.2.UI.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraNavBar.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraRichEdit.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.Intro.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.ThietLapKetNoi.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Form.Form1.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_ChucVu.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_ChucVu.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_NhanVien.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_QuyDanh.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.ctlNhanVien.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_QuyDanh.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.TaiKhoan.f_DoiMatKhau.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v15.2.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v15.2.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v15.2.Core.xml
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v15.2.Core.resources.dll
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.ctlHomeMain.resources
+C:\Users\TTVL-PC\OneDrive\Project\DuAn\TTVL_Schools\OnlineGitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.exe
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\TTVL.pdb
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.BonusSkins.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Charts.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.UI.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.Wizard.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Reporting.Extensions.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v16.1.UI.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraVerticalGrid.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraNavBar.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraReports.v16.1.Extensions.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Reporting.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraReports.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraRichEdit.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v16.1.Drawing.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.DataAccess.v16.1.UI.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.DataAccess.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.Extensions.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPivotGrid.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.CodeParser.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.PivotGrid.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGauges.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraDiagram.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Diagram.v16.1.Core.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Xpo.v16.1.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Data.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Printing.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraBars.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Sparkline.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.UI.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraCharts.v16.1.Wizard.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraEditors.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGrid.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraLayout.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPrinting.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Reporting.Extensions.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\TTVL_DLL.pdb
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Utils.v16.1.UI.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraTreeList.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraVerticalGrid.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraNavBar.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.RichEdit.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraReports.v16.1.Extensions.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraScheduler.v16.1.Reporting.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraReports.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraRichEdit.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Office.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Pdf.v16.1.Drawing.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.DataAccess.v16.1.UI.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.DataAccess.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraPivotGrid.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.PivotGrid.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraGauges.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.XtraDiagram.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Diagram.v16.1.Core.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\DevExpress.Xpo.v16.1.xml
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Data.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Data.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Data.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Data.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Printing.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraBars.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraBars.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraBars.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraBars.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Sparkline.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraCharts.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraCharts.v16.1.Wizard.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraEditors.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraLayout.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraPrinting.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraScheduler.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraScheduler.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Utils.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraTreeList.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraVerticalGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraNavBar.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraReports.v16.1.Extensions.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraReports.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraReports.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraReports.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraReports.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraRichEdit.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Office.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Office.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Office.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Office.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.DataAccess.v16.1.UI.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.DataAccess.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.DataAccess.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.DataAccess.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.DataAccess.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraPivotGrid.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.PivotGrid.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.XtraGauges.v16.1.Core.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\de\DevExpress.Xpo.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\es\DevExpress.Xpo.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ja\DevExpress.Xpo.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\bin\Debug\ru\DevExpress.Xpo.v16.1.resources.dll
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.ctlHomeMain.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.Intro.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.DangNhap.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.DangNhap.ThietLapKetNoi.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_ChucVu.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_QuyDanh.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_ChucVu.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_NhanVien.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.f_Them_Sua_QuyDanh.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.FormMain.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Form.Form1.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.TaiKhoan.f_DoiMatKhau.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.Properties.Resources.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.HeThong.NhanVien.ctlNhanVien.resources
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.csproj.GenerateResource.Cache
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe.licenses
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+D:\Lap Trinh\GitHub\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
+C:\Users\TTVL\Desktop\New folder\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\TTVL\Desktop\New folder\TTVL\obj\Debug\TTVL.exe
+C:\Users\TTVL\Desktop\New folder\TTVL\obj\Debug\TTVL.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Software\TTVL_Schools\TTVL\bin\Debug\TTVL.exe.config
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Software\TTVL_Schools\TTVL\obj\Debug\TTVL.exe
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Software\TTVL_Schools\TTVL\obj\Debug\TTVL.pdb
