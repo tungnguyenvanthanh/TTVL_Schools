@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
+using TTVL.Model;
 using TTVL_DLL;
 
 namespace TTVL.DangNhap
@@ -25,7 +26,7 @@ namespace TTVL.DangNhap
 
         void Login()
         {
-            if (txtTaiKhoan.Text.Equals(""))
+            if (txtTaiKhoan.Text.Trim().Equals(""))
             {
                 DialogBox.Error("Xin vui lòng nhập [Mã số], xin cám ơn");
                 txtTaiKhoan.Focus();
@@ -38,44 +39,27 @@ namespace TTVL.DangNhap
                 txtMatKhau.Focus();
                 return;
             }
-
-            using (var db = new MasterDataContext())
+            
+            if (LoginModel.Login(txtTaiKhoan.Text, txtMatKhau.Text))
             {
-                var QueryID = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text);
-
-                if (QueryID == null)
+                if (CheckGhiNho.Checked)
                 {
-                    DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");
+                    Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;
+                    Properties.Settings.Default.MatKhau = txtMatKhau.Text;
+                    Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                    Properties.Settings.Default.Save();
                 }
                 else
                 {
-                    string a = MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtMatKhau.Text + "P@ssword09113van");
-                    var QueryPass = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == txtTaiKhoan.Text && p.MatKhau == MyCodeTTVL.MaHoaMd5(txtTaiKhoan.Text + txtMatKhau.Text + "P@ssword09113van"));
-                    if (QueryPass == null)
-                    {
-                        DialogBox.Error("[Tài khoản] hoặc [Mật khẩu] không đúng, xin vui lòng kiểm tra lại");
-                    }
-                    else
-                    {
-                        if (CheckGhiNho.Checked)
-                        {
-                            Properties.Settings.Default.TaiKhoan = txtTaiKhoan.Text;
-                            Properties.Settings.Default.MatKhau = txtMatKhau.Text;
-                            Properties.Settings.Default.Check = CheckGhiNho.Checked;
-                            Properties.Settings.Default.Save();
-                        }
-                        else
-                        {
-                            Properties.Settings.Default.TaiKhoan = "";
-                            Properties.Settings.Default.MatKhau = "";
-                            Properties.Settings.Default.Check = CheckGhiNho.Checked;
-                            Properties.Settings.Default.Save();
-                        }
-                        this.DialogResult = DialogResult.OK;
-                    }
+                    Properties.Settings.Default.TaiKhoan = "";
+                    Properties.Settings.Default.MatKhau = "";
+                    Properties.Settings.Default.Check = CheckGhiNho.Checked;
+                    Properties.Settings.Default.Save();
                 }
+                this.DialogResult = DialogResult.OK;
             }
         }
+
         private void btDangNhap_Click(object sender, EventArgs e)
         {
             Login();
@@ -83,7 +67,7 @@ namespace TTVL.DangNhap
 
         private void btLienHe_ItemClick(object sender, ItemClickEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://thanhtungttvl.somee.com/html.html");
+            System.Diagnostics.Process.Start("https://www.facebook.com/thanhtungttvl");
         }
 
         private void btQuenMatKhau_ItemClick(object sender, ItemClickEventArgs e)

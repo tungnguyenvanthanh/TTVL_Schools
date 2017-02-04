@@ -8,3 +8,13 @@ D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Model\bin\Debug\EntityFramework
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Model\obj\Debug\Model.dll
 D:\Lap Trinh\GitHub\TTVL_Schools\Code\OnlineShop\Model\obj\Debug\Model.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\Model.dll.config
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\Model.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\Model.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\EntityFramework.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\EntityFramework.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\obj\Debug\Model.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\OnlineShop\Model\obj\Debug\Model.pdb

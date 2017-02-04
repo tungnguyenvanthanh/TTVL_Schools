@@ -124,6 +124,7 @@
     <Content Include="assets\admin\build\js\custom.js" />
     <Content Include="assets\admin\build\js\custom.min.js" />
     <Content Include="assets\admin\css\MyStyle.css" />
+    <Content Include="assets\admin\images\img.jpg" />
     <Content Include="assets\admin\images\One-2560x1600.jpg" />
     <Content Include="assets\admin\js\MyBaseJavaScript.js" />
     <Content Include="assets\admin\src\js\custom.js" />

@@ -17,21 +17,8 @@ namespace TTVL
 {//test
     public partial class FormMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        private string idNguoiDung { get; set; }
-
         public FormMain(){
             InitializeComponent();
-        }
-
-        private string BarStaticItem_NguoiDung(string id)
-        {
-            string NameNguoiDung = "";
-            using (var db = new MasterDataContext())
-            {
-                var query = db.NhanViens.SingleOrDefault(p => p.TaiKhoan == idNguoiDung);
-            }
-
-            return "Người dùng: " + NameNguoiDung;
         }
 
         private const int CP_NOCLOSE_BUTTON = 0x200;
