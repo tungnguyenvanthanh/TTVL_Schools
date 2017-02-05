@@ -194,8 +194,8 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookUpEdit_ChucVu.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("MaChucVu", "Mã chức vụ"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TenChuVu", "Tên chức vụ")});
-            this.lookUpEdit_ChucVu.Properties.DisplayMember = "TenChuVu";
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("TenChucVu", "Tên chức vụ")});
+            this.lookUpEdit_ChucVu.Properties.DisplayMember = "TenChucVu";
             this.lookUpEdit_ChucVu.Properties.NullText = "";
             this.lookUpEdit_ChucVu.Size = new System.Drawing.Size(167, 20);
             this.lookUpEdit_ChucVu.StyleController = this.layoutControl2;

@@ -44,6 +44,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\E_ChucVu.cs" />
+    <Compile Include="Entity\E_NhanVien.cs" />
     <Compile Include="Master.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

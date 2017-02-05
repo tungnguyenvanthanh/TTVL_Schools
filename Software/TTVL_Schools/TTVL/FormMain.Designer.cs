@@ -51,6 +51,7 @@
             this.Item_HeThong_BaoMat_KhoaDangNhap = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem_NguoiDung = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem_QuyenTruyCap = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem_ChucVu = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -62,7 +63,6 @@
             this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabControl_TTVL = new DevExpress.XtraTab.XtraTabControl();
-            this.barStaticItem_ChucVu = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl_TTVL)).BeginInit();
@@ -307,7 +307,6 @@
             // 
             // barStaticItem_NguoiDung
             // 
-            this.barStaticItem_NguoiDung.Caption = "Người dùng: Admin";
             this.barStaticItem_NguoiDung.Id = 5;
             this.barStaticItem_NguoiDung.ImageIndex = 4;
             this.barStaticItem_NguoiDung.Name = "barStaticItem_NguoiDung";
@@ -320,6 +319,14 @@
             this.barStaticItem_QuyenTruyCap.ImageIndex = 27;
             this.barStaticItem_QuyenTruyCap.Name = "barStaticItem_QuyenTruyCap";
             this.barStaticItem_QuyenTruyCap.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // barStaticItem_ChucVu
+            // 
+            this.barStaticItem_ChucVu.Caption = "Chức Vụ:";
+            this.barStaticItem_ChucVu.Id = 7;
+            this.barStaticItem_ChucVu.ImageIndex = 39;
+            this.barStaticItem_ChucVu.Name = "barStaticItem_ChucVu";
+            this.barStaticItem_ChucVu.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage1
             // 
@@ -409,14 +416,6 @@
             this.xtraTabControl_TTVL.TabIndex = 2;
             this.xtraTabControl_TTVL.CloseButtonClick += new System.EventHandler(this.xtraTabControl_TTVL_CloseButtonClick);
             this.xtraTabControl_TTVL.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.xtraTabControl_TTVL_ControlAdded);
-            // 
-            // barStaticItem_ChucVu
-            // 
-            this.barStaticItem_ChucVu.Caption = "Chức Vụ: Admin";
-            this.barStaticItem_ChucVu.Id = 7;
-            this.barStaticItem_ChucVu.ImageIndex = 39;
-            this.barStaticItem_ChucVu.Name = "barStaticItem_ChucVu";
-            this.barStaticItem_ChucVu.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // FormMain
             // 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraTab;
+using Model.Entity;
 using TTVL.HeThong.NhanVien;
 using TTVL.HeThong.TaiKhoan;
 using TTVL_DLL;
@@ -112,6 +113,9 @@ namespace TTVL
         {
             InitSkinGallery();
             LoadHomeMain();
+
+            barStaticItem_NguoiDung.Caption = "Người dùng: " + E_NhanVien.HoVaTen;
+            barStaticItem_ChucVu.Caption = "Chức vụ: " + E_ChucVu.TenChucVu;
         }
 
         private void itemSkins_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)

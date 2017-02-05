@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txtMatKhauCu = new DevExpress.XtraEditors.TextEdit();
+            this.txtXacNhan = new DevExpress.XtraEditors.TextEdit();
+            this.txtMatKhauMoi = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btOK = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauCu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtXacNhan.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauMoi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -50,9 +50,9 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.textEdit3);
-            this.layoutControl1.Controls.Add(this.textEdit2);
-            this.layoutControl1.Controls.Add(this.textEdit1);
+            this.layoutControl1.Controls.Add(this.txtMatKhauCu);
+            this.layoutControl1.Controls.Add(this.txtXacNhan);
+            this.layoutControl1.Controls.Add(this.txtMatKhauMoi);
             this.layoutControl1.Location = new System.Drawing.Point(12, 12);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
@@ -60,32 +60,32 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // textEdit3
+            // txtMatKhauCu
             // 
-            this.textEdit3.Location = new System.Drawing.Point(82, 60);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.PasswordChar = '*';
-            this.textEdit3.Size = new System.Drawing.Size(199, 20);
-            this.textEdit3.StyleController = this.layoutControl1;
-            this.textEdit3.TabIndex = 6;
+            this.txtMatKhauCu.Location = new System.Drawing.Point(82, 60);
+            this.txtMatKhauCu.Name = "txtMatKhauCu";
+            this.txtMatKhauCu.Properties.PasswordChar = '*';
+            this.txtMatKhauCu.Size = new System.Drawing.Size(199, 20);
+            this.txtMatKhauCu.StyleController = this.layoutControl1;
+            this.txtMatKhauCu.TabIndex = 6;
             // 
-            // textEdit2
+            // txtXacNhan
             // 
-            this.textEdit2.Location = new System.Drawing.Point(82, 36);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.PasswordChar = '*';
-            this.textEdit2.Size = new System.Drawing.Size(199, 20);
-            this.textEdit2.StyleController = this.layoutControl1;
-            this.textEdit2.TabIndex = 5;
+            this.txtXacNhan.Location = new System.Drawing.Point(82, 36);
+            this.txtXacNhan.Name = "txtXacNhan";
+            this.txtXacNhan.Properties.PasswordChar = '*';
+            this.txtXacNhan.Size = new System.Drawing.Size(199, 20);
+            this.txtXacNhan.StyleController = this.layoutControl1;
+            this.txtXacNhan.TabIndex = 5;
             // 
-            // textEdit1
+            // txtMatKhauMoi
             // 
-            this.textEdit1.Location = new System.Drawing.Point(82, 12);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.PasswordChar = '*';
-            this.textEdit1.Size = new System.Drawing.Size(199, 20);
-            this.textEdit1.StyleController = this.layoutControl1;
-            this.textEdit1.TabIndex = 4;
+            this.txtMatKhauMoi.Location = new System.Drawing.Point(82, 12);
+            this.txtMatKhauMoi.Name = "txtMatKhauMoi";
+            this.txtMatKhauMoi.Properties.PasswordChar = '*';
+            this.txtMatKhauMoi.Size = new System.Drawing.Size(199, 20);
+            this.txtMatKhauMoi.StyleController = this.layoutControl1;
+            this.txtMatKhauMoi.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -102,7 +102,7 @@
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.textEdit1;
+            this.layoutControlItem1.Control = this.txtMatKhauMoi;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(273, 24);
@@ -111,7 +111,7 @@
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.textEdit2;
+            this.layoutControlItem2.Control = this.txtXacNhan;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(273, 24);
@@ -120,28 +120,29 @@
             // 
             // layoutControlItem3
             // 
-            this.layoutControlItem3.Control = this.textEdit3;
+            this.layoutControlItem3.Control = this.txtMatKhauCu;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(273, 25);
             this.layoutControlItem3.Text = "Mật khẩu củ:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(67, 13);
             // 
-            // simpleButton1
+            // btOK
             // 
-            this.simpleButton1.Image = global::TTVL.Properties.Resources.Ok_icon;
-            this.simpleButton1.Location = new System.Drawing.Point(218, 98);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "Đồng ý";
+            this.btOK.Image = global::TTVL.Properties.Resources.Ok_icon;
+            this.btOK.Location = new System.Drawing.Point(218, 98);
+            this.btOK.Name = "btOK";
+            this.btOK.Size = new System.Drawing.Size(75, 23);
+            this.btOK.TabIndex = 1;
+            this.btOK.Text = "Đồng ý";
+            this.btOK.Click += new System.EventHandler(this.btOK_Click);
             // 
             // f_DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(316, 128);
-            this.Controls.Add(this.simpleButton1);
+            this.Controls.Add(this.btOK);
             this.Controls.Add(this.layoutControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -151,9 +152,9 @@
             this.Text = "Đổi mật khẩu";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauCu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtXacNhan.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMatKhauMoi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -165,13 +166,13 @@
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtMatKhauCu;
+        private DevExpress.XtraEditors.TextEdit txtXacNhan;
+        private DevExpress.XtraEditors.TextEdit txtMatKhauMoi;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btOK;
     }
 }

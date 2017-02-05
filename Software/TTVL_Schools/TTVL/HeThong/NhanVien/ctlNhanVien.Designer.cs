@@ -388,7 +388,7 @@
             // gridColumn13
             // 
             this.gridColumn13.Caption = "Chức vụ";
-            this.gridColumn13.FieldName = "TenChuVu";
+            this.gridColumn13.FieldName = "TenChucVu";
             this.gridColumn13.Name = "gridColumn13";
             this.gridColumn13.Visible = true;
             this.gridColumn13.VisibleIndex = 12;
@@ -462,6 +462,7 @@
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(132, 160);
             this.pictureEdit1.TabIndex = 0;
             // 
@@ -497,6 +498,7 @@
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit2.Size = new System.Drawing.Size(132, 160);
             this.pictureEdit2.TabIndex = 0;
             // 
