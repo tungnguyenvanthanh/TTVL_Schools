@@ -23,6 +23,8 @@ namespace TTVL.HeThong.TaiKhoan
         private void btOK_Click(object sender, EventArgs e)
         {
             DialogBox.ShowWaitForm();
+
+            #region Check
             if (txtMatKhauMoi.Text.Equals("") || txtMatKhauMoi.Equals(null))
             {
                 DialogBox.HideWaitForm();
@@ -43,6 +45,7 @@ namespace TTVL.HeThong.TaiKhoan
                 DialogBox.Error("[Mật khẩu củ] không đúng, vui lòng kiểm tra lại.");
                 return;
             }
+            #endregion
 
             if (DialogBox.Question("Bạn có chắc chắn muốn thay đổi [Mật khẩu] ?") == DialogResult.Yes)
             {

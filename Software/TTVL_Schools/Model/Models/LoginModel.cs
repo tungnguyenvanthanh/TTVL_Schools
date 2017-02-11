@@ -40,7 +40,7 @@ namespace TTVL.Model
                         }
                         E_NhanVien.TaiKhoan = QueryPass.TaiKhoan;
                         E_NhanVien.HoVaTen = QueryPass.HoVaTen;
-                        E_NhanVien.ChucVu = E_ChucVu.OneChucVu(Convert.ToInt32(QueryPass.MaChucVu));
+                        E_NhanVien.ChucVu = E_ChucVu.OneNameChucVu(Convert.ToInt32(QueryPass.MaChucVu));
                         E_NhanVien.MatKhau = QueryPass.MatKhau;
                         return true;
                     }

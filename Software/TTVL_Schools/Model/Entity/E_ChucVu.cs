@@ -10,7 +10,7 @@ namespace Model.Entity
     {
         public static string TenChucVu { get; set; }
 
-        public static string OneChucVu(int MaChucVu)
+        public static string OneNameChucVu(int MaChucVu)
         {
             using (var db = new MasterDataContext())
             {

@@ -1,0 +1,10 @@
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.dll.config
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\EntityFramework.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\EntityFramework.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\obj\Debug\Shop123.Entities.csprojResolveAssemblyReference.cache
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\obj\Debug\Shop123.Entities.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\obj\Debug\Shop123.Entities.pdb

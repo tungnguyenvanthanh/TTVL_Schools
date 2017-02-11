@@ -37,7 +37,6 @@ namespace TTVL
             DialogBox.ShowWaitForm();
             
             #region Check connect
-
             try
             {
                 Common.SqlConnString = CommonCls.Conn = EncDec.Decrypt(Common.Conn);
