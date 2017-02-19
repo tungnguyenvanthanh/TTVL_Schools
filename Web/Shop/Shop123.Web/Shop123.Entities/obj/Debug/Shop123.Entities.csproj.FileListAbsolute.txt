@@ -1,4 +1,3 @@
-C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.dll.config
 C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.dll
 C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\Shop123.Entities.pdb
 C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop123.Web\Shop123.Entities\bin\Debug\EntityFramework.dll

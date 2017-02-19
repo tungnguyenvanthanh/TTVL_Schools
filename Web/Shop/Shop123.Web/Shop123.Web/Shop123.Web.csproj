@@ -123,6 +123,7 @@
     <Content Include="Assets\Admin\build\css\custom.min.css" />
     <Content Include="Assets\Admin\build\js\custom.js" />
     <Content Include="Assets\Admin\build\js\custom.min.js" />
+    <Content Include="Assets\Admin\css\MyStyle.css" />
     <Content Include="Assets\Admin\documentation\css\animate.min.css" />
     <Content Include="Assets\Admin\documentation\css\bootstrap.min.css" />
     <Content Include="Assets\Admin\documentation\css\docs.min.css" />
@@ -142,6 +143,7 @@
     <Content Include="Assets\Admin\documentation\js\jquery.min.js" />
     <Content Include="Assets\Admin\documentation\js\shBrushXml.js" />
     <Content Include="Assets\Admin\documentation\js\shCore.js" />
+    <Content Include="Assets\Admin\images\img.jpg" />
     <Content Include="Assets\Admin\src\js\custom.js" />
     <Content Include="Assets\Admin\src\js\helpers\smartresize.js" />
     <Content Include="Assets\Admin\vendors\animate.css\animate.css" />
@@ -3522,6 +3524,10 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TestController.cs" />
+    <Compile Include="AuthorizeAttribute.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -4405,6 +4411,9 @@
     <Content Include="Assets\Admin\vendors\validator\validator.jquery.json" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Test\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -4414,8 +4423,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Areas\Admin\Views\Testontroller\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
