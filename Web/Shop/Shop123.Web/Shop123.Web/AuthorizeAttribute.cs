@@ -10,7 +10,7 @@ using Shop123.Web.Areas.Admin.Controllers;
 
 namespace Shop123.Web
 {
-    public class AuthorizeAttribute : FilterAttribute, IAuthorizationFilter
+    public class LoginAuthorizeAttribute : FilterAttribute, IAuthorizationFilter
     {
         public void OnAuthorization(AuthorizationContext filterContext)
         {

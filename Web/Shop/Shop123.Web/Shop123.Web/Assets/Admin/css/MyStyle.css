@@ -12,3 +12,10 @@
 .text-red {
     color: red;
 }
+.text-align-center {
+    text-align: center
+}
+
+.mt07 {
+    margin-top: 7px !important;
+}

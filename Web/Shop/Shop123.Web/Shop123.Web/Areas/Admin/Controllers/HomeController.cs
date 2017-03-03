@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Shop123.Web.Areas.Admin.Controllers
 {
-    [Authorize]
+    [LoginAuthorize]
     public class HomeController : Controller
     {
         // GET: Admin/Home

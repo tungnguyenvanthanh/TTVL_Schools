@@ -1,4 +1,4 @@
-.daterangepicker .ranges li {
+﻿.daterangepicker .ranges li {
   color: #73879C; }
   .daterangepicker .ranges li.active, .daterangepicker .ranges li:hover {
     background: #536A7F;
@@ -1180,11 +1180,11 @@ table.jambo_table tbody tr.selected td {
   background-color: white; }
 
 .dataTables_length {
-  width: 40%;
+  width: 100%;
   float: left; }
 
 .dataTables_filter {
-  width: 50%;
+  width: 100%;
   float: right;
   text-align: right; }
 

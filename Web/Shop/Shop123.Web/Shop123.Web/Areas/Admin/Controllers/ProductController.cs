@@ -7,7 +7,7 @@ using Shop123.Entities.Model;
 
 namespace Shop123.Web.Areas.Admin.Controllers
 {
-    [Authorize]
+    [LoginAuthorize]
     public class ProductController : Controller
     {
         // GET: Admin/Product

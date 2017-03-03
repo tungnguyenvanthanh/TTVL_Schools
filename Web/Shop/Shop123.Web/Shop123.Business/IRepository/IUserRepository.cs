@@ -10,5 +10,6 @@ namespace Shop123.Business.IRepository
     public interface IUserRepository
     {
         User Login(string username, string password);
+        List<User> GetUsers();
     }
 }

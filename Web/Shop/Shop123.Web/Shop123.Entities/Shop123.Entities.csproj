@@ -69,6 +69,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Model\LoginModel.cs" />
     <Compile Include="Model\ProductModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

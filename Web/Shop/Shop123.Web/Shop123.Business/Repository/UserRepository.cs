@@ -29,5 +29,10 @@ namespace Shop123.Business.Repository
                 return null;
             }
         }
+
+        public List<User> GetUsers()
+        {
+            return db.Users.Where(a => a.Username != "admin").ToList();
+        }
     }
 }
