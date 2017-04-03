@@ -1,0 +1,10 @@
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\Shop_TTVL.Entities.dll.config
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\Shop_TTVL.Entities.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\Shop_TTVL.Entities.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\EntityFramework.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\EntityFramework.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\obj\Debug\Shop_TTVL.Entities.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\obj\Debug\Shop_TTVL.Entities.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Entities\obj\Debug\Shop_TTVL.Entities.csprojResolveAssemblyReference.cache

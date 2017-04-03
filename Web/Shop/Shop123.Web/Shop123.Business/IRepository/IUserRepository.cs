@@ -11,5 +11,8 @@ namespace Shop123.Business.IRepository
     {
         User Login(string username, string password);
         List<User> GetUsers();
+        User GetUsers(int ID);
+        bool Save(User user);
+        bool TestUserNameUsers(string username);
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\bin\Debug\Shop_TTVL.Business.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\bin\Debug\Shop_TTVL.Business.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\bin\Debug\Shop_TTVL.Entities.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\bin\Debug\Shop_TTVL.Entities.pdb
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\obj\Debug\Shop_TTVL.Business.csprojResolveAssemblyReference.cache
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\obj\Debug\Shop_TTVL.Business.dll
+C:\Users\TTVL\OneDrive\Project\DuAn\GitHub\TTVL_Schools\Web\Shop\Shop_TTVL.Web\Shop_TTVL.Business\obj\Debug\Shop_TTVL.Business.pdb

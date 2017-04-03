@@ -1,0 +1,64 @@
+﻿.notification {
+    width: 100px;
+}
+.notification ul {
+    width: 100%;
+    display: flex;
+}
+.notification ul li{
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+.notification i {
+    color: #000;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.validation-summary-errors ul {
+    padding: 0;
+}
+.validation-summary-errors ul li {
+    list-style: none;
+}
+.text-red {
+    color: red;
+}
+.text-align-center {
+    text-align: center
+}
+
+.mt07 {
+    margin-top: 7px !important;
+}
+
+
+.w3l_login .dropdown-menu > li > a {
+    min-width: 160px;
+    text-align: left;
+    border: none;
+    font-size: 18px;
+}
+
+#myTab > li {
+    float: none;
+}
